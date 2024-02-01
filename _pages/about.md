@@ -8,7 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 feature_row:
-  - image_path: /about_image.jpg
+  - image_path: /about_picture.jpg
     alt: "placeholder image 1"
     title: "About"
     url: "#test-link"
