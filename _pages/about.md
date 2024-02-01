@@ -8,7 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 feature_row:
-  - image_path: /jacket_no_smile_changed3.jpg
+  - image_path: /about_image.jpg
     alt: "placeholder image 1"
     title: "About"
     url: "#test-link"
@@ -21,7 +21,7 @@ I am an macroeconomist interested in Fiscal Policy, Macroeconometrics and more g
 If you want to get in touch, please send me an email at [tom.pesso@upf.edu](mailto:tom.pesso@upf.edu)."
 ---
 <!-- <img title="a title" alt="Alt text" src="/images/jacket_no_smile_35-45.jpg"> -->
-{% include feature_row id="feature_row" type="left" layout="half" %}
+{% include feature_row id="feature_row" type="left" %}
 <!-- ![image-left](/images/jacket_no_smile_changed3.jpg){: .align-left} 
 
 # &emsp; About
