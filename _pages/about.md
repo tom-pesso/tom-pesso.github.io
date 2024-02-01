@@ -16,7 +16,7 @@ feature_row:
     btn_class: "btn--primary"
     excerpt: "I am a Ph.D. candidate in economics at University Pompeu Fabra in Barcelona, Spain. <br/> <br/>
 
-I am an macroeconomist interested in Fiscal Policy, Macroeconometrics and more generally Macroeconomic Policy Evaluation. <br/> <br/>
+I am a macroeconomist interested in Fiscal Policy, Macroeconometrics and more generally Macroeconomic Policy Evaluation. <br/> <br/>
 
 If you want to get in touch, please send me an email at [tom.pesso@upf.edu](mailto:tom.pesso@upf.edu)."
 ---
