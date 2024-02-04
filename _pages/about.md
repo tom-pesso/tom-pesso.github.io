@@ -11,7 +11,7 @@ feature_row:
   - image_path: /about_picture.jpg
     alt: "placeholder image 1"
     title: "About"
-    url: "#test-link"
+    url: "https://tom-pesso.github.io/tom-pesso/files/CV-november.pdf"
     btn_label: "CV"
     btn_class: "btn--primary"
     excerpt: "I am a Ph.D. candidate in economics at University Pompeu Fabra in Barcelona, Spain. <br/> <br/>
