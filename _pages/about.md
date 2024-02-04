@@ -20,8 +20,13 @@ I am a macroeconomist interested in Fiscal Policy, Macroeconometrics and more ge
 
 If you want to get in touch, please send me an email at [tom.pesso@upf.edu](mailto:tom.pesso@upf.edu)."
 ---
-<!-- <img title="a title" alt="Alt text" src="/images/jacket_no_smile_35-45.jpg"> -->
+
 {% include feature_row id="feature_row" type="left" %}
+
+<!-- --------------------------------- -->
+<!------- ARCHIVE OF CODES -------------->
+<!-- --------------------------------- -->
+
 <!-- ![image-left](/images/jacket_no_smile_changed3.jpg){: .align-left} 
 
 # &emsp; About
