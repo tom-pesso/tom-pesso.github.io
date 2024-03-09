@@ -8,7 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 feature_row:
-  - image_path: /about_picture.jpg
+  - image_path: /about_picture.jpeg
     alt: "placeholder image 1"
     title: "About"
     url: "https://tom-pesso.github.io/files/CV-november.pdf"
