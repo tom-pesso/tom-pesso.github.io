@@ -7,7 +7,7 @@ author_profile: true
 
 # Working papers
 
-<div style="margin-bottom: 20px;"></div> <!-- Space between sections -->
+
 <div>
     <h3>Fiscal Multiplier: the Size of the Shock Matters</h3>
     <p style="font-size: 0.9em; margin-left: 20px; text-align: justify;">
@@ -16,6 +16,7 @@ author_profile: true
     <p style="margin-left: 20px;"><em>Draft available on demand.</em></p>
 </div>
 
+<div style="margin-bottom: 20px;"></div> <!-- Space between sections -->
 <div>
     <h3>
         Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt
@@ -29,7 +30,7 @@ author_profile: true
     <p style="margin-left: 20px;"><a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf" target="_blank">Download the working paper</a></p>
 </div>
 
-
+<div style="margin-bottom: 20px;"></div> <!-- Space between sections -->
 ---
 # Work in Progress
 
