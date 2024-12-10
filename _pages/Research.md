@@ -17,7 +17,7 @@ author_profile: true
 </details>
 
 <details> 
-    <summary><b>US Presidents and the Economy: An Econometric Evaluation</b> <em>with <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html" target="_blank">R. Barnichon</a> and G. Mesters</em></summary>
+    <summary><b>US Presidents and the Economy: An Econometric Evaluation</b> <em>with <a href="https://sites.google.com/site/regisbarnichon/" target="_blank">R. Barnichon</a> and <a href="https://www.geertmesters.com/" target="_blank">G. Mesters</a></em></summary>
     <p style="margin-top: 10px; font-size: 0.9em;">
     </p>
 </details>
