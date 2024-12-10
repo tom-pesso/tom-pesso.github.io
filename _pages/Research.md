@@ -21,7 +21,7 @@ author_profile: true
     <h3>
         Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt (2024)
         <span style="font-size: 0.9em; font-style: italic; display: block; margin-top: 5px;">
-            with <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html" target="_blank">C. Checherita-Westphal (ECB)</a>. (ECB Working Paper Series - No. 2996)
+            with <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html" target="_blank">C. Checherita-Westphal</a>. (ECB Working Paper Series - No. 2996)
         </span>
     </h3>
     <p style="font-size: 0.9em; margin-left: 20px; text-align: justify;">
