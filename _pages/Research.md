@@ -5,7 +5,7 @@ excerpt: ""
 author_profile: true
 ---
 
-## Working papers
+# Working papers
 
 <div style="margin-bottom: 20px;"></div> <!-- Space between sections -->
 <div>
@@ -31,9 +31,7 @@ author_profile: true
 
 
 
----
-
-## Work in Progress
+# Work in Progress
 
 <div>
     <h3>
