@@ -14,7 +14,7 @@ feature_row:
     url: "https://tom-pesso.github.io/files/CV-TomPesso.pdf"
     btn_label: "CV"
     btn_class: "btn--primary"
-    excerpt: "I am a PhD candidate in Economics at Universitat Pompeu Fabra (UPF) and Barcelona School of Economics (BSE), under the supervision of [Prof. Geert Mesters](https://www.geertmesters.com/) and [Prof. Davide Debortoli](https://crei.cat/people/davide-debortoli-2/). <br/> <br/>
+    excerpt: "I am a fifth-year Ph.D candidate in Economics at Universitat Pompeu Fabra (UPF) and Barcelona School of Economics (BSE), under the supervision of [Prof. Geert Mesters](https://www.geertmesters.com/) and [Prof. Davide Debortoli](https://crei.cat/people/davide-debortoli-2/). <br/> <br/>
 
 I am a macroeconomist interested in Fiscal Policy, Macroeconometrics and more generally Macroeconomic Policy Evaluation. <br/> <br/>
 
