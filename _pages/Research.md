@@ -16,16 +16,19 @@ author_profile: true
     </p>
 </details>
 
+<div style="margin-bottom: 20px;"></div> <!-- Space between sections -->
+
 <details> 
-    <summary><b>US Presidents and the Economy: An Econometric Evaluation</b> <em>with <a href="https://sites.google.com/site/regisbarnichon/" target="_blank">R. Barnichon</a> and <a href="https://www.geertmesters.com/" target="_blank">G. Mesters</a></em></summary>
+    <summary><b>US Presidents and the Economy: An Econometric Evaluation</b><br> <em>with <a href="https://sites.google.com/site/regisbarnichon/" target="_blank">R. Barnichon</a> and <a href="https://www.geertmesters.com/" target="_blank">G. Mesters</a></em></summary>
     <p style="margin-top: 10px; font-size: 0.9em;">
     </p>
 </details>
 
+---
 ## Working papers
 
 <details> 
-    <summary><b>Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt</b> <em>with <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html" target="_blank">C. Checherita-Westphal (ECB)</a></em></summary>
+    <summary><b>Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt</b><br> <em>with <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html" target="_blank">C. Checherita-Westphal (ECB)</a></em></summary>
     <p style="margin-top: 10px; font-size: 0.9em;">
         This paper investigates the interplay between discretionary fiscal policy and inflation in the euro area, emphasizing the role of public debt levels in modulating this relationship. It explores how fiscal expansions or contractions influence inflationary pressures, particularly under varying debt conditions. The analysis reveals that fiscal policy’s effect on inflation is non-linear, with debt levels significantly affecting the inflationary outcome of fiscal measures. High debt levels tend to amplify the inflation response to fiscal expansions, a finding that holds under multiple analytical frameworks and robustness checks. This paper contributes to the empirical literature by highlighting the critical role of fiscal policy, especially in high-debt environments, and its implications for inflation dynamics in the euro area.<br>
         <br>
