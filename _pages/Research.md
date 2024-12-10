@@ -31,7 +31,10 @@ author_profile: true
 </div>
 
 <div style="margin-bottom: 20px;"></div> <!-- Space between sections -->
+
+
 ---
+
 # Work in Progress
 
 <div>
