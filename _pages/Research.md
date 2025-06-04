@@ -15,7 +15,7 @@ author_profile: true
     </p>
     <p style="margin-left: 20px;"><em>Draft available on demand.</em></p>
     <p style="font-size: 0.8em; margin-left: 20px;">
-        Presentations: EEA 2025 (forthcoming), IAAE 2025 (forthcoming), European Winter Meeting of the Econometric Society (Dec. 2024), BSE Summer Forum (2024, poster session) CREi Internal Seminar (2023, 2022), UPF Econometrics Internal Seminar (2023), PhD Jamboree BSE (2023)
+        Presentations: EEA 2025 (forthcoming), IAAE 2025 (forthcoming), European Winter Meeting of the Econometric Society (Dec. 2024), BSE Summer Forum (2024, poster session), CREi Internal Seminar (2023, 2022), UPF Econometrics Internal Seminar (2023), PhD Jamboree BSE (2023)
     </p>
 </div>
 
