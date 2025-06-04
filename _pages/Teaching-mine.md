@@ -12,7 +12,7 @@ author_profile: true
 
 <details>
 <summary><b>Fiscal Policy</b> for professor Davide Debortoli <br/>
-        &emsp; <i>2022/2023, Barcelona School of Economics</i> &emsp; &emsp; Graduate TA <br/>
+        &emsp; <i>2023/2025, Barcelona School of Economics</i> &emsp; &emsp; Graduate TA <br/>
 </summary>
 <br>
 Details to come.
