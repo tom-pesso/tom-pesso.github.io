@@ -32,18 +32,18 @@ author_profile: true
     .page__content h3 {
         font-size: 0.9rem;         /* Paper title size */
         font-weight: 600;
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.1rem;
     }
 
     .page__content .text-sm {       /* Abstract */
-    font-size: 0.7rem !important;   /* or 0.65rem or whatever you prefer */
+    font-size: 0.8rem !important;   /* or 0.65rem or whatever you prefer */
 }
 
     
     /* === SLIGHTLY SMALLER TEXT FOR PRESENTATIONS + NOTES === */
     .presentations-text,
     .small-note {
-        font-size: 0.75rem;        /* Equivalent to 0.8em in your old version */
+        font-size: 0.7rem;        /* Equivalent to 0.8em in your old version */
     }
 
     /* === OVERRIDE TAILWIND TEXT SIZES (PDF badge, ECB badge, etc.) === */
