@@ -21,7 +21,11 @@ If you want to get in touch, please send me an email at [tom.pesso@upf.edu](mail
 
 [Working Papers](#working-papers){: .btn .btn--primary}
 
-
+<div class="text-center mt-6 mb-4">
+    <h1 class="text-3xl font-semibold text-gray-900">
+        Tom Pesso
+    </h1>
+</div>
 
 {% include feature_row id="feature_row" type="left" %}
 
