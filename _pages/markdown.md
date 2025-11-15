@@ -176,22 +176,11 @@ author_profile: true
                 <summary class="flex justify-between items-start mb-2">
                     <div class="flex justify-between items-start mb-2">
     <div class="flex-1">
-        
-        <!-- TITLE -->
-        <h3 class="text-xl font-bold text-gray-900 mb-1">
-            Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt (2024)
-        </h3>
 
-        <!-- AUTHORS + BADGES ROW -->
-        <div class="flex flex-wrap items-center gap-2 text-md text-gray-600 italic">
-            <span>
-                with
-                <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
-                   target="_blank"
-                   class="paper-link text-indigo-600 hover:text-indigo-800 visited:text-purple-600 transition-colors duration-200">
-                    C. Checherita-Westphal
-                </a>.
-            </span>
+        <div class="flex flex-wrap items-center gap-2 mb-1">
+            <h3 class="text-xl font-bold text-gray-900">
+                Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt (2024)
+            </h3>
 
             <!-- ECB badge -->
             <span class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded-full border border-blue-200">
@@ -205,8 +194,7 @@ author_profile: true
                 <svg xmlns="http://www.w3.org/2000/svg"
                      viewBox="0 0 20 20"
                      fill="currentColor"
-                     class="w-4 h-4 mr-1"
-                     aria-hidden="true">
+                     class="w-4 h-4 mr-1">
                     <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
                     <path d="M11.5 2V7.5H17" />
                 </svg>
@@ -214,9 +202,19 @@ author_profile: true
             </a>
         </div>
 
+        <!-- AUTHORS on their own line -->
+        <p class="text-md text-gray-600 italic">
+            with
+            <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
+               target="_blank"
+               class="paper-link text-indigo-600 hover:text-indigo-800 visited:text-purple-600 transition-colors">
+                C. Checherita-Westphal
+            </a>.
+        </p>
+
     </div>
 
-    <!-- CHEVRON -->
+    <!-- chevron stays the same -->
     <span class="p-2 rounded-full hover:bg-gray-200 transition-colors ml-4 inline-flex items-center justify-center">
         <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
              xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -225,6 +223,7 @@ author_profile: true
         </svg>
     </span>
 </div>
+
 
                 </summary>
 
