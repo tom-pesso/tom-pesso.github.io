@@ -106,8 +106,7 @@ author_profile: true
                     <div class="flex-1">
                         <h3 class="text-xl font-bold text-gray-900 mb-2">
                             Fiscal Multiplier: the Size of the Shock Matters (2024)
-                        </h3>
-                        <div class="text-md text-gray-600 italic">
+                            <div class="text-md text-gray-600 italic">
                             <!-- PDF badge (on demand) -->
                             <span class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-yellow-200">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -121,6 +120,8 @@ author_profile: true
                                 <span>PDF (on demand)</span>
                             </span>
                         </div>
+                        </h3>
+                        
                     </div>
                     <span class="p-2 rounded-full hover:bg-gray-200 transition-colors inline-flex items-center justify-center">
                         <!-- Chevron down icon -->
