@@ -129,7 +129,7 @@ author_profile: false
             </div>
 
             <!-- Row 2: PDF badge -->
-            <div class="mt-2 flex flex-wrap items-center gap-2">
+            <div class="mt-1 flex flex-wrap items-center gap-2">
 
                 <!-- PDF (on demand) badge -->
                 <span class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-yellow-200">
@@ -223,7 +223,7 @@ author_profile: false
             </div>
 
             <!-- Row 2: ECB badge + PDF badge + coauthor (all on one line, wrapping together if needed) -->
-            <div class="mt-2 flex flex-wrap items-center gap-2">
+            <div class="mt-1 flex flex-wrap items-center gap-2">
                 <!-- Coauthor text -->
                 <span class="text-md text-gray-600 italic">
                     with
