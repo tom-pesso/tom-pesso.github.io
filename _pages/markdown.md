@@ -18,19 +18,19 @@ author_profile: true
     /* === GLOBAL FONT FAMILY + BASE SIZE === */
     .page__content {
         font-family: 'Inter', sans-serif;
-        font-size: 0.85rem;        /* Main text size — adjust here */
+        font-size: 0.8rem;        /* Main text size — adjust here */
     }
 
     /* === SECTION TITLES (Working Papers / Work in Progress) === */
     .page__content h2 {
-        font-size: 1rem;           /* Adjust for bigger/smaller section headers */
+        font-size: 1.3rem;           /* Adjust for bigger/smaller section headers */
         font-weight: 600;
         margin-bottom: 0.75rem;
     }
 
     /* === PAPER TITLES === */
     .page__content h3 {
-        font-size: 0.9rem;         /* Paper title size */
+        font-size: 1rem;         /* Paper title size */
         font-weight: 600;
         margin-bottom: 0.5rem;
     }
@@ -47,7 +47,7 @@ author_profile: true
     }
 
     .page__content .text-md {
-        font-size: 0.85rem !important;  /* Co-author line, metadata */
+        font-size: 0.7rem !important;  /* Co-author line, metadata */
     }
 
     /* === ICON SIZE (PDF icon) === */
