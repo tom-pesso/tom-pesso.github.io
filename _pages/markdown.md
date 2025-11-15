@@ -15,9 +15,36 @@ author_profile: true
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-    /* Apply Inter font to main content area in Minimal Mistakes */
+    /* Apply Inter font and smaller base size to this page */
     .page__content {
         font-family: 'Inter', sans-serif;
+        font-size: 0.9rem; /* ≈ your old 0.9em */
+    }
+
+    /* Make section headings smaller than default Tailwind 2xl */
+    .page__content h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    /* Make paper titles smaller */
+    .page__content h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    /* Default text size for paragraphs, spans, links, list items */
+    .page__content p,
+    .page__content span,
+    .page__content a,
+    .page__content li {
+        font-size: 0.9rem;
+    }
+
+    /* Slightly smaller text for presentations lists, notes, etc. */
+    .presentations-text,
+    .small-note {
+        font-size: 0.8rem; /* ≈ your old 0.8em */
     }
 
     .paper-link {
@@ -88,12 +115,17 @@ author_profile: true
                         This paper studies the impact of the sign and magnitude of fiscal shocks on the fiscal multiplier. Through a theoretical examination, it highlights the significance of both the sign and magnitude of the shock in determining the multiplier. The study introduces a new empirical methodology, the Local Linear Local Projection, to detect complex non-linear patterns. When applied to US data, the methodology reveals that the degree of nonlinearity captured in the data varies with the identification strategy employed. Notably, zero does not appear to be a significant tipping point in the nonlinearity of the fiscal multiplier.
                     </p>
                     <div class="bg-gray-100 p-3 rounded-md mb-1 border border-gray-200">
-                        <p class="text-xs text-gray-600">
+                        <p class="presentations-text text-gray-600">
                             <span class="font-semibold">Presentations:</span> EEA 2025, IAAE 2025, European Winter Meeting of the Econometric Society (Dec. 2024), BSE Summer Forum (2024, poster session), CREi Internal Seminar (2023, 2022), UPF Econometrics Internal Seminar (2023), PhD Jamboree BSE (2023)
                         </p>
                     </div>
                 </div>
             </details>
+
+            <!-- Always Visible Content -->
+            <p class="small-note text-gray-800 italic mt-2">
+                Draft available on demand.
+            </p>
         </article>
 
         <!-- Paper 2 -->
