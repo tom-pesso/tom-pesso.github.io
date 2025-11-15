@@ -23,14 +23,14 @@ author_profile: true
     
     /* === SECTION TITLES (Working Papers / Work in Progress) === */
     .page__content h2 {
-        font-size: 1.3rem;           /* Adjust for bigger/smaller section headers */
+        font-size: 1.5rem;           /* Adjust for bigger/smaller section headers */
         font-weight: 600;
         margin-bottom: 0.75rem;
     }
 
     /* === PAPER TITLES === */
     .page__content h3 {
-        font-size: 0.9rem;         /* Paper title size */
+        font-size: 0.95rem;         /* Paper title size */
         font-weight: 600;
         margin-bottom: 0.1rem;
     }
