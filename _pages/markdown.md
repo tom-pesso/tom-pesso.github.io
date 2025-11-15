@@ -320,4 +320,94 @@ summary::-webkit-details-marker {
 
     </section>
 
+
+<!-- Teaching Section -->
+<section class="mt-12">
+    <h2 id="teaching" class="text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-6">
+        Teaching
+    </h2>
+
+    <!-- Course 1 -->
+    <article class="mb-8 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
+        <details>
+            <summary class="cursor-pointer">
+                
+                <!-- Top row: course title -->
+                <div class="flex justify-between items-start gap-4">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                        Fiscal Policy — Graduate TA
+                    </h3>
+
+                    <!-- Chevron -->
+                    <span class="p-2 rounded-full hover:bg-gray-200 transition-colors inline-flex items-center justify-center">
+                        <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
+                             xmlns="http://www.w3.org/2000/svg" fill="none"
+                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="text-md text-gray-600 italic mt-0.5">
+                    for Prof. Davide Debortoli — 2023/2025, Barcelona School of Economics
+                </div>
+            </summary>
+
+            <!-- Details content -->
+            <div class="mt-4 text-sm text-gray-700 leading-relaxed">
+                Details to come.
+            </div>
+        </details>
+    </article>
+
+    <!-- Course 2 -->
+    <article class="mb-8 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
+        <details>
+            <summary class="cursor-pointer">
+
+                <!-- Top row: course title -->
+                <div class="flex justify-between items-start gap-4">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                        Causal Inference & Panel Data — Graduate TA / Summer School TA
+                    </h3>
+
+                    <!-- Chevron -->
+                    <span class="p-2 rounded-full hover:bg-gray-200 transition-colors inline-flex items-center justify-center">
+                        <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
+                             xmlns="http://www.w3.org/2000/svg" fill="none"
+                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="text-md text-gray-600 italic mt-0.5">
+                    for Prof. Albrecht Glitz — 2021/2022 & 2022/2023, Barcelona School of Economics
+                </div>
+            </summary>
+
+            <!-- Details content -->
+            <div class="mt-4 text-sm text-gray-700 leading-relaxed">
+
+                <div class="bg-gray-100 border border-gray-200 rounded-md p-4">
+                    <p class="font-semibold mb-2">Causal Inference</p>
+                    <ul class="list-disc ml-6 space-y-1">
+                        <li>Randomized Controlled Trials</li>
+                        <li>Natural Experiments</li>
+                        <li>Regression Discontinuity Designs</li>
+                        <li>Selection on Observables (Regression, Matching)</li>
+                        <li>Difference-in-Differences, Event Studies, Synthetic Control</li>
+                    </ul>
+                </div>
+
+            </div>
+        </details>
+    </article>
+
+</section>
+
 </main>
