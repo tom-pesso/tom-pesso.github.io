@@ -32,7 +32,7 @@ author_profile: false
     .page__content h3 {
         font-size: 0.95rem;
         font-weight: 600;
-        margin-bottom: 0.1rem;
+        margin-bottom: 0.05rem;
     }
 
     /* === ABSTRACT TEXT === */
