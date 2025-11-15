@@ -94,11 +94,6 @@ author_profile: true
                     </div>
                 </div>
             </details>
-
-            <!-- Always Visible Content -->
-            <p class="text-sm font-medium text-gray-800 italic mt-2">
-                Draft available on demand.
-            </p>
         </article>
 
         <!-- Paper 2 -->
