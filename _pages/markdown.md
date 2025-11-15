@@ -209,7 +209,7 @@ author_profile: false
             <!-- Row 1: Title + chevron -->
             <div class="flex justify-between items-start gap-4">
                 <h3 class="text-xl font-bold text-gray-900">
-                    Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt (2024)
+                    Fiscal Policy and Inflation: Non-Linearities in Government Debt (2024)
                 </h3>
 
                 <!-- Chevron -->
