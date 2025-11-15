@@ -20,7 +20,6 @@ author_profile: true
         font-family: 'Inter', sans-serif;
     }
 
-    /* Keep links simple – Tailwind utility classes do the heavy lifting */
     .paper-link {
         text-decoration: none;
     }
@@ -53,10 +52,26 @@ author_profile: true
         <article class="mb-10 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
             <!-- Collapsible block (title + abstract + presentations) -->
             <details>
-                <summary class="flex justify-between items-center mb-4">
-                    <h3 class="text-xl font-bold text-gray-900 pr-4">
-                        Fiscal Multiplier: the Size of the Shock Matters (2024)
-                    </h3>
+                <summary class="flex justify-between items-start mb-2">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Fiscal Multiplier: the Size of the Shock Matters (2024)
+                        </h3>
+                        <div class="text-md text-gray-600 italic">
+                            <!-- PDF badge (on demand) -->
+                            <span class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-yellow-200">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 20 20"
+                                     fill="currentColor"
+                                     class="w-4 h-4 mr-1"
+                                     aria-hidden="true">
+                                    <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
+                                    <path d="M11.5 2V7.5H17" />
+                                </svg>
+                                <span>PDF (on demand)</span>
+                            </span>
+                        </div>
+                    </div>
                     <span class="p-2 rounded-full hover:bg-gray-200 transition-colors inline-flex items-center justify-center">
                         <!-- Chevron down icon -->
                         <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
@@ -68,12 +83,12 @@ author_profile: true
                 </summary>
 
                 <!-- Content that appears when opened -->
-                <div class="text-gray-700 leading-relaxed text-justify mb-4">
+                <div class="text-sm text-gray-700 leading-relaxed text-justify mb-4">
                     <p class="mb-4">
                         This paper studies the impact of the sign and magnitude of fiscal shocks on the fiscal multiplier. Through a theoretical examination, it highlights the significance of both the sign and magnitude of the shock in determining the multiplier. The study introduces a new empirical methodology, the Local Linear Local Projection, to detect complex non-linear patterns. When applied to US data, the methodology reveals that the degree of nonlinearity captured in the data varies with the identification strategy employed. Notably, zero does not appear to be a significant tipping point in the nonlinearity of the fiscal multiplier.
                     </p>
                     <div class="bg-gray-100 p-3 rounded-md mb-1 border border-gray-200">
-                        <p class="text-sm text-gray-600">
+                        <p class="text-xs text-gray-600">
                             <span class="font-semibold">Presentations:</span> EEA 2025, IAAE 2025, European Winter Meeting of the Econometric Society (Dec. 2024), BSE Summer Forum (2024, poster session), CREi Internal Seminar (2023, 2022), UPF Econometrics Internal Seminar (2023), PhD Jamboree BSE (2023)
                         </p>
                     </div>
@@ -105,17 +120,15 @@ author_profile: true
                                 ECB Working Paper - No. 2996
                             </span>
 
-                            <!-- PDF link with paper icon + "PDF" -->
+                            <!-- PDF badge as yellow button -->
                             <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf"
                                target="_blank"
-                               class="paper-link text-sm font-medium ml-2 inline-flex items-center not-italic text-indigo-600 hover:text-indigo-800 visited:text-purple-600 transition-colors duration-200">
-                                <!-- Simple document icon -->
+                               class="paper-link inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-full border border-yellow-200">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 20 20"
                                      fill="currentColor"
                                      class="w-4 h-4 mr-1"
                                      aria-hidden="true">
-                                    <!-- Document outline with folded corner -->
                                     <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
                                     <path d="M11.5 2V7.5H17" />
                                 </svg>
@@ -135,7 +148,7 @@ author_profile: true
                 </summary>
 
                 <!-- Collapsible Abstract -->
-                <div class="mt-2 text-gray-700 leading-relaxed text-justify">
+                <div class="mt-2 text-sm text-gray-700 leading-relaxed text-justify">
                     <p>
                         This paper investigates the interplay between discretionary fiscal policy and inflation in the euro area, emphasizing the role of public debt levels in modulating this relationship. It explores how fiscal expansions or contractions influence inflationary pressures, particularly under varying debt conditions. The analysis reveals that fiscal policy’s effect on inflation is non-linear, with debt levels significantly affecting the inflationary outcome of fiscal measures. High debt levels tend to amplify the inflation response to fiscal expansions, a finding that holds under multiple analytical frameworks and robustness checks. This paper contributes to the empirical literature by highlighting the critical role of fiscal policy, especially in high-debt environments, and its implications for inflation dynamics in the euro area.
                     </p>
