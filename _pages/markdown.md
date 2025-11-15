@@ -41,6 +41,10 @@ author_profile: true
 
     
     /* === SLIGHTLY SMALLER TEXT FOR PRESENTATIONS + NOTES === */
+    .page__content .presentations-box {
+    font-size: 0.7rem !important;  /* adjust as you want */
+    }
+
     .presentations-text,
     .small-note {
         font-size: 0.7rem;        /* Equivalent to 0.8em in your old version */
