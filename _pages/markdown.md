@@ -1,10 +1,26 @@
 ---
 permalink: /markdown/
-layout: single
 title: ""
 excerpt: ""
 author_profile: false
+layout: splash
+feature_row:
+  - image_path: /about_picture.jpeg
+    alt: "placeholder image 1"
+    title: "Welcome to my website!"
+    url: "https://tom-pesso.github.io/files/CV-TomPesso.pdf"
+    btn_label: "CV"
+    btn_class: "btn--primary"
+    excerpt: "I am a fifth-year Ph.D candidate in Economics at Universitat Pompeu Fabra (UPF) and Barcelona School of Economics (BSE), under the supervision of [Prof. Geert Mesters](https://www.geertmesters.com/) and [Prof. Davide Debortoli](https://crei.cat/people/davide-debortoli-2/). <br/> <br/>
+
+I am a macroeconomist interested in Fiscal Policy, Macroeconometrics and more generally Macroeconomic Policy Evaluation. <br/> <br/>
+
+If you want to get in touch, please send me an email at [tom.pesso@upf.edu](mailto:tom.pesso@upf.edu)."
 ---
+
+
+
+{% include feature_row id="feature_row" type="left" %}
 
 <!-- Load Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
