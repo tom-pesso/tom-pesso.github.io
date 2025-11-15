@@ -113,7 +113,7 @@ author_profile: false
 
             <!-- Row 1: Title + chevron -->
             <div class="flex justify-between items-start gap-4">
-                <h3 class="text-xl font-bold text-gray-900">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
                     Fiscal Multiplier: the Size of the Shock Matters (2024)
                 </h3>
 
@@ -208,7 +208,7 @@ author_profile: false
 
             <!-- Row 1: Title + chevron -->
             <div class="flex justify-between items-start gap-4">
-                <h3 class="text-xl font-bold text-gray-900">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
                     Fiscal Policy and Inflation: Non-Linearities in Government Debt (2024)
                 </h3>
 
