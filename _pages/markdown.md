@@ -42,12 +42,12 @@ author_profile: true
     
     /* === SLIGHTLY SMALLER TEXT FOR PRESENTATIONS + NOTES === */
     .page__content .presentations-box {
-    font-size: 0.7rem !important;  /* adjust as you want */
+    font-size: 0.6rem !important;  /* adjust as you want */
     }
 
     .presentations-text,
     .small-note {
-        font-size: 0.7rem;        /* Equivalent to 0.8em in your old version */
+        font-size: 0.6rem;        /* Equivalent to 0.8em in your old version */
     }
 
     /* === OVERRIDE TAILWIND TEXT SIZES (PDF badge, ECB badge, etc.) === */
@@ -174,45 +174,58 @@ author_profile: true
             <details>
                 <!-- Visible header (clickable to open/close) -->
                 <summary class="flex justify-between items-start mb-2">
-                    <div class="flex-1">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">
-                            Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt (2024)
-                        </h3>
-                        <div class="text-md text-gray-600 italic">
-                            with
-                            <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
-                               target="_blank" class="paper-link text-indigo-600 hover:text-indigo-800 visited:text-purple-600 transition-colors duration-200">
-                                C. Checherita-Westphal
-                            </a>.
-                            <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-full not-italic">
-                                ECB Working Paper - No. 2996
-                            </span>
+                    <div class="flex justify-between items-start mb-2">
+    <div class="flex-1">
+        
+        <!-- TITLE -->
+        <h3 class="text-xl font-bold text-gray-900 mb-1">
+            Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt (2024)
+        </h3>
 
-                            <!-- PDF badge as yellow button -->
-                            <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf"
-                               target="_blank"
-                               class="paper-link inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-full border border-yellow-200">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 20 20"
-                                     fill="currentColor"
-                                     class="w-4 h-4 mr-1"
-                                     aria-hidden="true">
-                                    <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
-                                    <path d="M11.5 2V7.5H17" />
-                                </svg>
-                                <span>PDF</span>
-                            </a>
-                        </div>
-                    </div>
+        <!-- AUTHORS + BADGES ROW -->
+        <div class="flex flex-wrap items-center gap-2 text-md text-gray-600 italic">
+            <span>
+                with
+                <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
+                   target="_blank"
+                   class="paper-link text-indigo-600 hover:text-indigo-800 visited:text-purple-600 transition-colors duration-200">
+                    C. Checherita-Westphal
+                </a>.
+            </span>
 
-                    <span class="p-2 rounded-full hover:bg-gray-200 transition-colors ml-4 inline-flex items-center justify-center">
-                        <!-- Chevron down icon -->
-                        <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
-                             xmlns="http://www.w3.org/2000/svg" fill="none"
-                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </span>
+            <!-- ECB badge -->
+            <span class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded-full border border-blue-200">
+                ECB Working Paper - No. 2996
+            </span>
+
+            <!-- PDF badge -->
+            <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf"
+               target="_blank"
+               class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded-full border border-yellow-200">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 20 20"
+                     fill="currentColor"
+                     class="w-4 h-4 mr-1"
+                     aria-hidden="true">
+                    <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
+                    <path d="M11.5 2V7.5H17" />
+                </svg>
+                PDF
+            </a>
+        </div>
+
+    </div>
+
+    <!-- CHEVRON -->
+    <span class="p-2 rounded-full hover:bg-gray-200 transition-colors ml-4 inline-flex items-center justify-center">
+        <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
+             xmlns="http://www.w3.org/2000/svg" fill="none"
+             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+    </span>
+</div>
+
                 </summary>
 
                 <!-- Collapsible Abstract -->
