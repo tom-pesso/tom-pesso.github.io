@@ -3,7 +3,7 @@ permalink: /markdown/
 layout: single
 title: ""
 excerpt: ""
-author_profile: true
+author_profile: false
 ---
 
 <!-- Load Tailwind CSS -->
