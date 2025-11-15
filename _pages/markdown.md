@@ -209,6 +209,16 @@ author_profile: true
 
             <!-- Row 2: ECB badge + PDF badge + coauthor (all on one line, wrapping together if needed) -->
             <div class="mt-2 flex flex-wrap items-center gap-2">
+                <!-- Coauthor text -->
+                <span class="text-md text-gray-600 italic">
+                    with
+                    <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
+                       target="_blank"
+                       class="paper-link text-indigo-600 hover:text-indigo-800 visited:text-purple-600 transition-colors">
+                        C. Checherita-Westphal
+                    </a>.
+                </span>
+                
                 <!-- ECB badge -->
                 <span class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded-full border border-blue-200">
                     ECB Working Paper - No. 2996
@@ -228,15 +238,7 @@ author_profile: true
                     PDF
                 </a>
 
-                <!-- Coauthor text -->
-                <span class="text-md text-gray-600 italic">
-                    with
-                    <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
-                       target="_blank"
-                       class="paper-link text-indigo-600 hover:text-indigo-800 visited:text-purple-600 transition-colors">
-                        C. Checherita-Westphal
-                    </a>.
-                </span>
+                
             </div>
         </summary>
 
