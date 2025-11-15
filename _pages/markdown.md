@@ -15,48 +15,60 @@ author_profile: true
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-    /* Apply Inter font and smaller base size to this page */
+    /* === GLOBAL FONT FAMILY + BASE SIZE === */
     .page__content {
         font-family: 'Inter', sans-serif;
-        font-size: 0.8rem; /* ≈ your old 0.9em */
+        font-size: 0.85rem;        /* Main text size — adjust here */
     }
 
-    /* Make section headings smaller than default Tailwind 2xl */
+    /* === SECTION TITLES (Working Papers / Work in Progress) === */
     .page__content h2 {
-        font-size: 1rem;
+        font-size: 1rem;           /* Adjust for bigger/smaller section headers */
         font-weight: 600;
+        margin-bottom: 0.75rem;
     }
 
-    /* Make paper titles smaller */
+    /* === PAPER TITLES === */
     .page__content h3 {
-        font-size: 0.9rem;
+        font-size: 0.9rem;         /* Paper title size */
         font-weight: 600;
+        margin-bottom: 0.5rem;
     }
 
-    /* Default text size for paragraphs, spans, links, list items */
-    .page__content p,
-    .page__content span,
-    .page__content a,
-    .page__content li {
-        font-size: 0.8rem;
-    }
-
-    /* Slightly smaller text for presentations lists, notes, etc. */
+    /* === SLIGHTLY SMALLER TEXT FOR PRESENTATIONS + NOTES === */
     .presentations-text,
     .small-note {
-        font-size: 0.7rem; /* ≈ your old 0.8em */
+        font-size: 0.75rem;        /* Equivalent to 0.8em in your old version */
     }
 
+    /* === OVERRIDE TAILWIND TEXT SIZES (PDF badge, ECB badge, etc.) === */
+    .page__content .text-xs {
+        font-size: 0.7rem !important;   /* PDF badge + ECB badge */
+    }
+
+    .page__content .text-md {
+        font-size: 0.85rem !important;  /* Co-author line, metadata */
+    }
+
+    /* === ICON SIZE (PDF icon) === */
+    .page__content .w-4 {
+        width: 0.7rem !important;       /* Shrinks icons uniformly */
+    }
+    .page__content .h-4 {
+        height: 0.7rem !important;
+    }
+
+    /* === LINK STYLE OVERRIDE (keep clean) === */
     .paper-link {
         text-decoration: none;
     }
 
-    /* Rotate chevron when a <details> block is open */
+    /* === DROPDOWN ARROW ROTATION === */
     details[open] .toggle-icon {
         transform: rotate(180deg);
     }
 
-    /* Hide the default triangle marker on <summary> */
+    /* === REMOVE DEFAULT TRIANGLE FROM <summary> === */
     summary {
         list-style: none;
         cursor: pointer;
@@ -64,7 +76,9 @@ author_profile: true
     summary::-webkit-details-marker {
         display: none;
     }
+
 </style>
+
 
 <!-- Main Content -->
 <main class="max-w-4xl mx-auto py-8 md:py-12">
@@ -114,18 +128,32 @@ author_profile: true
                     <p class="mb-4">
                         This paper studies the impact of the sign and magnitude of fiscal shocks on the fiscal multiplier. Through a theoretical examination, it highlights the significance of both the sign and magnitude of the shock in determining the multiplier. The study introduces a new empirical methodology, the Local Linear Local Projection, to detect complex non-linear patterns. When applied to US data, the methodology reveals that the degree of nonlinearity captured in the data varies with the identification strategy employed. Notably, zero does not appear to be a significant tipping point in the nonlinearity of the fiscal multiplier.
                     </p>
-                    <div class="bg-gray-100 p-3 rounded-md mb-1 border border-gray-200">
-                        <p class="presentations-text text-gray-600">
-                            <span class="font-semibold">Presentations:</span> EEA 2025, IAAE 2025, European Winter Meeting of the Econometric Society (Dec. 2024), BSE Summer Forum (2024, poster session), CREi Internal Seminar (2023, 2022), UPF Econometrics Internal Seminar (2023), PhD Jamboree BSE (2023)
-                        </p>
-                    </div>
+                    <div class="flex flex-wrap gap-1 presentations-text mt-2">
+    <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+        EEA 2025
+    </span>
+    <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+        IAAE 2025
+    </span>
+    <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+        European Winter Meeting of the Econometric Society (Dec. 2024)
+    </span>
+    <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+        BSE Summer Forum (2024, poster session)
+    </span>
+    <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+        CREi Internal Seminar (2023, 2022)
+    </span>
+    <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+        UPF Econometrics Internal Seminar (2023)
+    </span>
+    <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+        PhD Jamboree BSE (2023)
+    </span>
+</div>
+
                 </div>
             </details>
-
-            <!-- Always Visible Content -->
-            <p class="small-note text-gray-800 italic mt-2">
-                Draft available on demand.
-            </p>
         </article>
 
         <!-- Paper 2 -->
