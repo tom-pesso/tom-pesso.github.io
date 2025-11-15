@@ -19,6 +19,9 @@ If you want to get in touch, please send me an email at [tom.pesso@upf.edu](mail
 ---
 
 
+[Working Papers](#working-papers){: .btn .btn--primary}
+
+
 
 {% include feature_row id="feature_row" type="left" %}
 
@@ -122,8 +125,8 @@ summary::-webkit-details-marker {
 
     <!-- Working Papers Section -->
     <section class="mb-6">
-        <h2 class="text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-6">
-            Working Papers
+        <h2 id="working-papers" class="text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-6">
+    Working Papers
         </h2>
 
         <!-- Paper 1 -->
