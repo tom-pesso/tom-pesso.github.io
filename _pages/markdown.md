@@ -18,66 +18,73 @@ author_profile: true
     /* === GLOBAL FONT FAMILY + BASE SIZE === */
     .page__content {
         font-family: 'Inter', sans-serif;
-        font-size: 0.7rem;        /* Main text size — adjust here */
+        font-size: 0.7rem;
     }
     
-    /* === SECTION TITLES (Working Papers / Work in Progress) === */
+    /* === SECTION TITLES === */
     .page__content h2 {
-        font-size: 1.5rem;           /* Adjust for bigger/smaller section headers */
+        font-size: 1.5rem;
         font-weight: 600;
         margin-bottom: 0.75rem;
     }
 
     /* === PAPER TITLES === */
     .page__content h3 {
-        font-size: 0.95rem;         /* Paper title size */
+        font-size: 0.95rem;
         font-weight: 600;
         margin-bottom: 0.1rem;
     }
 
-    .page__content .text-sm {       /* Abstract */
-    font-size: 0.8rem !important;   /* or 0.65rem or whatever you prefer */
-}
-
-    
-    /* === SLIGHTLY SMALLER TEXT FOR PRESENTATIONS + NOTES === */
-    .page__content .presentations-box {
-    font-size: 0.6rem !important;  /* adjust as you want */
+    /* === ABSTRACT TEXT === */
+    .page__content .text-sm {
+        font-size: 0.8rem !important;
     }
 
+    /* === PRESENTATIONS BOX — main size control === */
+    .page__content .presentations-box {
+        font-size: 0.6rem !important; /* “Presentations:” label */
+    }
+
+    /* === PRESENTATION BADGES (pills) === */
+    .page__content .presentations-box .presentation-pill {
+        font-size: 0.6rem !important;
+        line-height: 1.1; /* looks cleaner inside pills */
+    }
+
+    /* === SMALL NOTES === */
     .presentations-text,
     .small-note {
-        font-size: 0.6rem;        /* Equivalent to 0.8em in your old version */
+        font-size: 0.6rem;
     }
 
     /* === OVERRIDE TAILWIND TEXT SIZES (PDF badge, ECB badge, etc.) === */
     .page__content .text-xs {
-        font-size: 0.7rem !important;   /* PDF badge + ECB badge */
+        font-size: 0.7rem !important;
     }
 
     .page__content .text-md {
-        font-size: 0.7rem !important;  /* Co-author line, metadata */
+        font-size: 0.7rem !important;
     }
 
     /* === ICON SIZE (PDF icon) === */
     .page__content .w-4 {
-        width: 0.7rem !important;       /* Shrinks icons uniformly */
+        width: 0.7rem !important;
     }
     .page__content .h-4 {
         height: 0.7rem !important;
     }
 
-    /* === LINK STYLE OVERRIDE (keep clean) === */
+    /* === LINK STYLE === */
     .paper-link {
         text-decoration: none;
     }
 
-    /* === DROPDOWN ARROW ROTATION === */
+    /* === DROPDOWN ARROW === */
     details[open] .toggle-icon {
         transform: rotate(180deg);
     }
 
-    /* === REMOVE DEFAULT TRIANGLE FROM <summary> === */
+    /* === REMOVE DEFAULT SUMMARY MARKER === */
     summary {
         list-style: none;
         cursor: pointer;
@@ -85,8 +92,8 @@ author_profile: true
     summary::-webkit-details-marker {
         display: none;
     }
-
 </style>
+
 
 
 <!-- Main Content -->
@@ -136,33 +143,42 @@ author_profile: true
                     <p class="mb-4">
                         This paper studies the impact of the sign and magnitude of fiscal shocks on the fiscal multiplier. Through a theoretical examination, it highlights the significance of both the sign and magnitude of the shock in determining the multiplier. The study introduces a new empirical methodology, the Local Linear Local Projection, to detect complex non-linear patterns. When applied to US data, the methodology reveals that the degree of nonlinearity captured in the data varies with the identification strategy employed. Notably, zero does not appear to be a significant tipping point in the nonlinearity of the fiscal multiplier.
                     </p>
-                    <div class="bg-gray-100 border border-gray-200 rounded-md p-2 mt-2">
-    <div class="flex flex-wrap gap-1 presentations-text">
+                    <div class="presentations-box bg-gray-100 border border-gray-200 rounded-md p-2 mt-2">
+    <div class="flex flex-wrap gap-1">
+
         <span class="text-gray-700 font-semibold mr-1">Presentations:</span>
 
-        <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
             EEA 2025
         </span>
-        <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+
+        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
             IAAE 2025
         </span>
-        <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+
+        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
             European Winter Meeting of the Econometric Society (Dec. 2024)
         </span>
-        <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+
+        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
             BSE Summer Forum (2024, poster session)
         </span>
-        <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+
+        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
             CREi Internal Seminar (2023, 2022)
         </span>
-        <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+
+        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
             UPF Econometrics Internal Seminar (2023)
         </span>
-        <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+
+        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
             PhD Jamboree BSE (2023)
         </span>
+
     </div>
 </div>
+
 
 
                 </div>
