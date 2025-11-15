@@ -411,7 +411,7 @@ summary::-webkit-details-marker {
             <div class="flex flex-wrap gap-2 mb-4">
                 
                 <!-- Syllabus (example link, update if needed) -->
-                <a href="https://tom-pesso.github.io/files/teaching/12e016-econometric-methods-ii.pdf" 
+                <a href="https://tom-pesso.github.io/files/12e016-econometric-methods-ii.pdf" 
                    target="_blank"
                    class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-yellow-200">
                     <svg xmlns="http://www.w3.org/2000/svg"
