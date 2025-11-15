@@ -42,7 +42,13 @@ If you want to get in touch, please send me an email at [tom.pesso@upf.edu](mail
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-    
+      /* Hide the global navigation bar on this page only */
+  .site-nav {
+      display: none !important;
+  }
+  .greedy-nav {
+      display: none !important;
+  }
     /* === GLOBAL FONT FAMILY + BASE SIZE === */
     .page__content {
         font-family: 'Inter', sans-serif;
