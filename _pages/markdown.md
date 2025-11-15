@@ -189,50 +189,15 @@ author_profile: true
 <article class="mb-10 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
     <details>
         <!-- Visible header (clickable to open/close) -->
-        <summary class="flex justify-between items-start mb-2 cursor-pointer">
-            <div class="flex flex-1 justify-between items-start gap-4">
+        <summary class="mb-2 cursor-pointer">
 
-                <!-- LEFT BLOCK: Title + badges + coauthors -->
-                <div class="flex-1">
+            <!-- Row 1: Title + chevron -->
+            <div class="flex justify-between items-start gap-4">
+                <h3 class="text-xl font-bold text-gray-900">
+                    Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt (2024)
+                </h3>
 
-                    <!-- TITLE + BADGES + COAUTHORS all on SAME line -->
-                    <div class="flex flex-wrap items-center gap-2 mb-1">
-                        <h3 class="text-xl font-bold text-gray-900">
-                            Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt (2024)
-                        </h3>
-
-                        <!-- ECB badge -->
-                        <span class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded-full border border-blue-200">
-                            ECB Working Paper - No. 2996
-                        </span>
-
-                        <!-- PDF badge -->
-                        <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf"
-                           target="_blank"
-                           class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded-full border border-yellow-200">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 20 20"
-                                 fill="currentColor"
-                                 class="w-4 h-4 mr-1">
-                                <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
-                                <path d="M11.5 2V7.5H17" />
-                            </svg>
-                            PDF
-                        </a>
-
-                        <!-- COAUTHOR (now on same line thanks to flex-wrap) -->
-                        <p class="text-md text-gray-600 italic ml-2">
-                            with
-                            <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
-                               target="_blank"
-                               class="paper-link text-indigo-600 hover:text-indigo-800 visited:text-purple-600 transition-colors">
-                                C. Checherita-Westphal
-                            </a>.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- RIGHT SIDE: CHEVRON -->
+                <!-- Chevron -->
                 <span class="p-2 rounded-full hover:bg-gray-200 transition-colors inline-flex items-center justify-center">
                     <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
                          xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -240,7 +205,38 @@ author_profile: true
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg>
                 </span>
+            </div>
 
+            <!-- Row 2: ECB badge + PDF badge + coauthor (all on one line, wrapping together if needed) -->
+            <div class="mt-2 flex flex-wrap items-center gap-2">
+                <!-- ECB badge -->
+                <span class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded-full border border-blue-200">
+                    ECB Working Paper - No. 2996
+                </span>
+
+                <!-- PDF badge -->
+                <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf"
+                   target="_blank"
+                   class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded-full border border-yellow-200">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20"
+                         fill="currentColor"
+                         class="w-4 h-4 mr-1">
+                        <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
+                        <path d="M11.5 2V7.5H17" />
+                    </svg>
+                    PDF
+                </a>
+
+                <!-- Coauthor text -->
+                <span class="text-md text-gray-600 italic">
+                    with
+                    <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
+                       target="_blank"
+                       class="paper-link text-indigo-600 hover:text-indigo-800 visited:text-purple-600 transition-colors">
+                        C. Checherita-Westphal
+                    </a>.
+                </span>
             </div>
         </summary>
 
@@ -250,9 +246,9 @@ author_profile: true
                 This paper investigates the interplay between discretionary fiscal policy and inflation in the euro area, emphasizing the role of public debt levels in modulating this relationship. It explores how fiscal expansions or contractions influence inflationary pressures, particularly under varying debt conditions. The analysis reveals that fiscal policy’s effect on inflation is non-linear, with debt levels significantly affecting the inflationary outcome of fiscal measures. High debt levels tend to amplify the inflation response to fiscal expansions, a finding that holds under multiple analytical frameworks and robustness checks. This paper contributes to the empirical literature by highlighting the critical role of fiscal policy, especially in high-debt environments, and its implications for inflation dynamics in the euro area.
             </p>
         </div>
-
     </details>
 </article>
+
 
 
     </section>
