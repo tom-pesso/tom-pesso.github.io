@@ -15,6 +15,7 @@ author_profile: false
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+    
     /* === GLOBAL FONT FAMILY + BASE SIZE === */
     .page__content {
         font-family: 'Inter', sans-serif;
@@ -84,21 +85,25 @@ author_profile: false
         transform: rotate(180deg);
     }
 
-    /* === REMOVE DEFAULT SUMMARY MARKER === */
-    summary {
-        list-style: none;
-        cursor: pointer;
-    }
-    summary::-webkit-details-marker {
-        display: none;
-    }
+   /* === REMOVE DEFAULT SUMMARY MARKER === */
+summary {
+    list-style: none;
+    cursor: pointer;
+
+    /* 👇 ADD THIS LINE */
+    padding: 0 !important;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+
 </style>
 
 
 
 <!-- Main Content -->
 <main class="max-w-4xl mx-auto py-8 md:py-12">
-<div class="page__content">
+
     <!-- Working Papers Section -->
     <section class="mb-12">
         <h2 class="text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-6">
@@ -295,5 +300,5 @@ author_profile: false
         </article>
 
     </section>
-</div>
+
 </main>
