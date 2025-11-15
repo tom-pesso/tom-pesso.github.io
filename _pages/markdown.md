@@ -98,7 +98,7 @@ author_profile: false
 
 <!-- Main Content -->
 <main class="max-w-4xl mx-auto py-8 md:py-12">
-
+<div class="page__content">
     <!-- Working Papers Section -->
     <section class="mb-12">
         <h2 class="text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-6">
@@ -295,5 +295,5 @@ author_profile: false
         </article>
 
     </section>
-
+</div>
 </main>
