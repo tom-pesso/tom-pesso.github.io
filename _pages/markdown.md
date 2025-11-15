@@ -1,202 +1,152 @@
 ---
 permalink: /markdown/
-title: "Markdown"
+title: "My Research"
+excerpt: ""
 author_profile: true
-redirect_from: 
-  - /md/
-  - /markdown.html
 ---
 
-## Locations of key files/directories
+<!-- Load Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
 
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
+<!-- Use Inter font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-## Tips and hints
+<style>
+    /* Apply Inter font */
+    .page-content { /* Target the theme's content wrapper if possible */
+        font-family: 'Inter', sans-serif;
+    }
+    /* Style for the paper links */
+    .paper-link {
+        @apply text-indigo-600 hover:text-indigo-800 visited:text-purple-600 transition-colors duration-200;
+    }
+    /* Style for the dropdown icon rotation */
+    .toggle-icon.rotate-180 {
+        transform: rotate(180deg);
+    }
+</style>
 
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
+<!-- Main Content -->
+<main class="max-w-4xl mx-auto py-8 md:py-12">
 
-## Resources
- * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
+    <!-- Working Papers Section -->
+    <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-6">
+            Working Papers
+        </h2>
 
-## Markdown guide
+        <!-- Paper 1 -->
+        <article class="mb-10 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
+            <!-- Visible Header -->
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-900 pr-4">
+                    Fiscal Multiplier: the Size of the Shock Matters (2024)
+                </h3>
+                <button class="abstract-toggle p-2 rounded-full hover:bg-gray-200 transition-colors" onclick="toggleAbstract(this)" aria-expanded="false" aria-label="Toggle Abstract">
+                    <!-- Chevron down icon -->
+                    <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Collapsible Abstract -->
+            <div class="abstract-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                <p class="text-gray-700 leading-relaxed text-justify mb-4">
+                    This paper studies the impact of the sign and magnitude of fiscal shocks on the fiscal multiplier. Through a theoretical examination, it highlights the significance of both the sign and magnitude of the shock in determining the multiplier. The study introduces a new empirical methodology, the Local Linear Local Projection, to detect complex non-linear patterns. When applied to US data, the methodology reveals that the degree of nonlinearity captured in the data varies with the identification strategy employed. Notably, zero does not appear to be a significant tipping point in the nonlinearity of the fiscal multiplier.
+                </p>
+            </div>
 
-### Header three
+            <!-- Always Visible Content -->
+            <div class="bg-gray-100 p-3 rounded-md mb-4 border border-gray-200">
+                <p class="text-sm text-gray-600">
+                    <span class="font-semibold">Presentations:</span> EEA 2025, IAAE 2025, European Winter Meeting of the Econometric Society (Dec. 2024), BSE Summer Forum (2024, poster session), CREi Internal Seminar (2023, 2022), UPF Econometrics Internal Seminar (2023), PhD Jamboree BSE (2023)
+                </p>
+            </div>
+            <p class="text-sm font-medium text-gray-800 italic">
+                Draft available on demand.
+            </p>
+        </article>
 
-#### Header four
+        <!-- Paper 2 -->
+        <article class="mb-10 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
+            <!-- Visible Header -->
+            <div class="flex justify-between items-start mb-4">
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                        Fiscal Policy and Inflation: Accounting for Non-Linearities in Government Debt (2024)
+                    </h3>
+                    <div class="text-md text-gray-600 italic">
+                        with <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html" target="_blank" class="paper-link">C. Checherita-Westphal</a>.
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-full not-italic">ECB Working Paper - No. 2996</span>
+                    </div>
+                </div>
+                <button class="abstract-toggle p-2 rounded-full hover:bg-gray-200 transition-colors ml-4" onclick="toggleAbstract(this)" aria-expanded="false" aria-label="Toggle Abstract">
+                    <!-- Chevron down icon -->
+                    <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+            </div>
 
-##### Header five
+            <!-- Collapsible Abstract -->
+            <div class="abstract-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                <p class="text-gray-700 leading-relaxed text-justify mb-4">
+                    This paper investigates the interplay between discretionary fiscal policy and inflation in the euro area, emphasizing the role of public debt levels in modulating this relationship. It explores how fiscal expansions or contractions influence inflationary pressures, particularly under varying debt conditions. The analysis reveals that fiscal policy’s effect on inflation is non-linear, with debt levels significantly affecting the inflationary outcome of fiscal measures. High debt levels tend to amplify the inflation response to fiscal expansions, a finding that holds under multiple analytical frameworks and robustness checks. This paper contributes to the empirical literature by highlighting the critical role of fiscal policy, especially in high-debt environments, and its implications for inflation dynamics in the euro area.
+                </p>
+            </div>
 
-###### Header six
+            <!-- Always Visible Content -->
+            <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf" target="_blank" class="text-sm font-medium inline-block bg-indigo-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-indigo-600 transition-colors duration-200 mt-2">
+                Download the working paper
+            </a>
+        </article>
 
-## Blockquotes
+    </section>
 
-Single line blockquote:
+    <!-- Work in Progress Section -->
+    <section>
+        <h2 class="text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-6">
+            Work in Progress
+        </h2>
 
-> Quotes are cool.
+        <!-- WIP Paper 1 -->
+        <article class="p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">
+                US Presidents and the Economy: An Econometric Evaluation
+            </h3>
+            <div class="text-md text-gray-600 italic">
+                with <a href="https://sites.google.com/site/regisbarnichon/" target="_blank" class="paper-link">R. Barnichon</a>, 
+                <a href="https://www.geertmesters.com/" target="_blank" class="paper-link">G. Mesters</a>
+            </div>
+        </article>
 
-## Tables
+    </section>
 
-### Table 1
+</main>
 
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
+<script>
+    function toggleAbstract(buttonElement) {
+        const article = buttonElement.closest('article');
+        const content = article.querySelector('.abstract-content');
+        const icon = buttonElement.querySelector('.toggle-icon');
+        const isExpanded = buttonElement.getAttribute('aria-expanded') === 'true';
 
-### Table 2
-
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
-
-## Definition Lists
-
-Definition List Title
-:   Definition list division.
-
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
-## Unordered Lists (Nested)
-
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
-
-## Ordered List (Nested)
-
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
-
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-## Notices
-
-**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
-{: .notice}
-
-## HTML Tags
-
-### Address Tag
-
-<address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
-</address>
-
-### Anchor Tag (aka. Link)
-
-This is an example of a [link](http://github.com "Github").
-
-### Abbreviation Tag
-
-The abbreviation CSS stands for "Cascading Style Sheets".
-
-*[CSS]: Cascading Style Sheets
-
-### Cite Tag
-
-"Code is poetry." ---<cite>Automattic</cite>
-
-### Code Tag
-
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
-### Strike Tag
-
-This tag will let you <strike>strikeout text</strike>.
-
-### Emphasize Tag
-
-The emphasize tag should _italicize_ text.
-
-### Insert Tag
-
-This tag should denote <ins>inserted</ins> text.
-
-### Keyboard Tag
-
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
-
-### Preformatted Tag
-
-This tag styles large blocks of code.
-
-<pre>
-.post-title {
-  margin: 0 0 5px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
-}
-</pre>
-
-### Quote Tag
-
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
-
-### Strong Tag
-
-This tag shows **bold text**.
-
-### Subscript Tag
-
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
-
-### Superscript Tag
-
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
-
-### Variable Tag
-
-This allows you to denote <var>variables</var>.
+        if (isExpanded) {
+            // Close it
+            buttonElement.setAttribute('aria-expanded', 'false');
+            content.style.maxHeight = '0px';
+            content.classList.add('opacity-0');
+            icon.classList.remove('rotate-180');
+        } else {
+            // Open it
+            buttonElement.setAttribute('aria-expanded', 'true');
+            // Set max-height to scrollHeight for a smooth animation to the content's full height
+            content.style.maxHeight = content.scrollHeight + 'px';
+            content.classList.remove('opacity-0');
+            icon.classList.add('rotate-180');
+        }
+    }
+</script>
