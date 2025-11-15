@@ -18,18 +18,18 @@ author_profile: true
     /* Apply Inter font and smaller base size to this page */
     .page__content {
         font-family: 'Inter', sans-serif;
-        font-size: 0.9rem; /* ≈ your old 0.9em */
+        font-size: 0.8rem; /* ≈ your old 0.9em */
     }
 
     /* Make section headings smaller than default Tailwind 2xl */
     .page__content h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 600;
     }
 
     /* Make paper titles smaller */
     .page__content h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 600;
     }
 
@@ -38,13 +38,13 @@ author_profile: true
     .page__content span,
     .page__content a,
     .page__content li {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     /* Slightly smaller text for presentations lists, notes, etc. */
     .presentations-text,
     .small-note {
-        font-size: 0.8rem; /* ≈ your old 0.8em */
+        font-size: 0.7rem; /* ≈ your old 0.8em */
     }
 
     .paper-link {
