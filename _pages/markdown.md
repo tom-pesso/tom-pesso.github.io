@@ -19,17 +19,19 @@ If you want to get in touch, please send me an email at [tom.pesso@upf.edu](mail
 ---
 
 
-[Working Papers](#working-papers){: .btn .btn--primary}
 
-<div class="text-center mt-6 mb-4">
-    <h1 class="text-3xl font-semibold text-gray-900">
+
+<div class="text-center mt-12 mb-10">
+    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
         Tom Pesso
     </h1>
+    <p class="text-lg text-gray-600 mt-2">Economics Ph.D. Candidate</p>
 </div>
+
 
 {% include feature_row id="feature_row" type="left" %}
 
-<!-- Load Tailwind CSS -->
+<!-- Load Tailwind CSS [Working Papers](#working-papers){: .btn .btn--primary} -->
 <script src="https://cdn.tailwindcss.com"></script>
 
 <!-- Use Inter font family -->
