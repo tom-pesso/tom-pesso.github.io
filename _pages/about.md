@@ -10,7 +10,7 @@ redirect_from:
 feature_row:
   - image_path: /about_picture.jpeg
     alt: "placeholder image 1"
-    title: "About"
+    title: "Welcome to my website!"
     url: "https://tom-pesso.github.io/files/CV-TomPesso.pdf"
     btn_label: "CV"
     btn_class: "btn--primary"
