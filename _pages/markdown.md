@@ -128,6 +128,7 @@ author_profile: true
                     <p class="mb-4">
                         This paper studies the impact of the sign and magnitude of fiscal shocks on the fiscal multiplier. Through a theoretical examination, it highlights the significance of both the sign and magnitude of the shock in determining the multiplier. The study introduces a new empirical methodology, the Local Linear Local Projection, to detect complex non-linear patterns. When applied to US data, the methodology reveals that the degree of nonlinearity captured in the data varies with the identification strategy employed. Notably, zero does not appear to be a significant tipping point in the nonlinearity of the fiscal multiplier.
                     </p>
+                    <p class="presentations-text text-gray-700 font-semibold mb-1">Presentations:</p>
                     <div class="flex flex-wrap gap-1 presentations-text mt-2">
     <span class="inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
         EEA 2025
