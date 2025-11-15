@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "My Research"
+title: ""
 excerpt: ""
 author_profile: true
 ---
@@ -82,6 +82,9 @@ author_profile: true
                         with <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html" target="_blank" class="paper-link">C. Checherita-Westphal</a>.
                         <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-full not-italic">ECB Working Paper - No. 2996</span>
                     </div>
+                    <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf" target="_blank" class="text-sm font-medium inline-block bg-indigo-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-indigo-600 transition-colors duration-200 mt-2">
+                PDF
+            </a>
                 </div>
                 <button class="abstract-toggle p-2 rounded-full hover:bg-gray-200 transition-colors ml-4" onclick="toggleAbstract(this)" aria-expanded="false" aria-label="Toggle Abstract">
                     <!-- Chevron down icon -->
@@ -99,9 +102,7 @@ author_profile: true
             </div>
 
             <!-- Always Visible Content -->
-            <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf" target="_blank" class="text-sm font-medium inline-block bg-indigo-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-indigo-600 transition-colors duration-200 mt-2">
-                Download the working paper
-            </a>
+            
         </article>
 
     </section>
