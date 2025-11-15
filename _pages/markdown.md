@@ -384,7 +384,7 @@ summary::-webkit-details-marker {
             <!-- Top row: course title -->
             <div class="flex justify-between items-start gap-4">
                 <h3 class="text-xl font-bold text-gray-900 mb-2">
-                    Causal Inference & Panel Data — Graduate TA / Summer School TA
+                    Causal Inference & Panel Data — Graduate TA + Summer School TA
                 </h3>
 
                 <!-- Chevron -->
@@ -411,7 +411,7 @@ summary::-webkit-details-marker {
             <div class="flex flex-wrap gap-2 mb-4">
                 
                 <!-- Syllabus (example link, update if needed) -->
-                <a href="https://tom-pesso.github.io/files/teaching/causal_inference_syllabus.pdf" 
+                <a href="https://tom-pesso.github.io/files/teaching/12e016-econometric-methods-ii.pdf" 
                    target="_blank"
                    class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-yellow-200">
                     <svg xmlns="http://www.w3.org/2000/svg"
@@ -424,7 +424,7 @@ summary::-webkit-details-marker {
                 </a>
 
                 <!-- Problem Sets -->
-                <a href="https://tom-pesso.github.io/files/teaching/causal_inference_problem_sets.zip"
+                <a href="https://bse.eu/summer-school/microeconometrics"
                    target="_blank"
                    class="inline-flex items-center bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-green-200">
                     <svg xmlns="http://www.w3.org/2000/svg"
@@ -432,19 +432,7 @@ summary::-webkit-details-marker {
                          class="w-4 h-4 mr-1">
                         <path d="M3 3h14v14H3z" />
                     </svg>
-                    Problem Sets
-                </a>
-
-                <!-- Slides -->
-                <a href="https://tom-pesso.github.io/files/teaching/causal_inference_slides.pdf"
-                   target="_blank"
-                   class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-blue-200">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 20 20" fill="currentColor"
-                         class="w-4 h-4 mr-1">
-                        <path d="M4 3h12v14H4z" />
-                    </svg>
-                    Slides
+                    Summer School
                 </a>
 
             </div>
