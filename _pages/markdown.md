@@ -20,7 +20,7 @@ author_profile: true
         font-family: 'Inter', sans-serif;
         font-size: 0.7rem;        /* Main text size — adjust here */
     }
-
+    
     /* === SECTION TITLES (Working Papers / Work in Progress) === */
     .page__content h2 {
         font-size: 1.3rem;           /* Adjust for bigger/smaller section headers */
@@ -35,6 +35,11 @@ author_profile: true
         margin-bottom: 0.3rem;
     }
 
+    .page__content .text-sm {       /* Abstract */
+    font-size: 0.7rem !important;   /* or 0.65rem or whatever you prefer */
+}
+
+    
     /* === SLIGHTLY SMALLER TEXT FOR PRESENTATIONS + NOTES === */
     .presentations-text,
     .small-note {
