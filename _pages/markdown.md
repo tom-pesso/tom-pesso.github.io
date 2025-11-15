@@ -106,84 +106,99 @@ author_profile: true
         </h2>
 
         <!-- Paper 1 -->
-        <article class="mb-10 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
-            <!-- Collapsible block (title + abstract + presentations) -->
-            <details>
-                <summary class="flex justify-between items-start mb-2">
-                    <div class="flex items-center gap-2 mb-2">
-    <h3 class="text-xl font-bold text-gray-900">
-        Fiscal Multiplier: the Size of the Shock Matters (2024)
-    </h3>
+<article class="mb-10 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
+    <details>
+        <!-- Summary block -->
+        <summary class="mb-2 cursor-pointer">
 
-    <!-- PDF badge (on demand) -->
-    <span class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-yellow-200">
-        <svg xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 20 20"
-             fill="currentColor"
-             class="w-4 h-4 mr-1"
-             aria-hidden="true">
-            <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
-            <path d="M11.5 2V7.5H17" />
-        </svg>
-        <span>PDF (on demand)</span>
-    </span>
-</div>
-                    <span class="p-2 rounded-full hover:bg-gray-200 transition-colors inline-flex items-center justify-center">
-                        <!-- Chevron down icon -->
-                        <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
-                             xmlns="http://www.w3.org/2000/svg" fill="none"
-                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
+            <!-- Row 1: Title + chevron -->
+            <div class="flex justify-between items-start gap-4">
+                <h3 class="text-xl font-bold text-gray-900">
+                    Fiscal Multiplier: the Size of the Shock Matters (2024)
+                </h3>
+
+                <!-- Chevron icon -->
+                <span class="p-2 rounded-full hover:bg-gray-200 transition-colors inline-flex items-center justify-center">
+                    <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
+                         xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </span>
+            </div>
+
+            <!-- Row 2: PDF badge -->
+            <div class="mt-2 flex flex-wrap items-center gap-2">
+
+                <!-- PDF (on demand) badge -->
+                <span class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-yellow-200">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20"
+                         fill="currentColor"
+                         class="w-4 h-4 mr-1">
+                        <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
+                        <path d="M11.5 2V7.5H17" />
+                    </svg>
+                    PDF (on demand)
+                </span>
+
+            </div>
+        </summary>
+
+        <!-- Content -->
+        <div class="text-sm text-gray-700 leading-relaxed text-justify mb-4">
+            <p class="mb-4">
+                This paper studies the impact of the sign and magnitude of fiscal shocks on the fiscal multiplier.
+                Through a theoretical examination, it highlights the significance of both the sign and magnitude
+                of the shock in determining the multiplier. The study introduces a new empirical methodology,
+                the Local Linear Local Projection, to detect complex non-linear patterns. When applied to US data,
+                the methodology reveals that the degree of nonlinearity captured in the data varies with the
+                identification strategy employed. Notably, zero does not appear to be a significant tipping point
+                in the nonlinearity of the fiscal multiplier.
+            </p>
+
+            <!-- Presentations box -->
+            <div class="presentations-box bg-gray-100 border border-gray-200 rounded-md p-2 mt-2">
+                <div class="flex flex-wrap gap-1">
+
+                    <span class="text-gray-700 font-semibold mr-1">Presentations:</span>
+
+                    <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+                        EEA 2025
                     </span>
-                </summary>
 
-                <!-- Content that appears when opened -->
-                <div class="text-sm text-gray-700 leading-relaxed text-justify mb-4">
-                    <p class="mb-4">
-                        This paper studies the impact of the sign and magnitude of fiscal shocks on the fiscal multiplier. Through a theoretical examination, it highlights the significance of both the sign and magnitude of the shock in determining the multiplier. The study introduces a new empirical methodology, the Local Linear Local Projection, to detect complex non-linear patterns. When applied to US data, the methodology reveals that the degree of nonlinearity captured in the data varies with the identification strategy employed. Notably, zero does not appear to be a significant tipping point in the nonlinearity of the fiscal multiplier.
-                    </p>
-                    <div class="presentations-box bg-gray-100 border border-gray-200 rounded-md p-2 mt-2">
-    <div class="flex flex-wrap gap-1">
+                    <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+                        IAAE 2025
+                    </span>
 
-        <span class="text-gray-700 font-semibold mr-1">Presentations:</span>
+                    <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+                        European Winter Meeting of the Econometric Society (Dec. 2024)
+                    </span>
 
-        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
-            EEA 2025
-        </span>
+                    <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+                        BSE Summer Forum (2024, poster session)
+                    </span>
 
-        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
-            IAAE 2025
-        </span>
+                    <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+                        CREi Internal Seminar (2023, 2022)
+                    </span>
 
-        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
-            European Winter Meeting of the Econometric Society (Dec. 2024)
-        </span>
+                    <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+                        UPF Econometrics Internal Seminar (2023)
+                    </span>
 
-        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
-            BSE Summer Forum (2024, poster session)
-        </span>
-
-        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
-            CREi Internal Seminar (2023, 2022)
-        </span>
-
-        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
-            UPF Econometrics Internal Seminar (2023)
-        </span>
-
-        <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
-            PhD Jamboree BSE (2023)
-        </span>
-
-    </div>
-</div>
-
-
+                    <span class="presentation-pill inline-flex items-center bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-gray-300">
+                        PhD Jamboree BSE (2023)
+                    </span>
 
                 </div>
-            </details>
-        </article>
+            </div>
+
+        </div>
+    </details>
+</article>
+
 
         <!-- Paper 2 -->
 <article class="mb-10 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
