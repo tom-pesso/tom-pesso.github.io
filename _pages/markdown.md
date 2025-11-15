@@ -103,26 +103,24 @@ author_profile: true
             <!-- Collapsible block (title + abstract + presentations) -->
             <details>
                 <summary class="flex justify-between items-start mb-2">
-                    <div class="flex-1">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">
-                            Fiscal Multiplier: the Size of the Shock Matters (2024)
-                            <div class="text-md text-gray-600 italic">
-                            <!-- PDF badge (on demand) -->
-                            <span class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-yellow-200">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 20 20"
-                                     fill="currentColor"
-                                     class="w-4 h-4 mr-1"
-                                     aria-hidden="true">
-                                    <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
-                                    <path d="M11.5 2V7.5H17" />
-                                </svg>
-                                <span>PDF (on demand)</span>
-                            </span>
-                        </div>
-                        </h3>
-                        
-                    </div>
+                    <div class="flex items-center gap-2 mb-2">
+    <h3 class="text-xl font-bold text-gray-900">
+        Fiscal Multiplier: the Size of the Shock Matters (2024)
+    </h3>
+
+    <!-- PDF badge (on demand) -->
+    <span class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-yellow-200">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 20 20"
+             fill="currentColor"
+             class="w-4 h-4 mr-1"
+             aria-hidden="true">
+            <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
+            <path d="M11.5 2V7.5H17" />
+        </svg>
+        <span>PDF (on demand)</span>
+    </span>
+</div>
                     <span class="p-2 rounded-full hover:bg-gray-200 transition-colors inline-flex items-center justify-center">
                         <!-- Chevron down icon -->
                         <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
