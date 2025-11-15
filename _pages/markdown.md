@@ -363,50 +363,94 @@ summary::-webkit-details-marker {
     </article>
 
     <!-- Course 2 -->
-    <article class="mb-8 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
-        <details>
-            <summary class="cursor-pointer">
+<article class="mb-8 p-6 bg-gray-50 rounded-lg shadow-md border border-gray-200">
+    <details>
+        <summary class="cursor-pointer">
 
-                <!-- Top row: course title -->
-                <div class="flex justify-between items-start gap-4">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">
-                        Causal Inference & Panel Data — Graduate TA / Summer School TA
-                    </h3>
+            <!-- Top row: course title -->
+            <div class="flex justify-between items-start gap-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                    Causal Inference & Panel Data — Graduate TA / Summer School TA
+                </h3>
 
-                    <!-- Chevron -->
-                    <span class="p-2 rounded-full hover:bg-gray-200 transition-colors inline-flex items-center justify-center">
-                        <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
-                             xmlns="http://www.w3.org/2000/svg" fill="none"
-                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </span>
-                </div>
+                <!-- Chevron -->
+                <span class="p-2 rounded-full hover:bg-gray-200 transition-colors inline-flex items-center justify-center">
+                    <svg class="toggle-icon w-5 h-5 text-gray-600 transition-transform duration-300"
+                         xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </span>
+            </div>
 
-                <!-- Subtitle -->
-                <div class="text-md text-gray-600 italic mt-0.5">
-                    for Prof. Albrecht Glitz — 2021/2022 & 2022/2023, Barcelona School of Economics
-                </div>
-            </summary>
+            <!-- Subtitle -->
+            <div class="text-md text-gray-600 italic mt-0.5">
+                for Prof. Albrecht Glitz — 2021/2022 & 2022/2023, Barcelona School of Economics
+            </div>
+        </summary>
 
-            <!-- Details content -->
-            <div class="mt-4 text-sm text-gray-700 leading-relaxed">
+        <!-- Details content -->
+        <div class="mt-4 text-sm text-gray-700 leading-relaxed">
 
-                <div class="bg-gray-100 border border-gray-200 rounded-md p-4">
-                    <p class="font-semibold mb-2">Causal Inference</p>
-                    <ul class="list-disc ml-6 space-y-1">
-                        <li>Randomized Controlled Trials</li>
-                        <li>Natural Experiments</li>
-                        <li>Regression Discontinuity Designs</li>
-                        <li>Selection on Observables (Regression, Matching)</li>
-                        <li>Difference-in-Differences, Event Studies, Synthetic Control</li>
-                    </ul>
-                </div>
+            <!-- Document links (badges) -->
+            <div class="flex flex-wrap gap-2 mb-4">
+                
+                <!-- Syllabus (example link, update if needed) -->
+                <a href="https://tom-pesso.github.io/files/teaching/causal_inference_syllabus.pdf" 
+                   target="_blank"
+                   class="inline-flex items-center bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-yellow-200">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20" fill="currentColor"
+                         class="w-4 h-4 mr-1">
+                        <path d="M5 2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7.5L11.5 2H5z" />
+                        <path d="M11.5 2V7.5H17" />
+                    </svg>
+                    Syllabus
+                </a>
+
+                <!-- Problem Sets -->
+                <a href="https://tom-pesso.github.io/files/teaching/causal_inference_problem_sets.zip"
+                   target="_blank"
+                   class="inline-flex items-center bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-green-200">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20" fill="currentColor"
+                         class="w-4 h-4 mr-1">
+                        <path d="M3 3h14v14H3z" />
+                    </svg>
+                    Problem Sets
+                </a>
+
+                <!-- Slides -->
+                <a href="https://tom-pesso.github.io/files/teaching/causal_inference_slides.pdf"
+                   target="_blank"
+                   class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-blue-200">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 20 20" fill="currentColor"
+                         class="w-4 h-4 mr-1">
+                        <path d="M4 3h12v14H4z" />
+                    </svg>
+                    Slides
+                </a>
 
             </div>
-        </details>
-    </article>
+
+            <!-- Content box (NO duplicated title) -->
+            <div class="bg-gray-100 border border-gray-200 rounded-md p-4">
+
+                <ul class="list-disc ml-6 space-y-1">
+                    <li>Randomized Controlled Trials</li>
+                    <li>Natural Experiments</li>
+                    <li>Regression Discontinuity Designs</li>
+                    <li>Selection on Observables (Regression, Matching)</li>
+                    <li>Difference-in-Differences, Event Studies, Synthetic Control</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </details>
+</article>
 
 </section>
 
