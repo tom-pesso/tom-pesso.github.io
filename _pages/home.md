@@ -61,7 +61,11 @@ redirect_from:
       <p>
         <a href="https://tom-pesso.github.io/files/CV-TomPesso.pdf"
            target="_blank"
-           class="btn-cv">CV</a>
+           class="btn-cv"
+           onclick="gtag('event', 'cv_click', {
+       event_category: 'engagement',
+       event_label: 'Homepage CV Button'
+   });">CV</a>
       </p>
 
     </div>
@@ -213,7 +217,11 @@ redirect_from:
               with
               <a href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
                  target="_blank"
-                 class="paper-link">
+                 class="paper-link"
+                 onclick="gtag('event', 'click_cristina', {
+       event_category: 'outbound',
+       event_label: 'Cristina Checherita Profile'
+   });">
                 C. Checherita-Westphal
               </a>.
             </span>
@@ -275,12 +283,20 @@ redirect_from:
         with
         <a href="https://sites.google.com/site/regisbarnichon/"
            target="_blank"
-           class="paper-link">
+           class="paper-link"
+           onclick="gtag('event', 'click_regis', {
+       event_category: 'outbound',
+       event_label: 'Regis Barnichon Profile'
+   });">
           R. Barnichon
         </a>,
         <a href="https://www.geertmesters.com/"
            target="_blank"
-           class="paper-link">
+           class="paper-link"
+           onclick="gtag('event', 'click_geert', {
+       event_category: 'outbound',
+       event_label: 'Geert Mesters Profile'
+   });">
           G. Mesters
         </a>
       </div>
@@ -371,7 +387,11 @@ redirect_from:
             <!-- Syllabus -->
             <a href="https://tom-pesso.github.io/files/12e016-econometric-methods-ii.pdf"
                target="_blank"
-               class="badge badge-yellow">
+               class="badge badge-yellow"
+               onclick="gtag('event', 'click_teaching_metrics', {
+       event_category: 'outbound',
+       event_label: 'Syllabus Econometrics Methods'
+   });">
               <svg xmlns="http://www.w3.org/2000/svg"
                    viewBox="0 0 20 20"
                    fill="currentColor"
