@@ -281,7 +281,7 @@ details[open] .toggle-icon {
 
 /* container */
 .splash-intro {
-  max-width: 80%; 
+  max-width: 100%; 
   background: #ffffff;
   padding: 2rem 1rem;
 }
@@ -301,10 +301,10 @@ details[open] .toggle-icon {
 }
 
 .feature__image {
-  width: 280px;
+  width: 340px;
   height: auto;     /* keep natural proportions */
   object-fit: contain;
-  border-radius: 12px; /* rectangle */
+  border-radius: 6px; /* rectangle */
   display: block;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
@@ -369,7 +369,8 @@ details[open] .toggle-icon {
 
   .feature__wrapper {
     flex-direction: column;
-    text-align: center;
+    /* remove text-align: center so text stays left-aligned */
+    text-align: left;
   }
 
   .feature__item--image {
@@ -377,12 +378,15 @@ details[open] .toggle-icon {
   }
 
   .feature__image {
-    width: 160px;
-    height: 160px;
+    width: auto;         /* natural width */
+    max-width: 90%;      /* prevent overflow */
+    height: auto;        /* natural aspect ratio */
     margin-bottom: 1rem;
   }
 
   .feature__item--text {
-    text-align: center;
+    text-align: left;    /* keep left alignment */
+    width: 100%;
   }
 }
+
