@@ -179,9 +179,12 @@ main {
 
 /* Hero section title */
 .hero-title {
-  font-size: 3rem;            /* text-5xl */
-  font-weight: 700;           /* font-bold */
-  color: #111827;             /* text-gray-900 */
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  font-size: 3.75rem;     /* equivalent to text-5xl */
+  font-weight: 700;
+  color: #111827;         /* text-gray-900 */
   line-height: 1.1;
 }
 
