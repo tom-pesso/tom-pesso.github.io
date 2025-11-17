@@ -273,3 +273,95 @@ details[open] .toggle-icon {
 
 /* Presentations box */
 .presentations
+
+
+
+/* ================================
+   SPLASH INTRO SECTION (Homepage)
+   ================================= */
+
+.splash-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.splash-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Left: Photo */
+.splash-photo-wrapper {
+  flex: 0 0 160px;
+}
+
+.splash-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 9999px; /* circle */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  display: block;
+}
+
+/* Right: Text */
+.splash-text {
+  flex: 1;
+}
+
+.splash-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.splash-paragraph {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.splash-button {
+  display: inline-block;
+  background-color: #fef9c3; /* yellow-100 */
+  color: #854d0e;
+  border: 1px solid #facc15; /* yellow-200 */
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  text-decoration: none;
+}
+
+.splash-button:hover {
+  background-color: #fef3a8;
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+   ================================= */
+@media (max-width: 768px) {
+  .splash-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .splash-photo-wrapper {
+    flex: none;
+  }
+
+  .splash-photo {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1rem;
+  }
+
+  .splash-text {
+    text-align: center;
+  }
+}
