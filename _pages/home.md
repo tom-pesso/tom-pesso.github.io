@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Tom Pesso"
+title: "Economics"
 layout: home
 excerpt: ""
 author_profile: false
