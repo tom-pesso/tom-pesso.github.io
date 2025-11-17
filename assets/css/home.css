@@ -359,12 +359,15 @@ details[open] .toggle-icon {
   border-radius: 4px;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #8a5a00;
+  color: #8a5a00 !important;     /* FIX: override link color */
+  text-decoration: none;
 }
 .btn-cv:hover {
   background: #fff3a0;
   border-color: #c29500;
+  color: #744800 !important;     /* optional for hover */
 }
+
 
 /* MOBILE: vertical layout */
 @media (max-width: 768px) {
@@ -408,6 +411,13 @@ details[open] .toggle-icon {
   .hero-title {
   font-size: 2.5rem;     /* smaller hero title on mobile */
  }
+
+  .paper-title {
+  font-size: 1.15rem;   /* smaller desktop size */
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #111;
+}
 
   .page__title {
     font-size: 1.6rem;
