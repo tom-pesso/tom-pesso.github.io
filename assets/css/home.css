@@ -374,6 +374,7 @@ details[open] .toggle-icon {
 @media (min-width: 769px) {
   .splash-intro {
     padding-right: 3rem;   /* extra space on the right */
+    padding-right: 2rem;   /* extra space on the right */
   }
 }
 
