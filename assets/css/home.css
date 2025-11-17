@@ -182,7 +182,7 @@ main {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2.5rem;
-  font-size: 3.75rem;     /* equivalent to text-5xl */
+  font-size: 4rem;     /* equivalent to text-5xl */
   font-weight: 800;
   color: #111827;         /* text-gray-900 */
   line-height: 1.1;
