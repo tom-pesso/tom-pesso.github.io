@@ -373,7 +373,7 @@ details[open] .toggle-icon {
 /* DESKTOP tweaks */
 @media (min-width: 769px) {
   .splash-intro {
-    padding-right: 3rem;   /* extra space on the right */
+    padding-right: 5rem;   /* extra space on the right */
     padding-right: 2rem;   /* extra space on the right */
   }
 }
