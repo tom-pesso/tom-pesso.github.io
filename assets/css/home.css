@@ -183,7 +183,7 @@ main {
   margin-top: 3rem;
   margin-bottom: 2.5rem;
   font-size: 3.75rem;     /* equivalent to text-5xl */
-  font-weight: 700;
+  font-weight: 800;
   color: #111827;         /* text-gray-900 */
   line-height: 1.1;
 }
@@ -294,7 +294,7 @@ details[open] .toggle-icon {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  max-width: 100rem;            /* wider intro */
+  max-width: 75rem;            /* wider intro */
   margin: 0 auto;
 }
 
@@ -305,7 +305,7 @@ details[open] .toggle-icon {
 
 /* IMAGE SETTINGS */
 .feature__image {
-  width: 450px;                /* << your requested size */
+  width: 500px;                /* << your requested size */
   height: auto;                /* keep proportions */
   object-fit: cover;           /* better visual framing */
   border-radius: 6px;         /* slightly rounded corners */
@@ -322,8 +322,8 @@ details[open] .toggle-icon {
 .page__title {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #111;
 }
 
