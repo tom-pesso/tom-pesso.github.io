@@ -41,12 +41,12 @@ author_profile: false
         <a href="https://crei.cat/people/davide-debortoli-2/" target="_blank">Prof. Davide Debortoli</a>.
       </p>
 
-      <p>
+      <p class="page__lead">
         I am a macroeconomist interested in Fiscal Policy, Macroeconometrics,
         and more broadly Macroeconomic Policy Evaluation.
       </p>
 
-      <p>
+      <p class="page__lead">
         If you want to get in touch, please send me an email at
         <a href="mailto:tom.pesso@upf.edu">tom.pesso@upf.edu</a>.
       </p>
@@ -55,7 +55,7 @@ author_profile: false
       <p>
         <a href="https://tom-pesso.github.io/files/CV-TomPesso.pdf"
            target="_blank"
-           class="btn-cv">CV (PDF)</a>
+           class="btn-cv">CV</a>
       </p>
 
     </div>
