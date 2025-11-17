@@ -293,7 +293,7 @@ details[open] .toggle-icon {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  max-width: 60rem;            /* wider intro */
+  max-width: 75rem;            /* wider intro */
   margin: 0 auto;
 }
 
