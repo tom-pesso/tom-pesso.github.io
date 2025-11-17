@@ -292,7 +292,7 @@ details[open] .toggle-icon {
 .feature__wrapper {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 3.5rem;
   max-width: 75rem;            /* wider intro */
   margin: 0 auto;
 }
@@ -368,6 +368,16 @@ details[open] .toggle-icon {
   color: #744800 !important;     /* optional for hover */
 }
 
+
+
+/* DESKTOP tweaks */
+@media (min-width: 769px) {
+  .splash-intro {
+    padding-right: 3rem;   /* extra space on the right */
+  }
+}
+
+/* ====== MOBILE styles ====== */
 
 /* MOBILE: vertical layout */
 @media (max-width: 768px) {
