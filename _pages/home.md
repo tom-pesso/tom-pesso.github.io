@@ -1,9 +1,15 @@
 ---
-permalink: /home/
+permalink: /
 title: "Tom Pesso"
 layout: home
 excerpt: ""
 author_profile: false
+redirect_from: 
+  - /about/
+  - /about.html
+  - /research/
+  - /teaching-mine/
+  - /home/
 ---
 
 <!-- HERO TITLE -->
