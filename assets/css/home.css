@@ -369,33 +369,51 @@ details[open] .toggle-icon {
 /* MOBILE: vertical layout */
 @media (max-width: 768px) {
 
-  /* add margin inside the section */
+  /* Add breathing room */
   .splash-intro {
-    padding-left: 1.25rem;   /* ~20px */
+    padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 
+  /* Stack elements, reduce spacing */
   .feature__wrapper {
     flex-direction: column;
-    text-align: left;       /* DO NOT center the text */
+    text-align: left;
+    gap: 1.25rem;          /* smaller spacing between image and text */
+    width: 100%;
   }
 
+  /* CENTER THE IMAGE */
   .feature__item--image {
     flex: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* centers the image */
   }
 
   .feature__image {
-    width: auto;            /* natural image width */
-    max-width: 95%;        /* fit screen */
+    width: auto;
+    max-width: 100%;
     height: auto;
-    border-radius: 6px;    /* keep same rounding */
-    margin-bottom: 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;     /* slightly reduced */
   }
 
   .feature__item--text {
-    text-align: left;
     width: 100%;
+    text-align: left;          /* keep text left-aligned */
+  }
+
+  /* Smaller text on mobile */
+  .page__title {
+    font-size: 1.6rem;
+  }
+
+  .page__lead {
+    font-size: 1.05rem;
+  }
+
+  .splash-intro p {
+    font-size: 0.95rem;
   }
 }
-
-
