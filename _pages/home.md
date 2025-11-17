@@ -16,61 +16,61 @@ author_profile: false
 <!-- MAIN CONTENT -->
 <main class="max-w-4xl mx-auto py-8">
 
-  <!-- FEATURE / INTRO ROW (replacing feature_row include) -->
-  <section class="section">
-    <article class="card">
-      <div class="flex flex-wrap gap-4 items-center">
-        <!-- Image (optional, if you want to add your about_picture.jpeg directly) -->
-        <!--
-        <div style="flex: 0 0 120px;">
-          <img src="{{ '/about_picture.jpeg' | relative_url }}"
-               alt="Portrait of Tom Pesso"
-               style="max-width: 100%; border-radius: 9999px; display: block;"
-               loading="lazy">
-        </div>
-        -->
+  <!-- SPLASH / INTRO SECTION -->
+<section class="splash-section max-w-4xl mx-auto">
+  <div class="splash-container">
+    
+    <!-- Left: Photo -->
+    <div class="splash-photo-wrapper">
+      <img
+        src="{{ 'images/about_picture.jpeg' | relative_url }}"
+        alt="Portrait of Tom Pesso"
+        class="splash-photo"
+        loading="lazy"
+      >
+    </div>
 
-        <div style="flex: 1 1 220px; min-width: 0;">
-          <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.75rem; padding-bottom: 0;">
-            Welcome to my website!
-          </h2>
+    <!-- Right: Text -->
+    <div class="splash-text">
 
-          <p class="text-md text-gray-700" style="margin-bottom: 0.75rem;">
-            I am a sixth-year Ph.D candidate in Economics at Universitat Pompeu Fabra (UPF) and Barcelona
-            School of Economics (BSE), under the supervision of
-            <a href="https://www.geertmesters.com/" target="_blank" class="paper-link">
-              Prof. Geert Mesters
-            </a>
-            and
-            <a href="https://crei.cat/people/davide-debortoli-2/" target="_blank" class="paper-link">
-              Prof. Davide Debortoli
-            </a>.
-          </p>
+      <h2 class="splash-title">Welcome to my website!</h2>
 
-          <p class="text-md text-gray-700" style="margin-bottom: 0.75rem;">
-            I am a macroeconomist interested in Fiscal Policy, Macroeconometrics and more generally
-            Macroeconomic Policy Evaluation.
-          </p>
+      <p class="splash-paragraph">
+        I am a sixth-year Ph.D candidate in Economics at Universitat Pompeu Fabra (UPF)
+        and Barcelona School of Economics (BSE), under the supervision of
+        <a href="https://www.geertmesters.com/" target="_blank" class="paper-link">
+          Prof. Geert Mesters
+        </a>
+        and
+        <a href="https://crei.cat/people/davide-debortoli-2/" target="_blank" class="paper-link">
+          Prof. Davide Debortoli
+        </a>.
+      </p>
 
-          <p class="text-md text-gray-700">
-            If you want to get in touch, please send me an email at
-            <a href="mailto:tom.pesso@upf.edu" class="paper-link">
-              tom.pesso@upf.edu
-            </a>.
-          </p>
+      <p class="splash-paragraph">
+        I am a macroeconomist interested in Fiscal Policy, Macroeconometrics
+        and more generally Macroeconomic Policy Evaluation.
+      </p>
 
-          <!-- CV button -->
-          <div style="margin-top: 1rem;">
-            <a href="https://tom-pesso.github.io/files/CV-TomPesso.pdf"
-               class="badge badge-yellow"
-               target="_blank">
-              CV (PDF)
-            </a>
-          </div>
-        </div>
-      </div>
-    </article>
-  </section>
+      <p class="splash-paragraph">
+        If you want to get in touch, please send me an email at
+        <a href="mailto:tom.pesso@upf.edu" class="paper-link">tom.pesso@upf.edu</a>.
+      </p>
+
+      <!-- CV Button -->
+      <a href="https://tom-pesso.github.io/files/CV-TomPesso.pdf"
+         class="splash-button"
+         target="_blank">
+        CV (PDF)
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Spacer before next section -->
+<div style="height: 2.5rem;"></div>
+
 
   <!-- ============================
        WORKING PAPERS
