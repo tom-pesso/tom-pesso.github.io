@@ -281,6 +281,7 @@ details[open] .toggle-icon {
 
 /* container */
 .splash-intro {
+  max-width: 80%; 
   background: #ffffff;
   padding: 2rem 1rem;
 }
@@ -290,7 +291,7 @@ details[open] .toggle-icon {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  max-width: 56rem; /* matches MM wrapper */
+  max-width: 72rem; /* matches MM wrapper */
   margin: 0 auto;
 }
 
@@ -300,10 +301,10 @@ details[open] .toggle-icon {
 }
 
 .feature__image {
-  width: 200px;
+  width: 280px;
   height: auto;     /* keep natural proportions */
   object-fit: contain;
-  border-radius: 0; /* rectangle */
+  border-radius: 12px; /* rectangle */
   display: block;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
