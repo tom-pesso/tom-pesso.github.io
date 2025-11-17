@@ -93,7 +93,7 @@ redirect_from:
     </h2>
 
     <!-- Paper 1 -->
-    <article class="card">
+    <details data-paper-id="fiscal_multiplier_2024">
       <details>
         <!-- Summary block -->
         <summary class="mb-2 cursor-pointer">
@@ -185,7 +185,7 @@ redirect_from:
     </article>
 
     <!-- Paper 2 -->
-    <article class="card">
+    <details data-paper-id="ecb_fiscal_policy_inflation_2024">
       <details>
         <!-- Visible header (clickable to open/close) -->
         <summary class="mb-2 cursor-pointer">
@@ -278,7 +278,7 @@ redirect_from:
     </h2>
 
     <!-- WIP Paper 1 -->
-    <article class="card">
+    <details data-paper-id="us_presidents_economy_wip">
       <h3 class="wip-title">
         US Presidents and the Economy: An Econometric Evaluation
       </h3>
@@ -440,23 +440,29 @@ redirect_from:
 
 
 <script>
-// ===============================
-// 1. SCROLL DEPTH TRACKING (GA4)
-// ===============================
-
+// ===============
+// A. Scroll depth
+// ===============
 document.addEventListener("DOMContentLoaded", function () {
   const scrollPoints = [25, 50, 75, 100];
-  let triggered = new Set();
+  const fired = new Set();
 
-  function checkScrollDepth() {
+  function safe_gtag(ev, params) {
+    if (typeof gtag === "function") {
+      gtag("event", ev, params);
+    }
+  }
+
+  function trackScroll() {
     const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const percentScrolled = Math.floor((scrollTop / docHeight) * 100);
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = Math.floor((scrollTop / maxScroll) * 100);
 
     scrollPoints.forEach(function (p) {
-      if (percentScrolled >= p && !triggered.has(p)) {
-        triggered.add(p);
-        gtag("event", "scroll_depth", {
+      if (pct >= p && !fired.has(p)) {
+        fired.add(p);
+
+        safe_gtag("scroll_depth", {
           percent: p,
           event_category: "engagement",
           event_label: `Scrolled ${p}%`
@@ -465,64 +471,80 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  window.addEventListener("scroll", checkScrollDepth);
+  window.addEventListener("scroll", trackScroll);
 });
 
 
 // ================================================
-// 2. TIME-SPENT READING EACH PAPER (GA4)
-//    Works with <details> dropdowns
+// B. Dropdown & reading-time tracking per paper
 // ================================================
-
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll("details").forEach(function (el) {
 
-    // When user opens or closes the dropdown
+  const detailsList = document.querySelectorAll("details");
+
+  detailsList.forEach(function (el) {
+
+    const paperId = el.dataset.paperId || "unknown";
+
     el.addEventListener("toggle", function () {
-      const label = el.querySelector("summary")?.innerText?.trim() || "unknown";
 
-      // opening -> start timer
+      // Opening — start timing session
       if (el.open) {
         el.dataset.openedAt = Date.now();
-        gtag("event", "dropdown_open", {
-          event_category: "interaction",
-          event_label: label
-        });
-      }
 
-      // closing -> stop timer
-      else if (!el.open && el.dataset.openedAt) {
+        if (typeof gtag === "function") {
+          gtag("event", "dropdown_open", {
+            paper_id: paperId,
+            event_category: "interaction"
+          });
+        }
+
+      // Closing — stop timer
+      } else if (!el.open && el.dataset.openedAt) {
+
         const duration = (Date.now() - el.dataset.openedAt) / 1000;
-        gtag("event", "paper_read", {
-          title: label,
-          duration_seconds: duration,
-          event_category: "engagement"
-        });
+
+        if (typeof gtag === "function") {
+          gtag("event", "paper_read", {
+            paper_id: paperId,
+            duration_seconds: duration,
+            event_category: "engagement"
+          });
+        }
+
         el.dataset.openedAt = "";
       }
+
     });
   });
 
-  // If user leaves the page WITHOUT closing dropdown
+
+  // If user leaves the page without closing opened detail
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "hidden") {
-      document.querySelectorAll("details").forEach(function (el) {
+
+      detailsList.forEach(function (el) {
         if (el.open && el.dataset.openedAt) {
-          const label = el.querySelector("summary")?.innerText?.trim() || "unknown";
+
+          const paperId = el.dataset.paperId || "unknown";
           const duration = (Date.now() - el.dataset.openedAt) / 1000;
 
-          gtag("event", "paper_read", {
-            title: label,
-            duration_seconds: duration,
-            exited_without_closing: true,
-            event_category: "engagement"
-          });
+          if (typeof gtag === "function") {
+            gtag("event", "paper_read", {
+              paper_id: paperId,
+              duration_seconds: duration,
+              exited_without_closing: true,
+              event_category: "engagement"
+            });
+          }
 
           el.dataset.openedAt = "";
         }
       });
     }
   });
+
 });
 </script>
+
 
