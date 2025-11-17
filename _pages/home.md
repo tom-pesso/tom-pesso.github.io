@@ -281,22 +281,33 @@ redirect_from:
 
     <!-- WIP Paper 1 -->
     <article class="card">
-    <details data-paper-id="us_presidents_economy_wip">
+  <h3 class="wip-title">
+    US Presidents and the Economy: An Econometric Evaluation
+  </h3>
 
-      <summary class="cursor-pointer">
-        <h3 class="wip-title">
-          US Presidents and the Economy: An Econometric Evaluation
-        </h3>
-      </summary>
+  <div class="text-md text-gray-600 text-italic" style="margin-top: 0.5rem;">
+    with
+    <a href="https://sites.google.com/site/regisbarnichon/"
+       target="_blank"
+       class="paper-link"
+       onclick="gtag('event', 'click_regis', {
+         event_category: 'outbound',
+         event_label: 'Regis Barnichon Profile'
+       });">
+      R. Barnichon
+    </a>,
+    <a href="https://www.geertmesters.com/"
+       target="_blank"
+       class="paper-link"
+       onclick="gtag('event', 'click_geert', {
+         event_category: 'outbound',
+         event_label: 'Geert Mesters Profile'
+       });">
+      G. Mesters
+    </a>
+  </div>
+</article>
 
-      <div class="text-md text-gray-600 text-italic" style="margin-top:0.75rem;">
-        with
-        <a href="..." target="_blank" class="paper-link">R. Barnichon</a>,
-        <a href="..." target="_blank" class="paper-link">G. Mesters</a>
-      </div>
-
-    </details>
-  </article>
   </section>
 
   <!-- ============================
