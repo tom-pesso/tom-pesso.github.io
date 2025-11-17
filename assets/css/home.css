@@ -281,7 +281,7 @@ details[open] .toggle-icon {
 
 /* container */
 .splash-intro {
-  max-width: 100%; 
+  max-width: 100%;
   background: #ffffff;
   padding: 2rem 1rem;
 }
@@ -291,24 +291,24 @@ details[open] .toggle-icon {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  max-width: 72rem; /* matches MM wrapper */
+  max-width: 72rem;            /* wider intro */
   margin: 0 auto;
 }
 
-/* left image */
+/* left image container */
 .feature__item--image {
-  flex: 0 0 200px;
+  flex: 0 0 auto;              /* let image size control width */
 }
 
+/* IMAGE SETTINGS */
 .feature__image {
-  width: 340px;
-  height: auto;     /* keep natural proportions */
-  object-fit: contain;
-  border-radius: 6px; /* rectangle */
+  width: 380px;                /* << your requested size */
+  height: auto;                /* keep proportions */
+  object-fit: cover;           /* better visual framing */
+  border-radius: 10px;         /* slightly rounded corners */
   display: block;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
-
 
 /* right text */
 .feature__item--text {
@@ -369,8 +369,7 @@ details[open] .toggle-icon {
 
   .feature__wrapper {
     flex-direction: column;
-    /* remove text-align: center so text stays left-aligned */
-    text-align: left;
+    text-align: left;       /* DO NOT center the text */
   }
 
   .feature__item--image {
@@ -378,15 +377,17 @@ details[open] .toggle-icon {
   }
 
   .feature__image {
-    width: auto;         /* natural width */
-    max-width: 90%;      /* prevent overflow */
-    height: auto;        /* natural aspect ratio */
+    width: auto;            /* natural image width */
+    max-width: 100%;        /* fit screen */
+    height: auto;
+    border-radius: 10px;    /* keep same rounding */
     margin-bottom: 1rem;
   }
 
   .feature__item--text {
-    text-align: left;    /* keep left alignment */
+    text-align: left;
     width: 100%;
   }
 }
+
 
