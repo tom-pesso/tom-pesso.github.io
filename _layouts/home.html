@@ -1,0 +1,45 @@
+<!-- NEW TEMPLATE TOM -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      {% if page.title and page.title != "" %}
+        {{ page.title }} – {{ site.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if site.description %}
+    <meta name="description" content="{{ site.description | escape }}">
+    {% endif %}
+
+    {% if site.author %}
+    <meta name="author" content="{{ site.author | escape }}">
+    {% endif %}
+
+    {%- if site.seo -%}
+      {%- seo -%}
+    {%- endif -%}
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <!-- Custom lightweight CSS JUST for the homepage -->
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      {{ content }}
+    </div>
+  </body>
+</html>
