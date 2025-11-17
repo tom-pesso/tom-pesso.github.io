@@ -304,7 +304,7 @@ details[open] .toggle-icon {
 
 /* IMAGE SETTINGS */
 .feature__image {
-  width: 550px;                /* << your requested size */
+  width: 525px;                /* << your requested size */
   height: auto;                /* keep proportions */
   object-fit: cover;           /* better visual framing */
   border-radius: 6px;         /* slightly rounded corners */
