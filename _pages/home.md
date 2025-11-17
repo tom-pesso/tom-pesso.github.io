@@ -234,7 +234,11 @@ redirect_from:
             <!-- PDF badge -->
             <a href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf"
                target="_blank"
-               class="badge badge-yellow">
+               class="badge badge-yellow"
+               onclick="gtag('event', 'pdf_click', {
+       event_category: 'pdf_ecb_wp',
+       event_label: 'ECB Working Paper 2996 PDF'
+   });">
               <svg xmlns="http://www.w3.org/2000/svg"
                    viewBox="0 0 20 20"
                    fill="currentColor"
@@ -433,3 +437,92 @@ redirect_from:
     </article>
   </section>
 </main>
+
+
+<script>
+// ===============================
+// 1. SCROLL DEPTH TRACKING (GA4)
+// ===============================
+
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollPoints = [25, 50, 75, 100];
+  let triggered = new Set();
+
+  function checkScrollDepth() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const percentScrolled = Math.floor((scrollTop / docHeight) * 100);
+
+    scrollPoints.forEach(function (p) {
+      if (percentScrolled >= p && !triggered.has(p)) {
+        triggered.add(p);
+        gtag("event", "scroll_depth", {
+          percent: p,
+          event_category: "engagement",
+          event_label: `Scrolled ${p}%`
+        });
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkScrollDepth);
+});
+
+
+// ================================================
+// 2. TIME-SPENT READING EACH PAPER (GA4)
+//    Works with <details> dropdowns
+// ================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("details").forEach(function (el) {
+
+    // When user opens or closes the dropdown
+    el.addEventListener("toggle", function () {
+      const label = el.querySelector("summary")?.innerText?.trim() || "unknown";
+
+      // opening -> start timer
+      if (el.open) {
+        el.dataset.openedAt = Date.now();
+        gtag("event", "dropdown_open", {
+          event_category: "interaction",
+          event_label: label
+        });
+      }
+
+      // closing -> stop timer
+      else if (!el.open && el.dataset.openedAt) {
+        const duration = (Date.now() - el.dataset.openedAt) / 1000;
+        gtag("event", "paper_read", {
+          title: label,
+          duration_seconds: duration,
+          event_category: "engagement"
+        });
+        el.dataset.openedAt = "";
+      }
+    });
+  });
+
+  // If user leaves the page WITHOUT closing dropdown
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "hidden") {
+      document.querySelectorAll("details").forEach(function (el) {
+        if (el.open && el.dataset.openedAt) {
+          const label = el.querySelector("summary")?.innerText?.trim() || "unknown";
+          const duration = (Date.now() - el.dataset.openedAt) / 1000;
+
+          gtag("event", "paper_read", {
+            title: label,
+            duration_seconds: duration,
+            exited_without_closing: true,
+            event_category: "engagement"
+          });
+
+          el.dataset.openedAt = "";
+        }
+      });
+    }
+  });
+});
+</script>
+
