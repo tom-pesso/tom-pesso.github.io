@@ -292,7 +292,7 @@ details[open] .toggle-icon {
 .feature__wrapper {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 5rem;
   max-width: 75rem;            /* wider intro */
   margin: 0 auto;
 }
@@ -369,6 +369,12 @@ details[open] .toggle-icon {
 /* MOBILE: vertical layout */
 @media (max-width: 768px) {
 
+  /* add margin inside the section */
+  .splash-intro {
+    padding-left: 1.25rem;   /* ~20px */
+    padding-right: 1.25rem;
+  }
+
   .feature__wrapper {
     flex-direction: column;
     text-align: left;       /* DO NOT center the text */
@@ -380,9 +386,9 @@ details[open] .toggle-icon {
 
   .feature__image {
     width: auto;            /* natural image width */
-    max-width: 100%;        /* fit screen */
+    max-width: 95%;        /* fit screen */
     height: auto;
-    border-radius: 10px;    /* keep same rounding */
+    border-radius: 6px;    /* keep same rounding */
     margin-bottom: 1rem;
   }
 
