@@ -291,7 +291,7 @@ details[open] .toggle-icon {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  max-width: 72rem;            /* wider intro */
+  max-width: 100rem;            /* wider intro */
   margin: 0 auto;
 }
 
@@ -305,7 +305,7 @@ details[open] .toggle-icon {
   width: 380px;                /* << your requested size */
   height: auto;                /* keep proportions */
   object-fit: cover;           /* better visual framing */
-  border-radius: 10px;         /* slightly rounded corners */
+  border-radius: 6px;         /* slightly rounded corners */
   display: block;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
