@@ -94,7 +94,7 @@ redirect_from:
 
     <!-- Paper 1 -->
     <details data-paper-id="fiscal_multiplier_2024">
-      <details>
+      
         <!-- Summary block -->
         <summary class="mb-2 cursor-pointer">
           <!-- Row 1: Title + chevron -->
@@ -186,7 +186,7 @@ redirect_from:
 
     <!-- Paper 2 -->
     <details data-paper-id="ecb_fiscal_policy_inflation_2024">
-      <details>
+     
         <!-- Visible header (clickable to open/close) -->
         <summary class="mb-2 cursor-pointer">
           <!-- Row 1: Title + chevron -->
@@ -304,6 +304,7 @@ redirect_from:
           G. Mesters
         </a>
       </div>
+      </details>
     </article>
   </section>
 
