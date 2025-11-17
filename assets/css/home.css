@@ -125,8 +125,8 @@ h1, h2, h3 {
 }
 
 h2.section-title {
-  font-size: 1.5rem;      /* text-2xl */
-  font-weight: 600;
+  font-size: 1.6rem;      /* text-2xl */
+  font-weight: 700;
   color: #111827;
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 0.5rem;
@@ -136,8 +136,8 @@ h2.section-title {
 h3.paper-title,
 h3.course-title,
 h3.wip-title {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #111827;
   margin-bottom: 0.5rem;
 }
