@@ -13,10 +13,7 @@ author_profile: false
   </h1>
 </div>
 
-<!-- MAIN CONTENT -->
-<main class="max-w-4xl mx-auto py-8">
-
-  <!-- SPLASH INTRO SECTION (Minimal Mistakes style, custom lightweight override) -->
+ <!-- SPLASH INTRO SECTION (Minimal Mistakes style, custom lightweight override) -->
 <section class="splash-intro">
 
   <div class="feature__wrapper">
@@ -67,6 +64,11 @@ author_profile: false
 
 </section>
 
+
+<!-- MAIN CONTENT -->
+<main class="max-w-4xl mx-auto py-8">
+
+ 
 
 <!-- Spacer before next section -->
 <div style="height: 2.5rem;"></div>
