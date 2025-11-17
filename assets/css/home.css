@@ -275,93 +275,112 @@ details[open] .toggle-icon {
 .presentations
 
 
+/* ============================
+   MINIMAL MISTAKES STYLE SPLASH
+   ============================ */
 
-/* ================================
-   SPLASH INTRO SECTION (Homepage)
-   ================================= */
-
-.splash-section {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+/* container */
+.splash-intro {
+  background: #ffffff;
+  padding: 2rem 1rem;
 }
 
-.splash-container {
+/* feature row: side-by-side image + text */
+.feature__wrapper {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  padding: 0 1rem;
+  gap: 2.5rem;
+  max-width: 56rem; /* matches MM wrapper */
+  margin: 0 auto;
 }
 
-/* Left: Photo */
-.splash-photo-wrapper {
-  flex: 0 0 160px;
+/* left image */
+.feature__item--image {
+  flex: 0 0 200px;
 }
 
-.splash-photo {
-  width: 160px;
-  height: 160px;
+.feature__image {
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 9999px; /* circle */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  border-radius: 50%; /* circle photo */
   display: block;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
-/* Right: Text */
-.splash-text {
+/* right text */
+.feature__item--text {
   flex: 1;
 }
 
-.splash-title {
+/* typography matching MM splash */
+.page__title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
   font-size: 2rem;
   font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: #111827;
+  color: #111;
 }
 
-.splash-paragraph {
+.page__lead {
+  font-size: 1.2rem;     /* lead paragraph scaling */
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* normal paragraph spacing */
+.splash-intro p {
+  margin-bottom: 0.75rem;
   font-size: 1rem;
-  line-height: 1.55;
-  color: #374151;
-  margin-bottom: 1rem;
+  color: #444;
 }
 
-.splash-button {
-  display: inline-block;
-  background-color: #fef9c3; /* yellow-100 */
-  color: #854d0e;
-  border: 1px solid #facc15; /* yellow-200 */
-  font-weight: 600;
-  font-size: 0.875rem;
-  padding: 0.35rem 0.85rem;
-  border-radius: 9999px;
+/* links */
+.splash-intro a {
+  color: #4f46e5;
   text-decoration: none;
 }
-
-.splash-button:hover {
-  background-color: #fef3a8;
+.splash-intro a:hover {
+  text-decoration: underline;
 }
 
-/* ================================
-   MOBILE RESPONSIVE
-   ================================= */
+/* CV button styled like MM small button */
+.btn-cv {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #d4a017;
+  background: #fef9c3;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #8a5a00;
+}
+.btn-cv:hover {
+  background: #fff3a0;
+  border-color: #c29500;
+}
+
+/* MOBILE: vertical layout */
 @media (max-width: 768px) {
-  .splash-container {
+
+  .feature__wrapper {
     flex-direction: column;
     text-align: center;
   }
 
-  .splash-photo-wrapper {
+  .feature__item--image {
     flex: none;
   }
 
-  .splash-photo {
-    width: 140px;
-    height: 140px;
+  .feature__image {
+    width: 160px;
+    height: 160px;
     margin-bottom: 1rem;
   }
 
-  .splash-text {
+  .feature__item--text {
     text-align: center;
   }
 }
