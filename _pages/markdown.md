@@ -1,16 +1,11 @@
 ---
-permalink: /
+permalink: /markdown/
 title: ""
 excerpt: ""
 author_profile: false
 layout: splash
 header:
   nav: false
-redirect_from: 
-  - /about/
-  - /about.html
-  - /research/
-  - /teaching-mine/
 feature_row:
   - image_path: /about_picture.jpeg
     alt: "placeholder image 1"
