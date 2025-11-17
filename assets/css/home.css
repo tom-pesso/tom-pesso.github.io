@@ -284,7 +284,7 @@ details[open] .toggle-icon {
 
 /* container */
 .splash-intro {
-  max-width: 100%;
+  max-width: 70%;
   background: #ffffff;
   padding: 2rem 1rem;
 }
@@ -305,7 +305,7 @@ details[open] .toggle-icon {
 
 /* IMAGE SETTINGS */
 .feature__image {
-  width: 380px;                /* << your requested size */
+  width: 450px;                /* << your requested size */
   height: auto;                /* keep proportions */
   object-fit: cover;           /* better visual framing */
   border-radius: 6px;         /* slightly rounded corners */
