@@ -16,57 +16,57 @@ author_profile: false
 <!-- MAIN CONTENT -->
 <main class="max-w-4xl mx-auto py-8">
 
-  <!-- SPLASH / INTRO SECTION -->
-<section class="splash-section max-w-4xl mx-auto">
-  <div class="splash-container">
-    
-    <!-- Left: Photo -->
-    <div class="splash-photo-wrapper">
-      <img
-        src="{{ 'images/about_picture.jpeg' | relative_url }}"
-        alt="Portrait of Tom Pesso"
-        class="splash-photo"
-        loading="lazy"
-      >
+  <!-- SPLASH INTRO SECTION (Minimal Mistakes style, custom lightweight override) -->
+<section class="splash-intro">
+
+  <div class="feature__wrapper">
+
+    <!-- === Left: Image === -->
+    <div class="feature__item feature__item--image">
+      <img src="{{ 'images/about_picture.jpeg' | relative_url }}"
+           alt="Tom Pesso"
+           class="feature__image"
+           loading="lazy">
     </div>
 
-    <!-- Right: Text -->
-    <div class="splash-text">
+    <!-- === Right: Text (lead style) === -->
+    <div class="feature__item feature__item--text">
+      
+      <h2 class="page__title">
+        Welcome to my website!
+      </h2>
 
-      <h2 class="splash-title">Welcome to my website!</h2>
-
-      <p class="splash-paragraph">
+      <p class="page__lead">
         I am a sixth-year Ph.D candidate in Economics at Universitat Pompeu Fabra (UPF)
         and Barcelona School of Economics (BSE), under the supervision of
-        <a href="https://www.geertmesters.com/" target="_blank" class="paper-link">
-          Prof. Geert Mesters
-        </a>
+        <a href="https://www.geertmesters.com/" target="_blank">Prof. Geert Mesters</a>
         and
-        <a href="https://crei.cat/people/davide-debortoli-2/" target="_blank" class="paper-link">
-          Prof. Davide Debortoli
-        </a>.
+        <a href="https://crei.cat/people/davide-debortoli-2/" target="_blank">Prof. Davide Debortoli</a>.
       </p>
 
-      <p class="splash-paragraph">
-        I am a macroeconomist interested in Fiscal Policy, Macroeconometrics
-        and more generally Macroeconomic Policy Evaluation.
+      <p>
+        I am a macroeconomist interested in Fiscal Policy, Macroeconometrics,
+        and more broadly Macroeconomic Policy Evaluation.
       </p>
 
-      <p class="splash-paragraph">
+      <p>
         If you want to get in touch, please send me an email at
-        <a href="mailto:tom.pesso@upf.edu" class="paper-link">tom.pesso@upf.edu</a>.
+        <a href="mailto:tom.pesso@upf.edu">tom.pesso@upf.edu</a>.
       </p>
 
-      <!-- CV Button -->
-      <a href="https://tom-pesso.github.io/files/CV-TomPesso.pdf"
-         class="splash-button"
-         target="_blank">
-        CV (PDF)
-      </a>
+      <!-- CV button -->
+      <p>
+        <a href="https://tom-pesso.github.io/files/CV-TomPesso.pdf"
+           target="_blank"
+           class="btn-cv">CV (PDF)</a>
+      </p>
 
     </div>
+
   </div>
+
 </section>
+
 
 <!-- Spacer before next section -->
 <div style="height: 2.5rem;"></div>
