@@ -301,12 +301,13 @@ details[open] .toggle-icon {
 
 .feature__image {
   width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%; /* circle photo */
+  height: auto;     /* keep natural proportions */
+  object-fit: contain;
+  border-radius: 0; /* rectangle */
   display: block;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
+
 
 /* right text */
 .feature__item--text {
