@@ -148,9 +148,9 @@ redirect_from:
           <!-- Presentations box with separator -->
 <div class="mt-4 pt-4 border-t border-gray-300 bg-white presentations-box">
   <div class="flex flex-wrap gap-1 items-center">
-    <span class="text-gray-700 font-semibold mr-1">
-      Presentations:
-    </span>
+    <span class="text-xs text-gray-700 font-semibold mr-1">
+  Presentations:
+</span>
 
     <span class="presentation-pill">EEA 2025</span>
     <span class="presentation-pill">IAAE 2025</span>
