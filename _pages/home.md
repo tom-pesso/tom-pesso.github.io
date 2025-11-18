@@ -145,42 +145,27 @@ redirect_from:
             in the nonlinearity of the fiscal multiplier.
           </p>
 
-          <!-- Presentations box -->
-          <div class="presentations-box">
-            <div class="flex flex-wrap gap-1">
-              <span class="text-gray-700 font-semibold" style="margin-right: 0.25rem;">
-                Presentations:
-              </span>
+          <!-- Presentations box with separator -->
+<div class="mt-4 pt-4 border-t border-gray-200 presentations-box">
 
-              <span class="presentation-pill">
-                EEA 2025
-              </span>
+  <div class="flex flex-wrap gap-1 items-center">
+    <span class="text-gray-700 font-semibold mr-1">
+      Presentations:
+    </span>
 
-              <span class="presentation-pill">
-                IAAE 2025
-              </span>
+    <span class="presentation-pill">EEA 2025</span>
+    <span class="presentation-pill">IAAE 2025</span>
+    <span class="presentation-pill">
+      European Winter Meeting of the Econometric Society (Dec. 2024)
+    </span>
+    <span class="presentation-pill">BSE Summer Forum (2024, poster session)</span>
+    <span class="presentation-pill">CREi Internal Seminar (2023, 2022)</span>
+    <span class="presentation-pill">UPF Econometrics Internal Seminar (2023)</span>
+    <span class="presentation-pill">PhD Jamboree BSE (2023)</span>
+  </div>
 
-              <span class="presentation-pill">
-                European Winter Meeting of the Econometric Society (Dec. 2024)
-              </span>
+</div>
 
-              <span class="presentation-pill">
-                BSE Summer Forum (2024, poster session)
-              </span>
-
-              <span class="presentation-pill">
-                CREi Internal Seminar (2023, 2022)
-              </span>
-
-              <span class="presentation-pill">
-                UPF Econometrics Internal Seminar (2023)
-              </span>
-
-              <span class="presentation-pill">
-                PhD Jamboree BSE (2023)
-              </span>
-            </div>
-          </div>
         </div>
       </details>
     </article>
