@@ -148,22 +148,49 @@ redirect_from:
           <!-- Presentations box with separator -->
 <div class="mt-4 pt-4 border-t border-gray-300 bg-white presentations-box">
   <div class="flex flex-wrap gap-1 items-center">
+
     <span class="text-xs text-gray-700 font-semibold mr-1">
-  Presentations:
-</span>
-
-    <span class="presentation-pill">EEA 2025</span>
-    <span class="presentation-pill">IAAE 2025</span>
-    <span class="presentation-pill">
-      European Winter Meeting of the Econometric Society (Dec. 2024)
+      Presentations:
     </span>
-    <span class="presentation-pill">BSE Summer Forum (2024, poster session)</span>
-    <span class="presentation-pill">CREi Internal Seminar (2023, 2022)</span>
-    <span class="presentation-pill">UPF Econometrics Internal Seminar (2023)</span>
-    <span class="presentation-pill">PhD Jamboree BSE (2023)</span>
-  </div>
 
+    <!-- PILL 1: EEA -->
+    <span class="presentation-pill tooltip" data-tip="European Economic Association (Bordeaux)">
+      EEA (2025)
+    </span>
+
+    <!-- PILL 2: IAAE -->
+    <span class="presentation-pill tooltip" data-tip="International Association of Applied Econometrics (Turin)">
+      IAAE (2025)
+    </span>
+
+    <!-- PILL 3: EWMES -->
+    <span class="presentation-pill tooltip" data-tip="European Winter Meeting of the Econometric Society (Mallorca)">
+      EWMES (2024)
+    </span>
+
+    <!-- PILL 4 -->
+    <span class="presentation-pill tooltip" data-tip="Barcelona School of Economics Summer Forum — Poster Session">
+      BSE Summer Forum (2024, poster)
+    </span>
+
+    <!-- PILL 5 -->
+    <span class="presentation-pill tooltip" data-tip="Center for Research in International Economics (CREi), Internal Seminar">
+      CREi Internal Seminar (2023, 2022)
+    </span>
+
+    <!-- PILL 6 -->
+    <span class="presentation-pill tooltip" data-tip="UPF Econometrics Internal Seminar">
+      UPF Internal Econometrics Seminar (2023)
+    </span>
+
+    <!-- PILL 7 -->
+    <span class="presentation-pill tooltip" data-tip="Barcelona School of Economics — PhD Jamboree">
+      BSE PhD Jamboree (2023)
+    </span>
+
+  </div>
 </div>
+
 
         </div>
       </details>
