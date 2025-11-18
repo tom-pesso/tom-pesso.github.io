@@ -225,8 +225,9 @@ redirect_from:
        event_label: 'Cristina Checherita Profile'
    });">
                 C. Checherita-Westphal
-              </a>.
+              </a>
             </span>
+            <span class="text-gray-300">|</span>
 
             <!-- ECB badge -->
             <span class="badge badge-blue">
