@@ -212,7 +212,8 @@ redirect_from:
                 C. Checherita-Westphal
               </a>
             </span>
-            <span class="text-gray-300">|</span>
+            <span class="text-gray-200 text-xs">|</span>
+
 
             <!-- ECB badge -->
             <span class="badge badge-blue">
