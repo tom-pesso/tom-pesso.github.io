@@ -146,8 +146,7 @@ redirect_from:
           </p>
 
           <!-- Presentations box with separator -->
-<div class="mt-4 pt-4 border-t border-gray-200 presentations-box">
-
+<div class="mt-4 pt-4 border-t border-gray-300 bg-white presentations-box">
   <div class="flex flex-wrap gap-1 items-center">
     <span class="text-gray-700 font-semibold mr-1">
       Presentations:
