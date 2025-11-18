@@ -275,14 +275,24 @@ details[open] .toggle-icon {
 }
 
 /* Presentations box */
-.presentations
-
-.presentation-pill {
-  padding: 2px 6px;
-  background: #f7f7f7;
-  border-radius: 12px;
-  font-size: 0.75rem;
+.presentations-box {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d1d5db; /* gray-300 */
 }
+
+/* Presentation small pills */
+.presentation-pill {
+  background: #f3f4f6; /* gray-100 */
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.70rem;          /* smaller than text-xs */
+  color: #374151;              /* gray-700 */
+  border: 1px solid #e5e7eb;   /* gray-200 */
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
 
 
 
