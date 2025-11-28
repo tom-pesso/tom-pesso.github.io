@@ -52,5 +52,38 @@
     <div class="page-wrapper">
       {{ content }}
     </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleAbstractButtons = document.querySelectorAll('.toggle-abstract');
+
+    toggleAbstractButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default link jump
+        
+        // Find the closest parent article or container
+        const paperContainer = this.closest('article') || this.closest('.paper-item');
+        
+        // Find the abstract div within that container
+        const abstract = paperContainer.querySelector('.abstract');
+        
+        if (abstract) {
+          const isCurrentlyOpen = abstract.style.display === 'block';
+          
+          // Optional: Close all other abstracts first (mimicking the example)
+          // document.querySelectorAll('.abstract').forEach(el => el.style.display = 'none');
+
+          // Toggle the clicked one
+          if (!isCurrentlyOpen) {
+            abstract.style.display = 'block';
+          } else {
+            abstract.style.display = 'none';
+          }
+        }
+      });
+    });
+  });
+</script>
+    
   </body>
 </html>
