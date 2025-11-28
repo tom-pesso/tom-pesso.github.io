@@ -380,10 +380,10 @@ author_profile: false
 
   <!-- Buttons -->
   <div class="pub-buttons" style="margin-top: 8px;">
-    <a onclick="togglePubSection('abs-jc')">[abstract]</a>
-    <a href="https://example.com/paper.pdf" target="_blank">[paper]</a>
-    <a onclick="togglePubSection('cov-jc')">[presentations]</a>
-  </div>
+  <a onclick="togglePubSection('abs-jc', 'jc')">[abstract]</a>
+  <a href="https://example.com/paper.pdf" target="_blank">[paper]</a>
+  <a onclick="togglePubSection('cov-jc', 'jc')">[presentations]</a>
+</div>
 
   <!-- Hidden sections -->
   <div id="abs-jc" class="pub-toggle-content">
@@ -396,7 +396,7 @@ author_profile: false
       <li><a href="#">P2</a></li>
       <li><a href="#">P3</a></li>
     </ul>
-  
+  </div>
 
 </div>
 
