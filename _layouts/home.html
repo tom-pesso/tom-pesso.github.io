@@ -53,12 +53,22 @@
       {{ content }}
     </div>
 
-  <script>
-  function togglePubSection(id) {
-    var el = document.getElementById(id);
-    el.style.display = (el.style.display === "block") ? "none" : "block";
-  }
+ <script>
+function togglePubSection(id, group) {
+  // Close all sections of the same group
+  const sections = document.querySelectorAll(`[id$="-${group}"]`);
+  sections.forEach(sec => {
+    if (sec.id !== id) {
+      sec.style.display = "none";
+    }
+  });
+
+  // Toggle the selected section
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "block") ? "none" : "block";
+}
 </script>
+
 
     
   <script>
