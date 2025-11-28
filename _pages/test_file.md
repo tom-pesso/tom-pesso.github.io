@@ -382,7 +382,7 @@ author_profile: false
   <div class="pub-buttons" style="margin-top: 8px;">
     <a onclick="togglePubSection('abs-jc')">[abstract]</a>
     <a href="https://example.com/paper.pdf" target="_blank">[paper]</a>
-    <a onclick="togglePubSection('cov-jc')">[coverage]</a>
+    <a onclick="togglePubSection('cov-jc')">[presentations]</a>
   </div>
 
   <!-- Hidden sections -->
@@ -390,13 +390,13 @@ author_profile: false
     This article studies etc
   </div>
 
-  <!-- <div id="cov-jc" class="pub-toggle-content">
+  <div id="cov-jc" class="pub-toggle-content">
     <ul>
-      <li><a href="#">The Guardian article</a></li>
-      <li><a href="#">The Economist article</a></li>
-      <li><a href="#">NYT coverage</a></li>
+      <li><a href="#">P1</a></li>
+      <li><a href="#">P2</a></li>
+      <li><a href="#">P3</a></li>
     </ul>
-  </div> -->
+  
 
 </div>
 
