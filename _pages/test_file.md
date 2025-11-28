@@ -369,13 +369,13 @@ author_profile: false
     <article class="card publication-entry">
 
   <h3 class="paper-title">
-    Jim Crow and Black Economic Progress After Slavery
+    YYYYYYYY
   </h3>
   <div class="text-md text-gray-600 text-italic">
-    with Hugo Reichardt  
+    with XXXX 
   </div>
   <div class="text-md text-gray-600">
-    Quarterly Journal of Economics, 2024
+    Journal, YYYY
   </div>
 
   <!-- Buttons -->
@@ -387,16 +387,16 @@ author_profile: false
 
   <!-- Hidden sections -->
   <div id="abs-jc" class="pub-toggle-content">
-    This article studies the long-run effects of slavery and restrictive Jim Crow institutions...
+    This article studies etc
   </div>
 
-  <div id="cov-jc" class="pub-toggle-content">
+  <!-- <div id="cov-jc" class="pub-toggle-content">
     <ul>
       <li><a href="#">The Guardian article</a></li>
       <li><a href="#">The Economist article</a></li>
       <li><a href="#">NYT coverage</a></li>
     </ul>
-  </div>
+  </div> -->
 
 </article>
 
