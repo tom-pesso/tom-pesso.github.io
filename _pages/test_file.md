@@ -366,7 +366,7 @@ author_profile: false
       </details>
     </article>
 
-    <article class="card publication-entry">
+    <div class="publication-entry">
 
   <h3 class="paper-title">
     YYYYYYYY
@@ -398,7 +398,7 @@ author_profile: false
     </ul>
   </div> -->
 
-</article>
+</div>
 
   </section>
 </main>
