@@ -87,34 +87,28 @@ author_profile: false
     </h2>
 
     <!-- Paper 1 -->
-    <article class="card mb-8"> <h3 class="paper-title mb-2">
-    Fiscal Multiplier: the Size of the Shock Matters (2024)
-  </h3>
+    <article class="card mb-8">
+      <h3 class="paper-title mb-2">
+        Fiscal Multiplier: the Size of the Shock Matters (2024)
+      </h3>
 
-  <div class="paper-details">
-    <a href="#" class="btn-link toggle-abstract">abstract</a>
-    <span class="badge badge-yellow">PDF (on demand)</span>
-  </div>
+      <div class="paper-details">
+        <a href="#" class="btn-link toggle-abstract">abstract</a>
+        <span class="badge badge-yellow">PDF (on demand)</span>
+      </div>
 
-  <div class="abstract">
-    <p>
-      This paper studies the impact of the sign and magnitude of fiscal shocks on the fiscal multiplier.
-      Through a theoretical examination, it highlights the significance of both the sign and magnitude
-      of the shock in determining the multiplier. The study introduces a new empirical methodology,
-      the Local Linear Local Projection, to detect complex non-linear patterns. When applied to US data,
-      the methodology reveals that the degree of nonlinearity captured in the data varies with the
-      identification strategy employed. Notably, zero does not appear to be a significant tipping point
-      in the nonlinearity of the fiscal multiplier.
-    </p>
+      <div class="abstract">
+        <p>
+          This paper studies the impact of the sign and magnitude of fiscal shocks on the fiscal multiplier...
+          </p>
 
-    <div class="mt-4 pt-4 border-t border-gray-300">
-       <span class="text-xs text-gray-700 font-semibold mr-1">Presentations:</span>
-       <span class="presentation-pill">EEA (2025)</span>
-       <span class="presentation-pill">IAAE (2025)</span>
-    </div>
-  </div>
-
-</article>
+        <div class="mt-4 pt-4 border-t border-gray-300">
+           <span class="text-xs text-gray-700 font-semibold mr-1">Presentations:</span>
+           <span class="presentation-pill">EEA (2025)</span>
+           <span class="presentation-pill">IAAE (2025)</span>
+           </div>
+      </div>
+    </article>
 
     <!-- Paper 2 -->
     <article class="card">
