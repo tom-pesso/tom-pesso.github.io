@@ -365,6 +365,41 @@ author_profile: false
         </div>
       </details>
     </article>
+
+    <article class="card publication-entry">
+
+  <h3 class="paper-title">
+    Jim Crow and Black Economic Progress After Slavery
+  </h3>
+  <div class="text-md text-gray-600 text-italic">
+    with Hugo Reichardt  
+  </div>
+  <div class="text-md text-gray-600">
+    Quarterly Journal of Economics, 2024
+  </div>
+
+  <!-- Buttons -->
+  <div class="pub-buttons" style="margin-top: 8px;">
+    <a onclick="togglePubSection('abs-jc')">[abstract]</a>
+    <a href="https://example.com/paper.pdf" target="_blank">[paper]</a>
+    <a onclick="togglePubSection('cov-jc')">[coverage]</a>
+  </div>
+
+  <!-- Hidden sections -->
+  <div id="abs-jc" class="pub-toggle-content">
+    This article studies the long-run effects of slavery and restrictive Jim Crow institutions...
+  </div>
+
+  <div id="cov-jc" class="pub-toggle-content">
+    <ul>
+      <li><a href="#">The Guardian article</a></li>
+      <li><a href="#">The Economist article</a></li>
+      <li><a href="#">NYT coverage</a></li>
+    </ul>
+  </div>
+
+</article>
+
   </section>
 </main>
 
