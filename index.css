@@ -802,6 +802,12 @@ summary::-webkit-details-marker {
     padding-right: 1.25rem;
   }
 
+    /* 🔽 Insert the fix here */
+  .hero-mini-nav {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
   /* Stack elements, reduce spacing */
   .feature__wrapper {
     flex-direction: column;
@@ -997,4 +1003,5 @@ summary::-webkit-details-marker {
 
 .site-footer a:hover {
   text-decoration: underline;
+
 }
