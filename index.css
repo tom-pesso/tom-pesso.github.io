@@ -1,0 +1,1000 @@
+/* === TEMPLATE === */
+
+/* === GLOBAL RESET / BASE === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #ffffff;
+  /* Changed to white as per "no gray boxes" usually implies a cleaner look, but user just said "without boxes". Let's stick to f9fafb or white. The user's example has white background. */
+  color: #111827;
+  /* gray-900 */
+  overflow-x: hidden;
+}
+
+/* Wrapper to center content */
+.page-wrapper {
+  min-height: 100vh;
+}
+
+/* Utility container mimicking max-w-4xl mx-auto */
+.max-w-4xl {
+  max-width: 56rem;
+  /* ~4xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Spacing utilities (Tailwind-like) */
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-0_5 {
+  margin-top: 0.125rem;
+}
+
+/* custom helper if needed */
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2_5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.px-2_5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.py-0_5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+/* Basic flex utilities */
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Gap approximation */
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+/* Borders / radius / shadows */
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e7eb;
+  /* gray-200 */
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.border-yellow-200 {
+  border-color: #facc15;
+}
+
+.border-blue-200 {
+  border-color: #bfdbfe;
+}
+
+.border-gray-300 {
+  border-color: #d1d5db;
+}
+
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.shadow-md {
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Background colors */
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+.bg-yellow-100 {
+  background-color: #fef9c3;
+}
+
+.bg-blue-100 {
+  background-color: #dbeafe;
+}
+
+.bg-green-100 {
+  background-color: #dcfce7;
+}
+
+.bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+/* Text alignment, fonts, and sizes */
+.text-center {
+  text-align: center;
+}
+
+.text-gray-900 {
+  color: #111827;
+}
+
+.text-gray-700 {
+  color: #374151;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.text-yellow-800 {
+  color: #854d0e;
+}
+
+.text-blue-800 {
+  color: #1d4ed8;
+}
+
+.text-green-800 {
+  color: #166534;
+}
+
+.text-xs {
+  font-size: 0.70rem;
+  line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-md {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+/* Headers */
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h2.section-title {
+  font-size: 1.6rem;
+  /* text-2xl */
+  font-weight: 700;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3.paper-title,
+h3.course-title,
+h3.wip-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  /* #1f4b8e #245a9a (slightly lighter) #324e7b (darkest, and very sleek) rgb(35, 87, 203) (previous slightly too "electric", saturated*/
+  /*#111827*/
+  margin-bottom: 0.25rem;
+}
+
+h3.jmp-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f4b8e;
+  /* #1f4b8e #245a9a (slightly lighter) #324e7b (darkest, and very sleek) rgb(35, 87, 203) (previous slightly too "electric", saturated*/
+  /*#111827*/
+  margin-bottom: 0.5rem;
+}
+
+
+/* Font weights */
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Leading utilities */
+.leading-tight {
+  line-height: 1.1;
+}
+
+/* Margins */
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+/* Links */
+.paper-link {
+  text-decoration: none;
+}
+
+.link-email {
+  color: #1f4b8e !important;
+  /* #1f4b8e #245a9a (slightly lighter) #324e7b (darkest, and very sleek) rgb(35, 87, 203) (previous slightly too "electric", saturated*/
+  /*#111827*/
+  text-decoration: none;
+}
+
+.link-email:hover {
+  text-decoration: underline !important;
+}
+
+.link-coauthor {
+  color: #4b5563 !important;
+  /* gray-600 (same as surrounding text) */
+  text-decoration: none !important;
+}
+
+.link-coauthor:hover {
+  text-decoration: underline !important;
+  color: #4b5563 !important;
+  /* remain gray when hovered */
+}
+
+/* Main layout */
+main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+/* Base section style */
+/* Full-width section bands */
+.section {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  /* 100vw: span the whole viewport. Other option: 100% but beware of left alignment */
+  padding: 2.5rem 0;
+  /* vertical padding only */
+}
+
+/* Centered content inside each band */
+.section-inner {
+  max-width: 56rem;
+  /* same as .max-w-4xl */
+  margin: 0 auto;
+  padding: 0 1rem;
+  /* side padding so cards don’t touch edges */
+}
+
+/* Alternating backgrounds for full-width bands - REMOVED for v2 to keep it clean */
+.section:nth-of-type(odd) {
+  background: #ffffff;
+}
+
+.section:nth-of-type(even) {
+  background: #ffffff;
+}
+
+
+
+/* Hero section title */
+.hero-title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  /* equivalent to text-5xl */
+  font-weight: 800;
+  color: #111827;
+  /* text-gray-900 */
+  line-height: 1.1;
+}
+
+
+/* Hero navigation */
+.hero-mini-nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: -0.5rem;
+  /* tight spacing under name */
+  margin-bottom: 1.25rem;
+}
+
+.hero-mini-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f4b8e;
+  /* muted gray, like Ruben Durante's */
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.hero-mini-link:hover {
+  color: #1f4b8e;
+  /* your warm blue */
+}
+
+/* ============ HERO CONTACT + REFERENCES ============ */
+
+.hero-contact {
+  font-size: 1.05rem;
+  margin-top: 0.75rem;
+  color: #333;
+}
+
+.hero-references {
+  font-size: 0.95rem;
+  color: #4b5563;
+  /* muted gray */
+  margin-top: 0.25rem;
+}
+
+.hero-references a {
+  color: #4b5563 !important;
+  text-decoration: none;
+}
+
+.hero-references a:hover {
+  text-decoration: underline;
+}
+
+
+/* Cards (papers, teaching, work in progress) - REMOVED BOX STYLING */
+.card {
+  /* background-color: #f9fafb; */
+  /* border: 1px solid #e5e7eb; */
+  /* border-radius: 0.75rem; */
+  /* box-shadow: ... */
+  /* padding: 1.5rem; */
+  margin-bottom: 2.5rem;
+  /* mb-10 or mb-8 */
+  padding-bottom: 1rem;
+  /* Add some spacing between items */
+  margin-left: 1.5rem;
+  /* Indentation under section titles */
+}
+
+/* Teaching & course cards spacing */
+.card-teaching {
+  margin-bottom: 2rem;
+  /* mb-8 */
+}
+
+/* Collapsible sections (details/summary) - REMOVED for v2 as we use custom JS */
+/*
+details {
+  border-radius: 0.5rem;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+*/
+
+/* Small pills / badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  /* rounded-full */
+  font-size: 0.75rem;
+  /* text-xs */
+  font-weight: 600;
+  padding: 0.125rem 0.625rem;
+  /* py-0.5 px-2.5 */
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* Specific badge color helpers */
+.badge-yellow {
+  background-color: #fef9c3;
+  /* bg-yellow-100 */
+  color: #854d0e;
+  /* text-yellow-800 */
+  border-color: #facc15;
+  /* border-yellow-200 */
+}
+
+.badge-blue {
+  background-color: #dbeafe;
+  /* bg-blue-100 */
+  color: #1d4ed8;
+  /* text-blue-800 */
+  border-color: #bfdbfe;
+  /* border-blue-200 */
+}
+
+.badge-green {
+  background-color: #dcfce7;
+  /* bg-green-100 */
+  color: #166534;
+  /* text-green-800 */
+  border-color: #bbf7d0;
+  /* approx border-green-200 */
+}
+
+.badge-gray {
+  background-color: #e5e7eb;
+  /* bg-gray-200 */
+  color: #374151;
+  /* text-gray-700 */
+  border-color: #d1d5db;
+  /* border-gray-300 */
+}
+
+
+.badge-jmp {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.20rem 0.70rem;
+  /* slightly more comfortable */
+  font-size: 0.80rem;
+  /* slightly larger text */
+  font-weight: 600;
+  border-radius: 9999px;
+  background-color: #e8effa;
+  color: #1f4b8e;
+  border: 1.5px solid #1f4b8e;
+  margin-left: 0.5rem;
+
+  /* --- Baseline Alignment Fix --- */
+  vertical-align: middle;
+  /* aligns with title text baseline */
+  line-height: 1;
+  /* reduces extra internal space */
+  margin-top: -1px;
+  /* micro-adjust for pixel-perfect alignment */
+}
+
+
+
+
+/* Icon sizes (PDF icon) */
+.icon-4 {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+/* Presentations box */
+.presentations-box {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d1d5db;
+  /* gray-300 */
+}
+
+/* Presentation small pills */
+.presentation-pill {
+  background: #f7f7f7;
+  border: none;
+  font-size: 0.65rem;
+  padding: 1px 6px;
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+/* Tooltip hover box */
+.tooltip::after {
+  content: attr(data-tip);
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  transform: translate(-50%, -100%);
+
+  background: #111827;
+  /* gray-900 */
+  color: white;
+  font-size: 0.70rem;
+  padding: 4px 8px;
+
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.15s ease-in-out;
+
+  z-index: 50;
+}
+
+/* Small arrow */
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  transform: translate(-50%, -2px);
+
+  border: 5px solid transparent;
+  border-top-color: #111827;
+  /* arrow color */
+
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+
+/* On hover — show tooltip */
+.tooltip:hover::after,
+.tooltip:hover::before {
+  opacity: 1;
+}
+
+
+
+/* ============================
+   MINIMAL MISTAKES STYLE SPLASH
+   ============================ */
+
+/* container */
+.splash-intro {
+  background: #ffffff;
+  padding: 2rem 1rem;
+}
+
+
+/* feature row: side-by-side image + text */
+.feature__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  max-width: 75rem;
+  /* wider intro */
+  margin: 0 auto;
+}
+
+/* left image container */
+.feature__item--image {
+  flex: 0 0 auto;
+  /* let image size control width */
+}
+
+/* IMAGE SETTINGS */
+.feature__image {
+  width: clamp(280px, 40vw, 500px);
+  /* Increased size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* right text */
+.feature__item--text {
+  flex: 1;
+}
+
+/* typography matching MM splash */
+.page__title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.page__lead {
+  font-size: 1.2rem;
+  /* lead paragraph scaling */
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* normal paragraph spacing */
+.splash-intro p {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* links */
+
+
+/* Prevent hero section from underlining buttons */
+.splash-intro a.btn-cv:hover,
+.splash-intro a.btn-pdf:hover {
+  text-decoration: none !important;
+}
+
+/* CV button styled like MM small button */
+
+/* Base button style (CV, JMP, PDF, VoxEU, etc.) */
+.btn-cv,
+.btn-pdf {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #1f4b8e;
+  background: #ffffff;
+  color: #1f4b8e;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+/* Hover effect: blue background, white text */
+.btn-cv:hover,
+.btn-pdf:hover {
+  background: #1f4b8e;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/*Underline "Short Abstract"*/
+.short-abstract-label {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+
+
+/* DESKTOP tweaks */
+@media (min-width: 769px) {
+  .splash-intro {
+    padding-right: 6rem;
+    /* extra space on the right */
+    padding-left: 2rem;
+    /* extra space on the right */
+  }
+}
+
+/* ====== MOBILE styles ====== */
+
+/* MOBILE: vertical layout */
+@media (max-width: 768px) {
+
+  /* Add breathing room */
+  .splash-intro {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* Stack elements, reduce spacing */
+  .feature__wrapper {
+    flex-direction: column;
+    text-align: left;
+    gap: 1.25rem;
+    /* smaller spacing between image and text */
+    width: 100%;
+  }
+
+  /* CENTER THE IMAGE */
+  .feature__item--image {
+    flex: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* centers the image */
+  }
+
+  .feature__image {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    /* slightly reduced */
+  }
+
+  .feature__item--text {
+    width: 100%;
+    text-align: left;
+    /* keep text left-aligned */
+    max-width: 36rem;
+  }
+
+  /* Smaller text on mobile */
+  .hero-title {
+    font-size: 2.5rem;
+    /* smaller hero title on mobile */
+  }
+
+  .hero-mini-nav {
+    gap: 1.75rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .hero-mini-link {
+    font-size: 0.95rem;
+  }
+
+
+  .page__title {
+    font-size: 1.6rem;
+  }
+
+  .page__lead {
+    font-size: 1.05rem;
+  }
+
+  .splash-intro p {
+    font-size: 0.90rem;
+  }
+}
+
+/* ============================
+   NEW STYLES FOR V2 DROPDOWNS
+   ============================ */
+
+
+
+.paper-details {
+  margin-top: 0.2rem;
+  margin-bottom: 0.0rem;
+  font-size: 0.95rem;
+  color: #374151;
+  /* gray-700 */
+  line-height: 1.5;
+}
+
+.paper-details a.btn {
+  margin-top: 0.25rem;
+  /* adjust value to taste */
+  display: inline-block;
+  /* needed for margin-top to take effect */
+}
+
+.abstract {
+  /* Animation initial state */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  /* Keep left padding for border offset */
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #374151;
+  border-left: 3px solid #90aadc;
+  /* Blue left border */
+
+  transition: all 0.3s ease-in-out;
+}
+
+.abstract.open {
+  opacity: 1;
+  margin-top: 0rem;
+  /* Reduced top margin further */
+  margin-bottom: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 1px solid #1f4b8e;
+  /* Blue border */
+  background: #fff;
+  color: #1f4b8e;
+  /* Blue text */
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-right: 0.5rem;
+}
+
+.btn:hover {
+  background: #1f4b8e;
+  /* Blue background on hover */
+  color: #fff;
+  /* White text on hover */
+  border-color: #1f4b8e;
+}
+
+.btn.toggle-abstract,
+.btn.toggle-coverage {
+  /* Specific styles if needed, but base .btn is fine */
+}
+
+.separator {
+  font-size: 0.75em;
+  vertical-align: 1px;
+  margin: 0 0.2rem;
+  color: #9ca3af;
+}
+
+.page__lead a {
+  color: #1f4b8e;
+  /* your warm blue */
+  text-decoration: none;
+  /* optional: remove underline */
+  font-weight: 400;
+  /* optional: slight emphasis */
+}
+
+.page__lead a:hover {
+  text-decoration: underline;
+  color: #1f4b8e;
+  /* keep the same blue on hover */
+}
+
+.paper-details .paper-source {
+  color: #6b7280;
+  /* gray-500 */
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  color: #6b7280;
+  /* gray-500 */
+  font-size: 0.9rem;
+  border-top: 1px solid #e5e7eb;
+  /* light gray line */
+}
+
+.site-footer a {
+  color: #1f4b8e;
+  /* your blue */
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
