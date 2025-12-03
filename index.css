@@ -804,8 +804,8 @@ summary::-webkit-details-marker {
 
     /* 🔽 Insert the fix here */
   .hero-mini-nav {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
   
   /* Stack elements, reduce spacing */
@@ -1005,3 +1005,4 @@ summary::-webkit-details-marker {
   text-decoration: underline;
 
 }
+
