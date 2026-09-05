@@ -924,6 +924,12 @@ summary::-webkit-details-marker {
   padding-bottom: 0.5rem;
 }
 
+.paper-history-note {
+  margin: 0.75rem 0 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
 .btn {
   display: inline-block;
   padding: 0.2rem 0.6rem;
@@ -1003,14 +1009,4 @@ summary::-webkit-details-marker {
 
 .site-footer a:hover {
   text-decoration: underline;
-}
-
-/* ============================
-   JMP AWARD & NEWS STYLES
-   ============================ */
-
-.news-label {
-  color: #ae010f; /* rich red matching the uploaded color sample */
-  font-weight: 700;
-  margin-right: 0.25rem;
 }
