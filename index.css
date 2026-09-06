@@ -1020,7 +1020,7 @@ body { overflow-x: visible; }
 .splash-intro { max-width: 60rem; padding: 0 2rem 1.75rem; margin: 0 auto; }
 .feature__wrapper { gap: 2.25rem; align-items: flex-start; }
 .feature__item--text { min-width: 0; }
-.feature__image { width: 220px; height: 250px; object-fit: cover; object-position: center; box-shadow: none; border-radius: 4px; }
+.feature__image { width: 280px; height: 300px; object-fit: cover; object-position: center; box-shadow: none; border-radius: 4px; }
 .splash-intro p { font-size: 1rem; line-height: 1.6; margin: 0.65rem 0; }
 .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 .hero-actions .btn-cv { background: #1f4b8e; color: white; padding: 0.55rem 0.9rem; }
@@ -1055,7 +1055,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1f4b8e; outline-offs
   .feature__wrapper { gap: 1.25rem; }
   .feature__item--text { order: -1; max-width: none; }
   .feature__item--image { justify-content: flex-start; }
-  .feature__image { width: 140px; height: 150px; margin: 0; }
+  .feature__image { width: 180px; height: 190px; margin: 0; }
   main.max-w-4xl { padding: 0 1.25rem; }
   .job-market-paper { padding-left: 0.85rem; }
   .job-market-paper .paper-title { font-size: 1.25rem; }
