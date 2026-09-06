@@ -1021,9 +1021,7 @@ body { overflow-x: visible; }
 .feature__wrapper { gap: 2.25rem; align-items: flex-start; }
 .feature__item--text { min-width: 0; }
 .feature__image { width: 220px; height: 250px; object-fit: cover; object-position: center; box-shadow: none; border-radius: 4px; }
-.page__title { font-size: 1.1rem; line-height: 1.5; }
 .splash-intro p { font-size: 1rem; line-height: 1.6; margin: 0.65rem 0; }
-.splash-intro .intro-secondary { font-size: 0.9rem; color: #526073; }
 .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 .hero-actions .btn-cv { background: #1f4b8e; color: white; padding: 0.55rem 0.9rem; }
 .hero-actions .btn-cv:hover { background: #163869; }
