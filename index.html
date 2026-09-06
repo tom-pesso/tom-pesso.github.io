@@ -14,7 +14,8 @@
         gtag('config', 'G-ZV87M1VLDK');
     </script>
 
-    <title>Tom Pesso</title>
+    <title>Tom Pesso | Economics · UPF</title>
+    <meta name="description" content="Tom Pesso, economics Ph.D. candidate at UPF and BSE. Research in fiscal policy and macroeconometrics. On the 2026–2027 academic job market.">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,8 +40,8 @@
 
         <!-- HERO MICRO-NAV -->
         <nav class="hero-mini-nav">
-            <a href="#working-papers" class="hero-mini-link">Working Papers</a>
-            <a href="#wip" class="hero-mini-link">Work in Progress</a>
+            <a href="#jmp-paper" class="hero-mini-link">Job Market Paper</a>
+            <a href="#working-papers" class="hero-mini-link">Research</a>
             <a href="#teaching" class="hero-mini-link">Teaching</a>
             <a href="https://tom-pesso.github.io/files/CV-TomPesso.pdf" class="hero-mini-link" target="_blank"
                 data-track-category="CV" data-track-action="download" data-track-label="hero_nav">
@@ -54,21 +55,30 @@
 
                 <!-- === Left: Image === -->
                 <div class="feature__item feature__item--image">
-                    <img src="images/about_picture.jpeg" alt="Tom Pesso" class="feature__image" loading="lazy">
+                    <img src="images/about_picture.jpeg" alt="Tom Pesso" class="feature__image" fetchpriority="high">
                 </div>
 
                 <!-- === Right: Text === -->
                 <div class="feature__item feature__item--text">
 
-                    <h2 class="page__title">Welcome to my website!</h2>
+                    <h2 class="page__title">Economics · Universitat Pompeu Fabra</h2>
 
                     <p class="page__lead">
-                        <strong>I will be on the 2026–2027 academic job market.</strong>
+                        <strong>2026–2027 academic job market</strong>
                     </p>
 
                     <p class="page__lead">
                         I am a Ph.D. candidate in Economics at Universitat Pompeu Fabra (UPF)
-                        and Barcelona School of Economics (BSE), under the supervision of
+                        and Barcelona School of Economics (BSE).
+                    </p>
+
+                    <p class="page__lead">
+                        I study fiscal policy and develop econometric methods for identifying policy effects
+                        and estimating nonlinear macroeconomic responses.
+                    </p>
+
+                    <p class="page__lead intro-secondary">
+                        My advisers are
                         <a href="https://www.geertmesters.com/" target="_blank" data-track-category="supervisor"
                             data-track-action="click" data-track-label="Geert Mesters">Prof. Geert Mesters</a>
                         and
@@ -78,12 +88,8 @@
                             Debortoli</a>.
                     </p>
 
-                    <p class="page__lead">
-                        In 2024, I spent four months as a Ph.D. trainee in the Fiscal Policies Division at the European Central Bank (ECB).
-                    </p>
-
-                    <p class="page__lead">
-                        My research interests are in Applied Macroeconomics, with a focus on Fiscal Policy and Macroeconometrics. I am particularly interested in the identification of policy impact and estimating nonlinear macroeconomic responses.
+                    <p class="page__lead intro-secondary">
+                        Previously, Ph.D. trainee in the ECB’s Fiscal Policies Division (2024).
                     </p>
 
                     <p class="hero-contact">
@@ -92,11 +98,11 @@
                     </p>
 
                     <!-- CV Button -->
-                    <p style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                    <p class="hero-actions">
                         <a href="https://tom-pesso.github.io/files/CV-TomPesso.pdf" target="_blank" class="btn-cv"
                             data-cv-download data-track-category="CV" data-track-action="download"
                             data-track-label="intro_button">
-                            CV
+                            Download CV
                         </a>
                     </p>
 
@@ -111,9 +117,9 @@
             <!-- ============================
            WORKING PAPERS
            ============================ -->
-            <section class="section" id="working-papers">
+            <section class="section jmp-section" aria-labelledby="jmp-heading">
                 <div class="section-inner">
-                    <h2 class="section-title">Working Papers</h2>
+                    <h2 class="section-title" id="jmp-heading">Job Market Paper</h2>
             
                     <!-- Paper 1 -->
                     <!-- Job Market Paper -->
@@ -124,14 +130,16 @@
         </h3>
     
         <div class="paper-details">
-            Job Market Paper • Winner of the IAAE 2026 Best Graduate Paper Award
+            Winner of the IAAE 2026 Best Graduate Paper Award
         </div>
+
+        <p class="paper-summary">I use narrative evidence to measure the probability that tax policy changes are exogenous, rather than classifying them as simply exogenous or endogenous. This approach identifies tax responses using documentary evidence from the U.S., UK, and France.</p>
         
         <div class="paper-details" style="margin-top: 0.25rem;">
-            <a href="#" class="btn toggle-abstract" data-track-category="paper"
+            <button type="button" class="btn toggle-abstract" data-track-category="paper"
                 data-track-action="toggle_abstract"
-                data-track-label="jmp_narrative_2026">abstract</a>
-            <span class="separator">|</span> Draft available Fall 2026
+                data-track-label="jmp_narrative_2026">Abstract</button>
+            <span class="separator">|</span> <span class="draft-status">Draft available October 2026</span>
         </div>
         
         <div class="abstract">
@@ -143,14 +151,21 @@
             </p>
         </div>
     </article>
+                </div>
+            </section>
+
+            <section class="section" id="working-papers" aria-labelledby="research-heading">
+                <div class="section-inner">
+                    <h2 class="section-title" id="research-heading">Other Working Papers</h2>
                     <article class="card">
                         <h3 class="paper-title">
                             Local Linear Local Projections: Estimating Shock-Size Heterogeneity
                         </h3>
+                        <p class="paper-summary">A method for estimating how the slope of an impulse-response curve varies continuously with shock size and sign.</p>
                         <div class="paper-details">
-                            <a href="#" class="btn toggle-abstract" data-track-category="paper"
+                            <button type="button" class="btn toggle-abstract" data-track-category="paper"
                                 data-track-action="toggle_abstract"
-                                data-track-label="ll_lp_2026">abstract</a>
+                                data-track-label="ll_lp_2026">Abstract</button>
                             <span class="separator">|</span>
                             <a href="files/LLLP_TomPesso.pdf" class="btn" target="_blank"
                                 data-track-category="paper" data-track-action="download"
@@ -167,7 +182,7 @@
 
                             <div class="mt-4 pt-4 border-t border-gray-300 bg-white presentations-box">
                                 <div class="flex flex-wrap gap-1 items-center">
-                                    <span class="text-xs text-gray-700 font-semibold mr-1">Presentations:</span>
+                                    <span class="text-xs text-gray-700 font-semibold mr-1">Presentations of earlier versions:</span>
                                     <span class="presentation-pill">EEA (2025)</span>
                                     <span class="presentation-pill">IAAE (2025)</span>
                                     <span class="presentation-pill">EWMES (2024)</span>
@@ -185,15 +200,16 @@
                         <h3 class="paper-title">
                             Fiscal Policy and Inflation: Non-Linearities in Government Debt (2024)
                         </h3>
+                        <p class="paper-summary">How the inflation response to fiscal policy varies with government debt in the euro area.</p>
                         <div class="paper-details">
                             with <a
                                 href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
                                 target="_blank" class="link-coauthor" data-track-category="coauthor"
                                 data-track-action="click" data-track-label="C. Checherita-Westphal">C.
-                                Checherita-Westphal</a> <span class="separator">|</span> <em class="paper-source">ECB Working Paper – Internship Research Project (4 months)</em><br>
-                            <a href="#" class="btn toggle-abstract" data-track-category="paper"
+                                Checherita-Westphal</a> <span class="separator">|</span> <em class="paper-source">ECB Working Paper</em><br>
+                            <button type="button" class="btn toggle-abstract" data-track-category="paper"
                                 data-track-action="toggle_abstract"
-                                data-track-label="fiscal_policy_inflation_2024">abstract</a> <a
+                                data-track-label="fiscal_policy_inflation_2024">Abstract</button> <a
                                 href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf" class="btn"
                                 target="_blank" data-track-category="paper" data-track-action="download"
                                 data-track-label="fiscal_policy_inflation_2024">paper</a>
@@ -262,8 +278,8 @@
                         </h3>
                         <div class="paper-details">
                             for Prof. Davide Debortoli — 2023/2026, Barcelona School of Economics<br>
-                            <a href="#" class="btn toggle-abstract" data-track-category="teaching"
-                                data-track-action="toggle_details" data-track-label="fiscal_policy_ta">details</a>
+                            <button type="button" class="btn toggle-abstract" data-track-category="teaching"
+                                data-track-action="toggle_details" data-track-label="fiscal_policy_ta">Details</button>
                             <a href="https://tom-pesso.github.io/files/12M013-fiscal-policy.pdf"
                                 target="_blank" class="btn" data-track-category="teaching"
                                 data-track-action="download_syllabus"
@@ -289,8 +305,8 @@
                         </h3>
                         <div class="paper-details">
                             for Prof. Albrecht Glitz — 2021/2022 &amp; 2022/2023, Barcelona School of Economics<br>
-                            <a href="#" class="btn toggle-abstract" data-track-category="teaching"
-                                data-track-action="toggle_details" data-track-label="causal_inference_ta">details</a>
+                            <button type="button" class="btn toggle-abstract" data-track-category="teaching"
+                                data-track-action="toggle_details" data-track-label="causal_inference_ta">Details</button>
                             <a href="https://tom-pesso.github.io/files/12e016-econometric-methods-ii.pdf"
                                 target="_blank" class="btn" data-track-category="teaching"
                                 data-track-action="download_syllabus"
@@ -348,7 +364,11 @@
             // --- Dropdown Logic with Tracking ---
             const toggleAbstractButtons = document.querySelectorAll('.toggle-abstract');
 
-            toggleAbstractButtons.forEach(button => {
+            toggleAbstractButtons.forEach((button, index) => {
+                const panel = button.closest('.paper-details').nextElementSibling;
+                panel.id = 'abstract-panel-' + index;
+                button.setAttribute('aria-controls', panel.id);
+                button.setAttribute('aria-expanded', 'false');
                 button.addEventListener('click', function (e) {
                     e.preventDefault();
                     const paperDetails = this.closest('.paper-details');
@@ -360,13 +380,13 @@
                         // Close all abstracts
                         document.querySelectorAll('.abstract').forEach(elem => {
                             elem.classList.remove('open');
-                            elem.style.maxHeight = null;
                         });
+                        toggleAbstractButtons.forEach(control => control.setAttribute('aria-expanded', 'false'));
 
                         // Open the clicked one if it was previously closed
                         if (!isCurrentlyOpen) {
                             abstract.classList.add('open');
-                            abstract.style.maxHeight = abstract.scrollHeight + "px";
+                            this.setAttribute('aria-expanded', 'true');
 
                             // Track open event
                             const category = this.getAttribute('data-track-category') || 'dropdown';

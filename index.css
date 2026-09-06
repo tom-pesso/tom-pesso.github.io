@@ -1010,3 +1010,60 @@ summary::-webkit-details-marker {
 .site-footer a:hover {
   text-decoration: underline;
 }
+
+/* Job-market layout: one reading column, compact introduction, featured JMP. */
+body { overflow-x: visible; }
+.hero-title { font-size: 2.75rem; margin: 2rem 0 1rem; font-weight: 700; }
+.hero-mini-nav { gap: 1.75rem; flex-wrap: wrap; padding: 0 1.25rem; margin: 0 0 1.5rem; }
+.hero-mini-link { letter-spacing: 0; padding: 0.35rem 0; }
+.hero-mini-link:hover { text-decoration: underline; }
+.splash-intro { max-width: 60rem; padding: 0 2rem 1.75rem; margin: 0 auto; }
+.feature__wrapper { gap: 2.25rem; align-items: flex-start; }
+.feature__item--text { min-width: 0; }
+.feature__image { width: 220px; height: 250px; object-fit: cover; object-position: center; box-shadow: none; border-radius: 4px; }
+.page__title { font-size: 1.1rem; line-height: 1.5; }
+.splash-intro p { font-size: 1rem; line-height: 1.6; margin: 0.65rem 0; }
+.splash-intro .intro-secondary { font-size: 0.9rem; color: #526073; }
+.hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.hero-actions .btn-cv { background: #1f4b8e; color: white; padding: 0.55rem 0.9rem; }
+.hero-actions .btn-cv:hover { background: #163869; }
+main.max-w-4xl { max-width: 60rem; padding: 0 2rem; }
+.section { position: static; width: auto; margin: 0; padding: 1.75rem 0 0; }
+.section-inner { max-width: none; padding: 0; }
+h2.section-title { font-size: 1.35rem; margin-bottom: 1.25rem; }
+.card { margin: 0 0 1.5rem; padding: 0 0 0.75rem; }
+.job-market-paper { padding-left: 1.25rem; border-left: 3px solid #1f4b8e; }
+.job-market-paper .paper-title { font-size: 1.45rem; line-height: 1.4; }
+h3.paper-title, h3.wip-title, h3.course-title { line-height: 1.5; }
+.paper-summary { font-size: 1rem; line-height: 1.65; color: #374151; margin: 0.55rem 0 0.65rem; max-width: 76ch; }
+.paper-details { line-height: 1.65; }
+.job-market-paper > .paper-details:first-of-type { color: #1f4b8e; font-size: 0.9rem; }
+.draft-status { color: #526073; font-size: 0.9rem; }
+.btn { font-family: inherit; font-size: 0.875rem; padding: 0.4rem 0.65rem; line-height: 1.4; }
+.abstract { display: none; max-height: none; overflow: visible; opacity: 1; font-size: 1rem; transition: none; }
+.abstract.open { display: block; margin-top: 0.85rem; }
+.paper-history-note { font-size: 0.9rem; color: #526073; }
+.presentations-box { margin-top: 0.75rem; padding-top: 0.75rem; }
+.presentations-box .text-xs { font-size: 0.85rem; line-height: 1.6; }
+.presentation-pill { background: transparent; font-size: 0.85rem; padding: 0; line-height: 1.6; color: #526073; }
+.presentation-pill:not(:last-child)::after { content: ";"; margin-right: 0.25rem; }
+.site-footer { margin-top: 1.5rem; padding: 1.5rem 1rem; }
+a:focus-visible, button:focus-visible { outline: 3px solid #1f4b8e; outline-offset: 4px; }
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.25rem; margin-top: 1.5rem; }
+  .hero-mini-nav { gap: 0.25rem 1.25rem; }
+  .hero-mini-link { font-size: 0.9rem; }
+  .splash-intro { padding: 0 1.25rem 0.5rem; }
+  .feature__wrapper { gap: 1.25rem; }
+  .feature__item--text { order: -1; max-width: none; }
+  .feature__item--image { justify-content: flex-start; }
+  .feature__image { width: 140px; height: 150px; margin: 0; }
+  main.max-w-4xl { padding: 0 1.25rem; }
+  .job-market-paper { padding-left: 0.85rem; }
+  .job-market-paper .paper-title { font-size: 1.25rem; }
+  .hero-contact a { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
