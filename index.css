@@ -1,5 +1,7 @@
 /* === TEMPLATE === */
 
+:root { color-scheme: light; }
+
 /* === GLOBAL RESET / BASE === */
 *,
 *::before,
@@ -299,7 +301,7 @@ h2.section-title {
 }
 
 h3.paper-title,
-h3.course-title,
+.course-title,
 h3.wip-title {
   font-size: 1.1rem;
   font-weight: 600;
@@ -924,6 +926,12 @@ summary::-webkit-details-marker {
   padding-bottom: 0.5rem;
 }
 
+.paper-history-note {
+  margin: 0.75rem 0 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
 .btn {
   display: inline-block;
   padding: 0.2rem 0.6rem;
@@ -1005,12 +1013,175 @@ summary::-webkit-details-marker {
   text-decoration: underline;
 }
 
-/* ============================
-   JMP AWARD & NEWS STYLES
-   ============================ */
+/* Job-market layout: one reading column, compact introduction, featured JMP. */
+body { overflow-x: visible; }
+.hero-title { font-size: 2.75rem; margin: 2rem 0 1rem; font-weight: 700; }
+.hero-mini-nav { gap: 1.75rem; flex-wrap: wrap; padding: 0 1.25rem; margin: 0 0 1.5rem; }
+.hero-mini-link { letter-spacing: 0; padding: 0.35rem 0; }
+.hero-mini-link:hover { text-decoration: underline; }
+.splash-intro { max-width: 75rem; padding: 0 2rem 1.75rem; margin: 0 auto; }
+.feature__wrapper { gap: 2.25rem; align-items: center; }
+.feature__item--text { min-width: 0; }
+.feature__image { width: clamp(280px, 40vw, 500px); max-width: 100%; height: auto; box-shadow: none; border-radius: 6px; }
+.splash-intro p { font-size: 1rem; line-height: 1.6; margin: 0.65rem 0; }
+.hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.hero-actions .btn-cv { background: #1f4b8e; color: white; padding: 0.55rem 0.9rem; }
+.hero-actions .btn-cv:hover { background: #163869; }
+main.max-w-4xl { max-width: 60rem; padding: 0 2rem; }
+.section { position: static; width: auto; margin: 0; padding: 1.75rem 0 0; }
+.section-inner { max-width: none; padding: 0; }
+h2.section-title { font-size: 1.35rem; margin-bottom: 1.25rem; }
+.card { margin: 0 0 1.5rem; padding: 0 0 0.75rem; }
+.job-market-paper { padding-left: 1.25rem; border-left: 3px solid #1f4b8e; }
+.research-section { padding-top: 1.25rem; }
+.jmp-section { padding-top: 2rem; }
+.section + .section { padding-top: 2.25rem; }
+.research-section h2.section-title { margin-bottom: 1rem; }
+.research-section .card { margin-bottom: 0; padding-top: 0; padding-bottom: 1rem; }
+.research-section .card + .card { padding-top: 1rem; }
+.research-section .card:last-child { padding-bottom: 0.5rem; }
+.research-section .btn { font-size: 0.82rem; padding: 0.25rem 0.55rem; min-height: 32px; }
+h3.paper-title, h3.wip-title, .course-title { line-height: 1.5; }
+.teaching-institution { font-size: 1rem; font-weight: 600; color: #526073; margin: 1.25rem 0 0.35rem; }
+.card.card-teaching { margin: 0; padding: 0.65rem 0; border-bottom: 1px solid #e5e7eb; }
+.card-teaching:last-child { border-bottom: 0; }
+.course-header { display: flex; justify-content: space-between; align-items: baseline; gap: 0.25rem 1rem; }
+.card-teaching .course-title { min-width: 0; font-size: 1rem; line-height: 1.45; margin: 0; }
+.course-role { font-size: 0.8rem; font-weight: 400; color: #526073; white-space: nowrap; }
+.course-date { flex-shrink: 0; font-size: 0.85rem; color: #526073; white-space: nowrap; }
+.card-teaching .paper-details { display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem 0.45rem; margin-top: 0.2rem; font-size: 0.85rem; line-height: 1.5; }
+.course-instructors { flex: 1 1 20rem; }
+.card-teaching .btn { font-size: 0.78rem; padding: 0.15rem 0.45rem; min-height: 28px; margin: 0; }
+.card-teaching .abstract { font-size: 0.9rem; }
+.card-teaching .abstract.open { margin-top: 0.5rem; }
+.paper-summary { font-size: 0.9rem; line-height: 1.65; color: #374151; margin: 0.55rem 0 0.65rem; max-width: 76ch; }
+.paper-details { line-height: 1.65; }
+.job-market-paper > .paper-details:first-of-type { color: #1f4b8e; font-size: 0.9rem; }
+.draft-status { color: #526073; font-size: 0.9rem; }
+.btn { font-family: inherit; font-size: 0.875rem; padding: 0.4rem 0.65rem; line-height: 1.4; }
+.abstract { display: none; max-height: none; overflow: visible; opacity: 1; font-size: 1rem; transition: none; }
+.abstract.open { display: block; margin-top: 0.85rem; }
+.paper-history-note { font-size: 0.9rem; color: #526073; }
+.presentations-box { margin-top: 0.75rem; padding-top: 0.75rem; }
+.presentations-box .text-xs { font-size: 0.85rem; line-height: 1.6; }
+.presentation-pill { background: transparent; font-size: 0.85rem; padding: 0; line-height: 1.6; color: #526073; }
+a.presentation-pill { text-decoration: underline; text-decoration-color: #cbd5e1; text-underline-offset: 3px; }
+a.presentation-pill:hover { color: #1f4b8e; text-decoration-color: currentColor; }
+.presentation-pill:not(:last-child)::after { content: ";"; margin-right: 0.25rem; }
+.site-footer { margin-top: 1.5rem; padding: 1.5rem 1rem; }
+a:focus-visible, button:focus-visible { outline: 3px solid #1f4b8e; outline-offset: 4px; }
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.25rem; margin-top: 1.5rem; }
+  .hero-mini-nav { gap: 0.25rem 1.25rem; }
+  .hero-mini-link { font-size: 0.9rem; }
+  .splash-intro { padding: 0 1.25rem 0.5rem; }
+  .feature__wrapper { gap: 1.25rem; }
+  .feature__item--text { order: 0; max-width: none; }
+  .feature__item--image { justify-content: center; }
+  .feature__image { width: min(100%, 340px); height: auto; margin: 0; }
+  main.max-w-4xl { padding: 0 1.25rem; }
+  .job-market-paper { padding-left: 0.85rem; }
+  .hero-contact a { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+@media (max-width: 640px) {
+  .course-header { flex-direction: column; gap: 0.1rem; }
+  .course-instructors { flex-basis: 100%; }
+  .card-teaching .btn { min-height: 32px; }
+}
 
-.news-label {
-  color: #ae010f; /* rich red matching the uploaded color sample */
-  font-weight: 700;
-  margin-right: 0.25rem;
+/* Optional dark palette. Keep geometry and the original light design intact. */
+.theme-toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: max(1rem, calc((100% - 75rem) / 2));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 44px;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: #526073;
+  font: 400 0.8rem/1.4 'Inter', system-ui, sans-serif;
+  cursor: pointer;
+}
+.theme-toggle[hidden] { display: none; }
+.theme-toggle:hover { background: #f3f4f6; }
+
+@media screen {
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --night-bg: #171c23;
+    --night-heading: #eeece7;
+    --night-text: #ced1d5;
+    --night-muted: #a6afb9;
+    --night-blue: #9dbce5;
+    --night-rule: #38434f;
+    --night-hover: #232e3b;
+  }
+  [data-theme="dark"] body,
+  [data-theme="dark"] .splash-intro,
+  [data-theme="dark"] .section { background: var(--night-bg); color: var(--night-text); }
+  [data-theme="dark"] .hero-title,
+  [data-theme="dark"] h2.section-title,
+  [data-theme="dark"] .paper-title,
+  [data-theme="dark"] .wip-title,
+  [data-theme="dark"] .course-title { color: var(--night-heading); }
+  [data-theme="dark"] .splash-intro p,
+  [data-theme="dark"] .paper-details,
+  [data-theme="dark"] .paper-summary,
+  [data-theme="dark"] .abstract,
+  [data-theme="dark"] .text-gray-700 { color: var(--night-text); }
+  [data-theme="dark"] .text-gray-600,
+  [data-theme="dark"] .paper-history-note,
+  [data-theme="dark"] .paper-source,
+  [data-theme="dark"] .presentation-pill,
+  [data-theme="dark"] .teaching-institution,
+  [data-theme="dark"] .course-role,
+  [data-theme="dark"] .course-date,
+  [data-theme="dark"] .draft-status,
+  [data-theme="dark"] .site-footer,
+  [data-theme="dark"] .theme-toggle { color: var(--night-muted); }
+  [data-theme="dark"] .link-coauthor { color: var(--night-muted) !important; }
+  [data-theme="dark"] .link-email { color: var(--night-blue) !important; }
+  [data-theme="dark"] .hero-mini-link,
+  [data-theme="dark"] .page__lead a,
+  [data-theme="dark"] .site-footer a,
+  [data-theme="dark"] a.presentation-pill:hover,
+  [data-theme="dark"] .job-market-paper > .paper-details:first-of-type { color: var(--night-blue); }
+  [data-theme="dark"] h2.section-title,
+  [data-theme="dark"] .card-teaching,
+  [data-theme="dark"] .presentations-box,
+  [data-theme="dark"] .site-footer { border-color: var(--night-rule); }
+  [data-theme="dark"] .job-market-paper { border-color: var(--night-blue); }
+  [data-theme="dark"] .abstract { border-color: #607d9f; }
+  [data-theme="dark"] a.presentation-pill { text-decoration-color: #607080; }
+  [data-theme="dark"] .btn,
+  [data-theme="dark"] .btn-pdf {
+    background: transparent;
+    color: var(--night-blue);
+    border-color: #607d9f;
+  }
+  [data-theme="dark"] .btn:hover,
+  [data-theme="dark"] .btn-pdf:hover,
+  [data-theme="dark"] .theme-toggle:hover { background: var(--night-hover); border-color: var(--night-blue); }
+  [data-theme="dark"] .hero-actions .btn-cv {
+    background: var(--night-blue);
+    border-color: var(--night-blue);
+    color: var(--night-bg);
+  }
+  [data-theme="dark"] .hero-actions .btn-cv:hover { background: #bad0ed; border-color: #bad0ed; }
+  [data-theme="dark"] a:focus-visible,
+  [data-theme="dark"] button:focus-visible { outline-color: var(--night-blue); }
+  [data-theme="dark"] ::selection { background: #354e6d; color: #fff; }
+}
+@media print {
+  :root { color-scheme: light; }
+  .theme-toggle { display: none; }
 }

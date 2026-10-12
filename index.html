@@ -3,6 +3,17 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="color-scheme" content="light dark">
+    <script>
+        // Set the theme before the page paints to avoid a flash on return visits.
+        (function () {
+            let savedTheme;
+            try { savedTheme = localStorage.getItem('tom-pesso-theme'); } catch (_) {}
+            document.documentElement.dataset.theme = savedTheme === 'light' || savedTheme === 'dark'
+                ? savedTheme
+                : 'light';
+        })();
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV87M1VLDK"></script>
@@ -14,7 +25,9 @@
         gtag('config', 'G-ZV87M1VLDK');
     </script>
 
-    <title>Tom Pesso</title>
+    <title>Tom Pesso | Economics · UPF</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=20261012">
+    <meta name="description" content="Tom Pesso, economics Ph.D. candidate at UPF and BSE. Research in applied macroeconomics and econometrics. On the 2026–2027 academic job market.">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,11 +37,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Elliot's Style v2 -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css?v=20261012-dark-mode">
 </head>
 
 <body>
     <div class="page-wrapper">
+        <button class="theme-toggle" type="button" aria-pressed="false" hidden>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.5" />
+                <path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" />
+            </svg>
+            <span>dark mode</span>
+        </button>
 
         <!-- HERO TITLE -->
         <div class="text-center mt-12 mb-6">
@@ -39,10 +59,10 @@
 
         <!-- HERO MICRO-NAV -->
         <nav class="hero-mini-nav">
-            <a href="#working-papers" class="hero-mini-link">Working Papers</a>
-            <a href="#wip" class="hero-mini-link">Work in Progress</a>
+            <a href="#jmp-paper" class="hero-mini-link">Job Market Paper</a>
+            <a href="#working-papers" class="hero-mini-link">Research</a>
             <a href="#teaching" class="hero-mini-link">Teaching</a>
-            <a href="https://tom-pesso.github.io/files/CV-TomPesso.pdf" class="hero-mini-link" target="_blank"
+            <a href="files/CV-TomPesso.pdf" class="hero-mini-link" target="_blank"
                 data-track-category="CV" data-track-action="download" data-track-label="hero_nav">
                 CV
             </a>
@@ -54,53 +74,49 @@
 
                 <!-- === Left: Image === -->
                 <div class="feature__item feature__item--image">
-                    <img src="images/about_picture.jpeg" alt="Tom Pesso" class="feature__image" loading="lazy">
+                    <img src="images/about_picture.jpeg" alt="Tom Pesso" class="feature__image" fetchpriority="high">
                 </div>
 
                 <!-- === Right: Text === -->
                 <div class="feature__item feature__item--text">
 
-                    <h2 class="page__title">Welcome to my website!</h2>
-
                     <p class="page__lead">
-                        <strong>I will be on the 2026–2027 academic job market.</strong>
-                    </p>
-
-                    <p class="page__lead">
-                        <span class="news-label">News:</span> My Job Market Paper, <a href="#jmp-paper">"Probabilistic Narrative Identification: Evidence from Tax Policy"</a>, has been awarded the <strong>Best Graduate Paper Award</strong> at the <strong>IAAE 2026 Annual Conference</strong>.
+                        <strong>2026–2027 academic job market</strong>
                     </p>
 
                     <p class="page__lead">
                         I am a Ph.D. candidate in Economics at Universitat Pompeu Fabra (UPF)
-                        and Barcelona School of Economics (BSE), under the supervision of
+                        and Barcelona School of Economics (BSE).
+                    </p>
+
+                    <p class="page__lead">
+                        I am an applied macroeconomist with research interests in econometrics.
+                    </p>
+
+                    <p class="page__lead">
+                        My advisers are
                         <a href="https://www.geertmesters.com/" target="_blank" data-track-category="supervisor"
                             data-track-action="click" data-track-label="Geert Mesters">Prof. Geert Mesters</a>
                         and
                         <a href="https://crei.cat/people/davide-debortoli-2/" target="_blank"
                             data-track-category="supervisor" data-track-action="click"
                             data-track-label="Davide Debortoli">Prof. Davide
-                            Debortoli</a>.
-                    </p>
-
-                    <p class="page__lead">
-                        In 2024, I spent four months as a Ph.D. trainee in the Fiscal Policies Division at the European Central Bank (ECB).
-                    </p>
-
-                    <p class="page__lead">
-                        My research interests are in Applied Macroeconomics, with a focus on Fiscal Policy and Macroeconometrics. I am particularly interested in the identification of policy impact and estimating nonlinear macroeconomic responses.
+                            Debortoli</a>. In 2023, I spent four months as a Ph.D. trainee in the Fiscal Policies
+                        Division at the European Central Bank (ECB).
+                        I came to economics from an engineering background.
                     </p>
 
                     <p class="hero-contact">
-                        <b>Contact:</b>
-                        <a href="mailto:tom.pesso@upf.edu" class="link-email">tom.pesso@upf.edu</a>
+                        Always happy to discuss research. Reach me at
+                        <a href="mailto:tom.pesso@upf.edu" class="link-email">tom.pesso@upf.edu</a>.
                     </p>
 
                     <!-- CV Button -->
-                    <p style="display: flex; gap: 0.5rem; margin-top: 1rem;">
-                        <a href="https://tom-pesso.github.io/files/CV-TomPesso.pdf" target="_blank" class="btn-cv"
+                    <p class="hero-actions">
+                        <a href="files/CV-TomPesso.pdf" target="_blank" class="btn-cv"
                             data-cv-download data-track-category="CV" data-track-action="download"
                             data-track-label="intro_button">
-                            CV
+                            Download CV
                         </a>
                     </p>
 
@@ -115,9 +131,9 @@
             <!-- ============================
            WORKING PAPERS
            ============================ -->
-            <section class="section" id="working-papers">
+            <section class="section research-section jmp-section" aria-labelledby="jmp-heading">
                 <div class="section-inner">
-                    <h2 class="section-title">Working Papers</h2>
+                    <h2 class="section-title" id="jmp-heading">Job Market Paper</h2>
             
                     <!-- Paper 1 -->
                     <!-- Job Market Paper -->
@@ -128,62 +144,76 @@
         </h3>
     
         <div class="paper-details">
-            Job Market Paper • Winner of the IAAE 2026 Best Graduate Paper Award
+            Winner of the International Association for Applied Econometrics (IAAE) 2026 Best Graduate Paper Award
         </div>
-        
+
         <div class="paper-details" style="margin-top: 0.25rem;">
-            <a href="#" class="btn toggle-abstract" data-track-category="paper"
+            <button type="button" class="btn toggle-abstract" data-track-category="paper"
                 data-track-action="toggle_abstract"
-                data-track-label="jmp_narrative_2026">abstract</a>
-            <span class="separator">|</span> Draft available Fall 2026
+                data-track-label="jmp_narrative_2026">abstract</button>
+            <a href="files/JMP_TomPesso.pdf" class="btn" target="_blank"
+                data-track-category="paper" data-track-action="download"
+                data-track-label="jmp_narrative_2026">job market paper</a>
+            <a href="files/JMP_OnlineAppendix_TomPesso.pdf" class="btn" target="_blank"
+                data-track-category="paper" data-track-action="download"
+                data-track-label="jmp_online_appendix_2026">online appendix</a>
         </div>
         
         <div class="abstract">
             <p>
-                This paper generalizes narrative identification by interpreting documentary classifications as probabilistic information about latent exogeneity. Traditional narrative approaches treat selected policy actions as fully exogenous, implicitly imposing a zero-contamination restriction on a chosen subset of observations. Instead, I treat exogeneity as a latent binary attribute and use narrative evidence to construct a probability that a policy action belongs to the exogenous class. Identification proceeds at the level of reduced-form moments: variation in narrative support disciplines outcome–policy comovement, allowing the orthogonal-class moment to be recovered. I construct this probability with a document-grounded language-model procedure that retrieves policy-specific passages, extracts stated motivations, and maps those motivations into exogeneity probabilities.
+                This paper develops a probabilistic approach to narrative identification. Traditional narrative studies retain policy actions classified as exogenous and exclude the remainder from identification. I instead assign each action a probability of exogeneity, allowing the broader policy record to remain informative. Variation in this probability allows policy actions to be reweighted so that the endogenous component cancels, recovering the component associated with exogenous policy. I construct these probabilities through a replicable mapping from policy documents using large language models. Applied to the canonical tax-policy sample of Romer and Romer (2010), the framework yields an estimated medium-run GDP contraction about two-thirds smaller than under binary selection. I then extend the analysis to indirect taxation by constructing two new datasets of U.S. budget and French VAT proposals. VAT illustrates how probabilistic identification makes narrative analysis feasible when binary selection leaves too little credible identifying variation. Together, the applications reveal contrasting transmission patterns: U.S. tax increases lower output and inflation, with similar consumption and investment contributions to the GDP decline, whereas VAT increases initially raise prices and contract output, with consumption contributing more than investment.
             </p>
-            <p>
-                Empirically, I first validate the measure against the benchmark classifications of Romer and Romer (2010) and Cloyne (2013). I then construct a new dataset of routine U.S. federal tax actions. The resulting aggregate tax responses are contractionary, closely aligned with the canonical narrative tax literature, and operate mainly through investment. Finally, I construct a new narrative dataset of French VAT changes from 1960 to 2024 and combine it with UK VAT changes from Cloyne’s dataset. The pooled UK–France evidence provides the indirect-tax counterpart: VAT increases contract output mainly through private consumption and generate a short-lived rise in inflation, consistent with tax pass-through.
-            </p>
+            <div class="mt-4 pt-4 border-t border-gray-300 bg-white presentations-box">
+                <div class="flex flex-wrap gap-1 items-center">
+                    <span class="text-xs text-gray-700 font-semibold mr-1">Presentations (2026):</span>
+                    <a class="presentation-pill" href="https://editorialexpress.com/conference/SED2026/program/SED2026.html" target="_blank" rel="noopener noreferrer" title="Conference programme">SED Annual Meeting (Athens)</a>
+                    <a class="presentation-pill" href="https://editorialexpress.com/conference/IAAE2026/program/IAAE2026.html" target="_blank" rel="noopener noreferrer" title="Conference programme">IAAE Annual Conference (Lisbon)</a>
+                    <a class="presentation-pill" href="https://www.uea.ac.uk/about/school-of-economics/events/workshops/time-series-workshop" target="_blank" rel="noopener noreferrer" title="Official workshop page">UEA Time Series Workshop (Norwich)</a>
+                    <a class="presentation-pill" href="https://eea-esem-congresses.org/sessions/inference-proxy-svars" target="_blank" rel="noopener noreferrer" title="Conference session programme">Econometric Society European Meeting (Dublin)</a>
+                    <a class="presentation-pill" href="https://crei.cat/seminars/macroeconomics-breakfast/" target="_blank" rel="noopener noreferrer" title="Seminar schedule">CREI Macroeconomics Lunch Seminar (Barcelona)</a>
+                    <span class="presentation-pill">UPF Internal Econometrics Seminar</span>
+                </div>
+            </div>
         </div>
     </article>
+                </div>
+            </section>
+
+            <section class="section research-section" id="working-papers" aria-labelledby="research-heading">
+                <div class="section-inner">
+                    <h2 class="section-title" id="research-heading">Other Working Papers</h2>
                     <article class="card">
                         <h3 class="paper-title">
-                            Fiscal Multiplier: the Size of the Shock Matters
+                            Local Linear Local Projections: Estimating Shock-Size Heterogeneity
                         </h3>
+                        <p class="paper-summary">How do the effects of economic shocks vary with their size and sign? This paper develops a flexible method to study nonlinear shock responses and clarifies when the estimates have a causal interpretation.</p>
                         <div class="paper-details">
-                            <a href="#" class="btn toggle-abstract" data-track-category="paper"
+                            <button type="button" class="btn toggle-abstract" data-track-category="paper"
                                 data-track-action="toggle_abstract"
-                                data-track-label="fiscal_multiplier_2024">abstract</a>
-                            <span class="separator">|</span> Updated draft coming soon
+                                data-track-label="ll_lp_2026">abstract</button>
+                            <a href="files/Tom_Pesso_Local_Linear_Local_Projections.pdf" class="btn" target="_blank"
+                                data-track-category="paper" data-track-action="download"
+                                data-track-label="ll_lp_2026">paper</a>
                         </div>
                         <div class="abstract">
                             <p>
-                                This paper studies the impact of the sign and magnitude of fiscal shocks on the
-                                fiscal multiplier.
-                                Through a theoretical examination, it highlights the significance of both the sign
-                                and magnitude
-                                of the shock in determining the multiplier. The study introduces a new empirical
-                                methodology,
-                                the Local Linear Local Projection, to detect complex non-linear patterns. When
-                                applied to US data,
-                                the methodology reveals that the degree of nonlinearity captured in the data varies
-                                with the
-                                identification strategy employed. Notably, zero does not appear to be a significant
-                                tipping point
-                                in the nonlinearity of the fiscal multiplier.
+                                Do large shocks propagate differently from small ones, and do positive and negative shocks have the same effects? A nonlinear response to the initial shock can reflect either a direct nonlinear effect of the shock or propagation through economic conditions changed by the shock. I show that these mechanisms are generally observationally equivalent from the response curve alone: distinguishing them requires additional information on the propagation mechanism. Rather than seeking to identify which mechanism generates the nonlinearity, I take a local perspective, asking how the response to a marginal change in the shock varies across shock values and when this response has a causal interpretation. I propose Local Linear Local Projections (LL-LP) to trace this variation without imposing bins, thresholds, or a global nonlinear functional form. I show how conventional linear projections and specifications that split shocks by sign or size provide different summaries of the underlying slope curve. The framework also provides a basis for testing sign and size nonlinearities separately while allowing the shock distribution to be asymmetric.
+                            </p>
+
+                            <p class="paper-history-note">
+                                <strong>Earlier versions were presented or circulated as:</strong> <em>Fiscal Multiplier: the Size of the Shock Matters.</em>
                             </p>
 
                             <div class="mt-4 pt-4 border-t border-gray-300 bg-white presentations-box">
                                 <div class="flex flex-wrap gap-1 items-center">
-                                    <span class="text-xs text-gray-700 font-semibold mr-1">Presentations:</span>
-                                    <span class="presentation-pill">EEA (2025)</span>
-                                    <span class="presentation-pill">IAAE (2025)</span>
-                                    <span class="presentation-pill">EWMES (2024)</span>
-                                    <span class="presentation-pill">BSE Summer Forum (2024, poster)</span>
-                                    <span class="presentation-pill">CREi Internal Seminar (2023, 2022)</span>
+                                    <span class="text-xs text-gray-700 font-semibold mr-1">Presentations of earlier versions:</span>
+                                    <a class="presentation-pill" href="https://eea2025.org/sessions/macroeconomic-risks" target="_blank" rel="noopener noreferrer" title="Conference session programme">EEA (2025)</a>
+                                    <a class="presentation-pill" href="https://editorialexpress.com/conference/IAAE2025/program/IAAE2025.html" target="_blank" rel="noopener noreferrer" title="Conference programme">IAAE (2025)</a>
+                                    <a class="presentation-pill" href="https://editorialexpress.com/conference/EWMES2024/program/EWMES2024.html" target="_blank" rel="noopener noreferrer" title="Conference programme">EWMES (2024)</a>
+                                    <a class="presentation-pill" href="https://events.bse.eu/live/files/4959-sf2024-program-macroeconometrics-and-policy" target="_blank" rel="noopener noreferrer" title="Macroeconometrics and Policy programme: poster session">BSE Summer Forum (2024, poster)</a>
+                                    <a class="presentation-pill" href="https://crei.cat/seminars/macroeconomics-breakfast/" target="_blank" rel="noopener noreferrer" title="Seminar archive: select academic year 2022 - 2023 for the May 2023 presentation">CREi Internal Seminar (2023, 2022)</a>
                                     <span class="presentation-pill">UPF Internal Econometrics Seminar (2023)</span>
-                                    <span class="presentation-pill">BSE PhD Jamboree (2023)</span>
+                                    <a class="presentation-pill" href="https://events.bse.eu/live/files/4929-phd-jamboree-program-2024-1pdf" target="_blank" rel="noopener noreferrer" title="Conference programme">BSE PhD Jamboree (2024)</a>
                                 </div>
                             </div>
                         </div>
@@ -199,10 +229,10 @@
                                 href="https://www.ecb.europa.eu/pub/research/authors/profiles/cristina-checherita-westphal.en.html"
                                 target="_blank" class="link-coauthor" data-track-category="coauthor"
                                 data-track-action="click" data-track-label="C. Checherita-Westphal">C.
-                                Checherita-Westphal</a> <span class="separator">|</span> <em class="paper-source">ECB Working Paper – Internship Research Project (4 months)</em><br>
-                            <a href="#" class="btn toggle-abstract" data-track-category="paper"
+                                Checherita-Westphal</a> <span class="separator">|</span> <em class="paper-source">ECB Working Paper</em><br>
+                            <button type="button" class="btn toggle-abstract" data-track-category="paper"
                                 data-track-action="toggle_abstract"
-                                data-track-label="fiscal_policy_inflation_2024">abstract</a> <a
+                                data-track-label="fiscal_policy_inflation_2024">abstract</button> <a
                                 href="https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2996~5e4df9c08d.en.pdf" class="btn"
                                 target="_blank" data-track-category="paper" data-track-action="download"
                                 data-track-label="fiscal_policy_inflation_2024">paper</a>
@@ -235,7 +265,7 @@
             <!-- ============================
            WORK IN PROGRESS
            ============================ -->
-            <section class="section" id="wip">
+            <section class="section research-section" id="wip">
                 <div class="section-inner">
                     <h2 class="section-title">Work in Progress</h2>
 
@@ -264,16 +294,19 @@
                 <div class="section-inner">
                     <h2 class="section-title">Teaching</h2>
 
+                    <h3 class="teaching-institution">Barcelona School of Economics</h3>
+
                     <!-- Course 1 -->
                     <article class="card card-teaching">
-                        <h3 class="course-title">
-                            Fiscal Policy — Graduate TA
-                        </h3>
+                        <div class="course-header">
+                            <h4 class="course-title">Fiscal Policy <span class="course-role">— Graduate TA</span></h4>
+                            <span class="course-date">2024–2026</span>
+                        </div>
                         <div class="paper-details">
-                            for Prof. Davide Debortoli — 2023/2026, Barcelona School of Economics<br>
-                            <a href="#" class="btn toggle-abstract" data-track-category="teaching"
-                                data-track-action="toggle_details" data-track-label="fiscal_policy_ta">details</a>
-                            <a href="https://tom-pesso.github.io/files/12M013-fiscal-policy.pdf"
+                            <span class="course-instructors">Prof. Davide Debortoli</span>
+                            <button type="button" class="btn toggle-abstract" data-track-category="teaching"
+                                data-track-action="toggle_details" data-track-label="fiscal_policy_ta">details</button>
+                            <a href="files/12M013-fiscal-policy.pdf"
                                 target="_blank" class="btn" data-track-category="teaching"
                                 data-track-action="download_syllabus"
                                 data-track-label="fiscal_policy_ta">syllabus</a>
@@ -293,21 +326,18 @@
 
                     <!-- Course 2 -->
                     <article class="card card-teaching">
-                        <h3 class="course-title">
-                            Causal Inference &amp; Panel Data — Graduate TA + Summer School TA
-                        </h3>
+                        <div class="course-header">
+                            <h4 class="course-title">Econometric Methods II: Panel Data and Causal Inference <span class="course-role">— Graduate TA</span></h4>
+                            <span class="course-date">2022–2023</span>
+                        </div>
                         <div class="paper-details">
-                            for Prof. Albrecht Glitz — 2021/2022 &amp; 2022/2023, Barcelona School of Economics<br>
-                            <a href="#" class="btn toggle-abstract" data-track-category="teaching"
-                                data-track-action="toggle_details" data-track-label="causal_inference_ta">details</a>
-                            <a href="https://tom-pesso.github.io/files/12e016-econometric-methods-ii.pdf"
+                            <span class="course-instructors">Prof. Albrecht Glitz (2022) and Prof. Geert Mesters (2023)</span>
+                            <button type="button" class="btn toggle-abstract" data-track-category="teaching"
+                                data-track-action="toggle_details" data-track-label="causal_inference_ta">details</button>
+                            <a href="files/12e016-econometric-methods-ii.pdf"
                                 target="_blank" class="btn" data-track-category="teaching"
                                 data-track-action="download_syllabus"
                                 data-track-label="causal_inference_ta">syllabus</a>
-                            <a href="https://bse.eu/summer-school/microeconometrics" target="_blank" class="btn"
-                                data-track-category="teaching" data-track-action="click_link"
-                                data-track-label="summer_school_microeconometrics">summer
-                                school</a>
                         </div>
                         <div class="abstract">
                             <div class="course-content-box">
@@ -322,6 +352,57 @@
                         </div>
                     </article>
 
+                    <article class="card card-teaching">
+                        <div class="course-header">
+                            <h4 class="course-title">Macroeconomics II: Monetary Policy <span class="course-role">— Graduate TA</span></h4>
+                            <span class="course-date">2023</span>
+                        </div>
+                        <div class="paper-details">
+                            <span class="course-instructors">Prof. Luca Fornaro and Prof. Mishel Ghassibe</span>
+                            <button type="button" class="btn toggle-abstract" data-track-category="teaching"
+                                data-track-action="toggle_details" data-track-label="macroeconomics_ii_ta">details</button>
+                            <a href="files/14e025-macroeconomics-ii.pdf" target="_blank" class="btn"
+                                data-track-category="teaching" data-track-action="download_syllabus"
+                                data-track-label="macroeconomics_ii_ta">syllabus</a>
+                        </div>
+                        <div class="abstract">
+                            <div class="course-content-box">
+                                <ul>
+                                    <li>Intertemporal choice, consumption, and precautionary saving</li>
+                                    <li>Real business cycles, fiscal policy, and aggregate fluctuations</li>
+                                    <li>Heterogeneity and granularity</li>
+                                    <li>Price and wage rigidities, the New Keynesian framework, and optimal monetary policy</li>
+                                    <li>Liquidity traps, unconventional monetary policy, financial crises, and inflation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card-teaching">
+                        <div class="course-header">
+                            <h4 class="course-title">Quantitative Methods for Public Policy Evaluation <span class="course-role">— Summer School TA</span></h4>
+                            <span class="course-date">Summer 2022</span>
+                        </div>
+                        <div class="paper-details">
+                            <span class="course-instructors">Prof. Albrecht Glitz</span>
+                            <a href="https://bse.eu/summer-school/microeconometrics" target="_blank" class="btn"
+                                data-track-category="teaching" data-track-action="click_link"
+                                data-track-label="summer_school_microeconometrics">summer school</a>
+                        </div>
+                    </article>
+
+                    <h3 class="teaching-institution">Universitat Pompeu Fabra</h3>
+
+                    <article class="card card-teaching">
+                        <div class="course-header">
+                            <h4 class="course-title">Macroeconomics I <span class="course-role">— Undergraduate TA</span></h4>
+                            <span class="course-date">2022</span>
+                        </div>
+                        <div class="paper-details">
+                            <span class="course-instructors">Prof. Isaac Baley and other instructors</span>
+                        </div>
+                    </article>
+
                 </div>
             </section>
 
@@ -330,6 +411,19 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            const themeToggle = document.querySelector('.theme-toggle');
+            function applyTheme(theme) {
+                document.documentElement.dataset.theme = theme;
+                themeToggle.setAttribute('aria-pressed', String(theme === 'dark'));
+            }
+            applyTheme(document.documentElement.dataset.theme);
+            themeToggle.hidden = false;
+            themeToggle.addEventListener('click', function () {
+                const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+                applyTheme(theme);
+                try { localStorage.setItem('tom-pesso-theme', theme); } catch (_) {}
+            });
+
             // --- Google Analytics Tracking Helper ---
             function trackEvent(eventName, params) {
                 if (typeof gtag === 'function') {
@@ -357,7 +451,11 @@
             // --- Dropdown Logic with Tracking ---
             const toggleAbstractButtons = document.querySelectorAll('.toggle-abstract');
 
-            toggleAbstractButtons.forEach(button => {
+            toggleAbstractButtons.forEach((button, index) => {
+                const panel = button.closest('.paper-details').nextElementSibling;
+                panel.id = 'abstract-panel-' + index;
+                button.setAttribute('aria-controls', panel.id);
+                button.setAttribute('aria-expanded', 'false');
                 button.addEventListener('click', function (e) {
                     e.preventDefault();
                     const paperDetails = this.closest('.paper-details');
@@ -369,13 +467,13 @@
                         // Close all abstracts
                         document.querySelectorAll('.abstract').forEach(elem => {
                             elem.classList.remove('open');
-                            elem.style.maxHeight = null;
                         });
+                        toggleAbstractButtons.forEach(control => control.setAttribute('aria-expanded', 'false'));
 
                         // Open the clicked one if it was previously closed
                         if (!isCurrentlyOpen) {
                             abstract.classList.add('open');
-                            abstract.style.maxHeight = abstract.scrollHeight + "px";
+                            this.setAttribute('aria-expanded', 'true');
 
                             // Track open event
                             const category = this.getAttribute('data-track-category') || 'dropdown';
