@@ -1051,7 +1051,7 @@ h3.paper-title, h3.wip-title, .course-title { line-height: 1.5; }
 .course-date { flex-shrink: 0; font-size: 0.85rem; color: #526073; white-space: nowrap; }
 .card-teaching .paper-details { display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem 0.45rem; margin-top: 0.2rem; font-size: 0.85rem; line-height: 1.5; }
 .course-instructors { flex: 1 1 20rem; }
-.card-teaching .btn { font-size: 0.78rem; padding: 0.15rem 0.45rem; min-height: 28px; margin: 0; }
+.card-teaching .paper-details .btn { font-size: 0.78rem; padding: 0.15rem 0.45rem; min-height: 28px; margin: 0; }
 .card-teaching .abstract { font-size: 0.9rem; }
 .card-teaching .abstract.open { margin-top: 0.5rem; }
 .paper-summary { font-size: 0.9rem; line-height: 1.65; color: #374151; margin: 0.55rem 0 0.65rem; max-width: 76ch; }
@@ -1059,6 +1059,14 @@ h3.paper-title, h3.wip-title, .course-title { line-height: 1.5; }
 .job-market-paper > .paper-details:first-of-type { color: #1f4b8e; font-size: 0.9rem; }
 .draft-status { color: #526073; font-size: 0.9rem; }
 .btn { font-family: inherit; font-size: 0.875rem; padding: 0.4rem 0.65rem; line-height: 1.4; }
+.btn, .paper-details a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.paper-details .paper-source { display: inline-block; white-space: nowrap; }
+.paper-publication { display: inline-block; white-space: nowrap; }
 .abstract { display: none; max-height: none; overflow: visible; opacity: 1; font-size: 1rem; transition: none; }
 .abstract.open { display: block; margin-top: 0.85rem; }
 .paper-history-note { font-size: 0.9rem; color: #526073; }
@@ -1088,9 +1096,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1f4b8e; outline-offs
   *, *::before, *::after { transition: none !important; }
 }
 @media (max-width: 640px) {
-  .course-header { flex-direction: column; gap: 0.1rem; }
+  .paper-publication .separator { display: none; }
+  .course-header { flex-direction: row; flex-wrap: wrap; justify-content: flex-start; gap: 0.1rem 0.65rem; }
   .course-instructors { flex-basis: 100%; }
-  .card-teaching .btn { min-height: 32px; }
+  .card-teaching .paper-details .btn { min-height: 32px; }
 }
 
 /* Optional dark palette. Keep geometry and the original light design intact. */
