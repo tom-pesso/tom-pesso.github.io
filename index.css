@@ -1035,6 +1035,7 @@ h2.section-title { font-size: 1.35rem; margin-bottom: 1.25rem; }
 .job-market-paper { padding-left: 1.25rem; border-left: 3px solid #1f4b8e; }
 .research-section { padding-top: 1.25rem; }
 .jmp-section { padding-top: 2rem; }
+#jmp-heading { scroll-margin-top: 1.25rem; }
 .section + .section { padding-top: 2.25rem; }
 .research-section h2.section-title { margin-bottom: 1rem; }
 .research-section .card { margin-bottom: 0; padding-top: 0; padding-bottom: 1rem; }
