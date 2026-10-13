@@ -1019,10 +1019,10 @@ body { overflow-x: visible; }
 .hero-mini-nav { gap: 1.75rem; flex-wrap: wrap; padding: 0 1.25rem; margin: 0 0 1.5rem; }
 .hero-mini-link { letter-spacing: 0; padding: 0.35rem 0; }
 .hero-mini-link:hover { text-decoration: underline; }
-.splash-intro { max-width: 75rem; padding: 0 2rem 1.75rem; margin: 0 auto; }
-.feature__wrapper { gap: 2.25rem; align-items: center; }
+.splash-intro { max-width: 60rem; padding: 0 2rem 1.75rem; margin: 0 auto; }
+.feature__wrapper { gap: 2.75rem; align-items: center; }
 .feature__item--text { min-width: 0; }
-.feature__image { width: clamp(280px, 40vw, 500px); max-width: 100%; height: auto; box-shadow: none; border-radius: 6px; }
+.feature__image { width: clamp(280px, 30vw, 310px); max-width: 100%; height: auto; box-shadow: none; border-radius: 6px; }
 .splash-intro p { font-size: 1rem; line-height: 1.6; margin: 0.65rem 0; }
 .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 .hero-actions .btn-cv { background: #1f4b8e; color: white; padding: 0.55rem 0.9rem; }
@@ -1087,7 +1087,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1f4b8e; outline-offs
   .feature__wrapper { gap: 1.25rem; }
   .feature__item--text { order: 0; max-width: none; }
   .feature__item--image { justify-content: center; }
-  .feature__image { width: min(100%, 340px); height: auto; margin: 0; }
+  .feature__image { width: min(100%, 310px); height: auto; margin: 0; }
   main.max-w-4xl { padding: 0 1.25rem; }
   .job-market-paper { padding-left: 0.85rem; }
   .hero-contact a { overflow-wrap: anywhere; }
