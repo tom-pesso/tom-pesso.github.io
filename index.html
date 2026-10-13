@@ -74,7 +74,7 @@
 
                 <!-- === Left: Image === -->
                 <div class="feature__item feature__item--image">
-                    <img src="images/about_picture_candidate.jpg" alt="Tom Pesso" class="feature__image" fetchpriority="high">
+                    <img src="images/about_picture_candidate.jpg" data-light-src="images/about_picture_candidate.jpg" data-dark-src="images/about_picture_dark.jpg" alt="Tom Pesso" class="feature__image" fetchpriority="high" width="1333" height="2000">
                 </div>
 
                 <!-- === Right: Text === -->
@@ -412,9 +412,11 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const themeToggle = document.querySelector('.theme-toggle');
+            const portrait = document.querySelector('.feature__image');
             function applyTheme(theme) {
                 document.documentElement.dataset.theme = theme;
                 themeToggle.setAttribute('aria-pressed', String(theme === 'dark'));
+                portrait.src = theme === 'dark' ? portrait.dataset.darkSrc : portrait.dataset.lightSrc;
             }
             applyTheme(document.documentElement.dataset.theme);
             themeToggle.hidden = false;
