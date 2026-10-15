@@ -47,7 +47,7 @@
                 <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.5" />
                 <path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" />
             </svg>
-            <span>dark mode</span>
+            <span class="theme-label">dark mode</span>
         </button>
 
         <!-- HERO TITLE -->
@@ -74,7 +74,17 @@
 
                 <!-- === Left: Image === -->
                 <div class="feature__item feature__item--image">
-                    <img src="images/about_picture_candidate.jpg" data-light-src="images/about_picture_candidate.jpg" data-dark-src="images/about_picture_dark.jpg" alt="Tom Pesso" class="feature__image" fetchpriority="high" width="1333" height="2000">
+                    <img data-light-src="images/portrait-light.jpg" data-dark-src="images/portrait-dark.jpg" alt="Tom Pesso" class="feature__image" fetchpriority="high" width="640" height="960" hidden>
+                    <script>
+                        // Request only the portrait for the theme selected before the page paints.
+                        (function () {
+                            const portrait = document.querySelector('.feature__image');
+                            portrait.src = document.documentElement.dataset.theme === 'dark'
+                                ? portrait.dataset.darkSrc : portrait.dataset.lightSrc;
+                            portrait.hidden = false;
+                        })();
+                    </script>
+                    <noscript><img src="images/portrait-light.jpg" alt="Tom Pesso" class="feature__image" fetchpriority="high" width="640" height="960"></noscript>
                 </div>
 
                 <!-- === Right: Text === -->
@@ -412,6 +422,7 @@
             function applyTheme(theme) {
                 document.documentElement.dataset.theme = theme;
                 themeToggle.setAttribute('aria-pressed', String(theme === 'dark'));
+                themeToggle.querySelector('.theme-label').textContent = theme === 'dark' ? 'light mode' : 'dark mode';
                 portrait.src = theme === 'dark' ? portrait.dataset.darkSrc : portrait.dataset.lightSrc;
             }
             applyTheme(document.documentElement.dataset.theme);
