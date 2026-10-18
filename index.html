@@ -59,9 +59,9 @@
 
         <!-- HERO MICRO-NAV -->
         <nav class="hero-mini-nav">
-            <a href="#jmp-heading" class="hero-mini-link">Job Market Paper</a>
-            <a href="#working-papers" class="hero-mini-link">Research</a>
-            <a href="#teaching" class="hero-mini-link">Teaching</a>
+            <a href="#jmp-heading" class="hero-mini-link" data-track-category="navigation" data-track-action="navigate_section" data-track-label="job_market_paper">Job Market Paper</a>
+            <a href="#working-papers" class="hero-mini-link" data-track-category="navigation" data-track-action="navigate_section" data-track-label="research">Research</a>
+            <a href="#teaching" class="hero-mini-link" data-track-category="navigation" data-track-action="navigate_section" data-track-label="teaching">Teaching</a>
             <a href="files/CV-TomPesso.pdf" class="hero-mini-link" target="_blank"
                 data-track-category="CV" data-track-action="download" data-track-label="hero_nav">
                 CV
@@ -118,7 +118,7 @@
 
                     <p class="hero-contact">
                         Always happy to discuss research. Reach me at
-                        <a href="mailto:tom.pesso@upf.edu" class="link-email">tom.pesso@upf.edu</a>.
+                        <a href="mailto:tom.pesso@upf.edu" class="link-email" data-track-category="contact" data-track-action="email_click" data-track-label="intro_email">tom.pesso@upf.edu</a>.
                     </p>
 
                     <!-- CV Button -->
@@ -431,6 +431,7 @@
                 const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
                 applyTheme(theme);
                 try { localStorage.setItem('tom-pesso-theme', theme); } catch (_) {}
+                trackEvent('theme_change', { event_category: 'appearance', event_label: theme, theme: theme });
             });
 
             // --- Google Analytics Tracking Helper ---
@@ -453,6 +454,19 @@
                     trackEvent(action, {
                         'event_category': category,
                         'event_label': label
+                    });
+                    return;
+                }
+
+                const presentation = e.target.closest('a.presentation-pill');
+                if (presentation) {
+                    const paper = presentation.closest('article');
+                    const paperControl = paper && paper.querySelector('[data-track-label]');
+                    trackEvent('presentation_click', {
+                        event_category: 'presentation',
+                        event_label: presentation.textContent.trim(),
+                        paper_id: paperControl ? paperControl.getAttribute('data-track-label') : 'unknown',
+                        link_url: presentation.href
                     });
                 }
             });
@@ -502,7 +516,7 @@
     <footer class="site-footer">
         <div class="footer-inner">
             © 2026 Tom Pesso · Universitat Pompeu Fabra
-            · <a href="mailto:tom.pesso@upf.edu">tom.pesso@upf.edu</a>
+            · <a href="mailto:tom.pesso@upf.edu" data-track-category="contact" data-track-action="email_click" data-track-label="footer_email">tom.pesso@upf.edu</a>
         </div>
     </footer>
 
